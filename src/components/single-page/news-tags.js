@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { useParams } from 'next/navigation';
-import { slugTagsPost } from '../../api/blogAPI';
+import { slugTagsPost } from '../../api/blogAPI';   
 import Images from '../../assests/images';
 import SubscribeForm from './subscribe';
 import { Helmet } from 'react-helmet-async';

@@ -56,7 +56,9 @@ p.error-message {
     box-shadow: 0 10px 30px #00000026;
     font-family: 'sequel_sans_roman_head'!important;
 }
-
+.scroll-stack-wrapper .strean-line {
+    min-height: 527px;
+}
 .chat-row{
 display:flex;
 gap:10px;
