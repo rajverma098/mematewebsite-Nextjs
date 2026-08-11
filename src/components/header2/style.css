@@ -282,9 +282,9 @@
   margin-right: 40px;
 }
 .navbar-item-active {
-  background: linear-gradient(to right, #1ab2ff 33.15%, #ffb258 62%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  /* background: linear-gradient(to right, #1ab2ff 33.15%, #ffb258 62%); */
+  /* -webkit-background-clip: text; */
+  /* -webkit-text-fill-color: transparent; */
 }
 
 .navbar-item p {
@@ -496,9 +496,9 @@ button.border-gradient::after {
   text-align: top;
   width: 120px;
 
-  background: linear-gradient(to right, #1ab2ff 33.15%, #ffb258 62%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  /* background: linear-gradient(to right, #1ab2ff 33.15%, #ffb258 62%); */
+  /* -webkit-background-clip: text; */
+  /* -webkit-text-fill-color: transparent; */
 }
 .navbar-log-in a {
   color: #29292b;
@@ -516,9 +516,9 @@ button.border-gradient::after {
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
 .menu-feature-management a:hover {
-  background: linear-gradient(to right, #1ab2ff 33.15%, #ffb258 62%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  /* background: linear-gradient(to right, #1ab2ff 33.15%, #ffb258 62%); */
+  /* -webkit-background-clip: text; */
+  /* -webkit-text-fill-color: transparent; */
 }
 .navbar-item-flex-item {
   display: flex;
@@ -637,9 +637,9 @@ button.border-gradient::after {
   font-family: sequel_sans_roman_head !important;
   font-size: 17px;
   font-style: normal;
-  background: linear-gradient(to right, #1ab2ff 33.15%, #ffb258 62%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  /* background: linear-gradient(to right, #1ab2ff 33.15%, #ffb258 62%); */
+  /* -webkit-background-clip: text; */
+  /* -webkit-text-fill-color: transparent; */
   font-weight: 100;
   line-height: 140%; /* 23.8px */
   letter-spacing: -0.17px;

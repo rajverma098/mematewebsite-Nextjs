@@ -1,4 +1,6 @@
 .first-about {
+  position: relative;
+  overflow: hidden;
   width: 199px;
   display: flex;
   flex-direction: column;
@@ -8,13 +10,11 @@
   padding: 15px;
   padding-top: 17px;
   height: 261px;
-  background-image: url("https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/about-1.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
 }
 
 .second-about {
+  position: relative;
+  overflow: hidden;
   width: 199px;
   display: flex;
   flex-direction: column;
@@ -22,10 +22,6 @@
   padding: 15px;
   padding-top: 17px;
   height: 261px;
-  background-image: url("https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/about-2.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
 }
 
 .third-about {

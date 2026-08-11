@@ -1,8 +1,12 @@
 import React from 'react';
 import './style.css';
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
+import AboutGradientBg from '../../../../svg/AboutGradientBg';
 
 const MenuNews = ({ onSubItemClick }) => {
+  const pathname = usePathname();
+
   const handleClick = () => {
     if (onSubItemClick) onSubItemClick();
   };
@@ -12,9 +16,10 @@ const MenuNews = ({ onSubItemClick }) => {
       <div className='menu-news'>
         <Link 
           href="/news" 
-          className="news first-News"
+          className={`news first-News${pathname === '/news' ? ' menuActive' : ''}`}
           onClick={handleClick}
         >
+          <AboutGradientBg className="menu-card-bg" />
           <span>
             <span className='first-news-top-heading'>Our</span>
             <div className="first-news-sub-heading">News</div> 
@@ -25,9 +30,10 @@ const MenuNews = ({ onSubItemClick }) => {
 
         <Link 
           href="/customer-stories" 
-          className="news first-News"
+          className={`news first-News${pathname === '/customer-stories' ? ' menuActive' : ''}`}
           onClick={handleClick}
         >
+          <AboutGradientBg className="menu-card-bg" />
           <span>
             <span className='first-news-top-heading'>Customer</span>
             <div className="first-news-sub-heading">Stories</div> 
@@ -38,9 +44,10 @@ const MenuNews = ({ onSubItemClick }) => {
 
         <Link 
           href="/memate-software-updates" 
-         className="news first-News"
+          className={`news first-News${pathname === '/memate-software-updates' ? ' menuActive' : ''}`}
           onClick={handleClick}
         >
+          <AboutGradientBg className="menu-card-bg" />
           <span>
             <span className='first-news-top-heading'>Software</span>
             <div className="first-news-sub-heading">Update</div> 

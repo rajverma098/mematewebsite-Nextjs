@@ -45,6 +45,8 @@
 }
 
 .first-News {
+  position: relative;
+  overflow: hidden;
   width: 199px;
   display: flex;
   flex-direction: column;
@@ -54,6 +56,22 @@
   padding: 15px;
   padding-top: 17px;
   height: 261px;
+}
+
+.first-News > span,
+.first-News > button {
+  position: relative;
+  z-index: 1;
+}
+
+.menu-card-bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  pointer-events: none;
+  opacity: 0;
 }
 .first-news-sub-heading {
   color: #29292b;
@@ -118,35 +136,9 @@
     /* margin-bottom: 15px; */
 }
 
-a.menuActive {
-  width: 199px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  /* padding-top: 27px;
-  padding-left: 15px; */
-  padding: 15px;
-  padding-top: 17px;
-  height: 261px;
-  background-image: url("https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/about-1.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-}
-.menu-news a:hover {
-  width: 199px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  /* padding-top: 27px;
-  padding-left: 15px; */
-  padding: 15px;
-  padding-top: 17px;
-  height: 261px;
-  background-image: url("https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/about-1.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
+a.menuActive .menu-card-bg,
+.menu-news a:hover .menu-card-bg {
+  opacity: 1;
 }
 a.menuActive span.first-news-top-heading,a.menuActive .first-news-sub-heading,a.menuActive p.first-news-description{
   color: #fff;

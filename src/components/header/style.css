@@ -242,14 +242,10 @@
   cursor: pointer;
   margin-right: 40px;
 }
-.navbar-item-active {
-  background: linear-gradient(to right, #1ab2ff 33.15%, #ffb258 62%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
 
 .navbar-item p {
   color: #29292b;
+  -webkit-text-fill-color: #29292b;
   text-align: center;
   font-feature-settings: "liga" off, "clig" off;
   font-family: "sequel_sans_semi_bold_disp" !important;
@@ -257,6 +253,52 @@
   font-style: normal;
   font-weight: 100;
   line-height: normal;
+}
+
+.header-navbar-container .navbar-item:hover p,
+.header-navbar-container .navbar-item-active p,
+.header-footer-legal:hover p,
+.header-footer-legal:hover .header-footer-legal-text,
+p.header-footer-legal-text-selected,
+.header-menu-header-div-menu .header-menu-item-unselected:hover .header-menu-item-name-unselected a,
+.header-menu-header-div-menu .header-menu-item .header-menu-item-name-selected a,
+/* .menu-feature-text:hover, */
+.menu-feature-text a:hover,
+.menu-feature-text a.navbar-item-active,
+.menu-feature-management a:hover p,
+.menu-feature-management a.navbar-item-active p,
+.menu-client-management:hover .clinet-management-text {
+  color: transparent !important;
+  -webkit-text-fill-color: transparent !important;
+  background-color: transparent;
+  background-image: linear-gradient(90deg, #0CB3FF, #FAB25C, #0CB3FF);
+  background-size: 300% 100%;
+  background-repeat: no-repeat;
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+  animation: smokeMove 6s ease-in-out infinite;
+}
+
+@keyframes smokeMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Sync feature/industry SVG icons with text gradient */
+.menu-client-management:hover > svg path,
+.menu-client-management:has(a.navbar-item-active) > svg path,
+.header-footer-legal:hover > svg path,
+.header-footer-legal:hover a svg path,
+.header-footer-legal:has(p.header-footer-legal-text-selected) > svg path,
+.header-footer-legal:has(p.header-footer-legal-text-selected) a svg path {
+  fill: #0CB3FF;
+  animation: iconSmokeFill 6s ease-in-out infinite;
+}
+
+@keyframes iconSmokeFill {
+  0%, 100% { fill: #0CB3FF; }
+  50% { fill: #FAB25C; }
 }
 
 .header-navbar-container {
@@ -456,10 +498,6 @@ button.border-gradient::after {
   line-height: normal;
   text-align: top;
   width: 120px;
-
-  background: linear-gradient(to right, #1ab2ff 33.15%, #ffb258 62%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 .navbar-log-in a {
   color: #29292b;
@@ -476,11 +514,6 @@ button.border-gradient::after {
 .navbar-log-in:hover {
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
-.menu-feature-management a:hover {
-  background: linear-gradient(to right, #1ab2ff 33.15%, #ffb258 62%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
 .navbar-item-flex-item {
   display: flex;
   align-items: center;
@@ -494,6 +527,7 @@ button.border-gradient::after {
 }
 .header-menu-icon-wrapper a {
   color: #29292b;
+  -webkit-text-fill-color: #29292b;
   text-decoration: none;
   font-family: "sequel_sans_semi_bold_disp";
   margin-left: 7px;
@@ -539,6 +573,7 @@ button.border-gradient::after {
 
 .header-menu-item-name-unselected {
   color: #29292b;
+  -webkit-text-fill-color: #29292b;
   font-feature-settings: "liga" off, "clig" off;
   font-family: sequel_sans_roman_head !important;
   font-size: 16px;
@@ -586,6 +621,7 @@ button.border-gradient::after {
 }
 .header-footer-legal-text {
   color: #888e9e;
+  -webkit-text-fill-color: #888e9e;
   font-family: sequel_sans_roman_head !important;
   font-size: 16px;
   font-style: normal;
@@ -594,13 +630,9 @@ button.border-gradient::after {
 }
 
 .header-footer-legal-text-selected {
-  color: #888e9e;
   font-family: sequel_sans_roman_head !important;
   font-size: 17px;
   font-style: normal;
-  background: linear-gradient(to right, #1ab2ff 33.15%, #ffb258 62%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
   font-weight: 100;
   line-height: 140%; /* 23.8px */
   letter-spacing: -0.17px;

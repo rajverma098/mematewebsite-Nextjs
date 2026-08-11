@@ -413,11 +413,7 @@ const Header = () => {
                     </p>
                   </div>
                   <div
-                    className={`header-footer-legal header-footer-faqs ${
-                      pathname === "/faqs"
-                        ? "header-footer-legal-text-selected"
-                        : ""
-                    }`}
+                    className="header-footer-legal header-footer-faqs"
                     style={{ cursor: "pointer" }}
                   >
                     <Link href="/faqs">
