@@ -1,6 +1,6 @@
 import React from "react";
 import style from './effective.module.scss';
-import Link from "next/link";
+import DarkMemateBlackBut from "@/layout/hover-button/DarkMemateBlackBut";
 const StartupsEffective = () => {
   return (
 <>
@@ -11,7 +11,14 @@ const StartupsEffective = () => {
 <h2>And Collaboration</h2>
     <p>With meMate, you can easily add notes, leave descriptions for suppliers and projects, and foster collaboration. 
       This builds accountability and ensures smooth communication within your company.</p>
-      <Link href="/features/task-management-software">Task Management</Link>
+       <div className="spaceButtonGap">
+       <DarkMemateBlackBut
+      link2="/features/task-management-software"
+      className="alignLeft"
+      buttonTextlight="Task Management"
+      showButton2={true}
+    />
+     </div>
       
 </div>
 <div className={style.flexImageBox}>

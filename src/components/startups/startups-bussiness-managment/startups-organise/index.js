@@ -1,6 +1,6 @@
 import React from "react";
 import style from './organise.module.scss';
-import Link from 'next/link';
+import DarkMemateBlackBut from "@/layout/hover-button/DarkMemateBlackBut";
 const StartupsOrganise = () => {
   return (
 <>
@@ -14,7 +14,14 @@ const StartupsOrganise = () => {
 <h3>Organise </h3>
 <h2>Your Products and Services</h2>
     <p>meMate is the perfect solution for setting up your business. Create departments and sub-departments, categories and subcategories, and outline costs or time estimates for each service. It’s a streamlined way to structure your offerings and get your business started on the right track.</p>
-      <Link href="/features/business-quote-calculator">Calculators</Link>
+     <div className="spaceButtonGap">
+       <DarkMemateBlackBut
+      link2="/features/business-quote-calculator"
+      className="alignLeft"
+      buttonTextlight="Calculators"
+      showButton2={true}
+    />
+     </div>
 </div>
 </div>
 </>

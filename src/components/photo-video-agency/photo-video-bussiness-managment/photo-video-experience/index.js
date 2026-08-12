@@ -1,6 +1,6 @@
 import React from "react";
 import style from './experience.module.scss';
-import Link from "next/link";
+import DarkMemateBlackBut from "@/layout/hover-button/DarkMemateBlackBut";
 const PhotoExperience = () => {
   return (
 <>
@@ -15,7 +15,14 @@ const PhotoExperience = () => {
     <p>View the complete history of your clients’ projects, supplier transactions, and subcontractor 
       activities all in one place. Create a job, assign it to your contractors, and track their
        performance effortlessly. We make it easy for you to stay organised and in control.</p>
-      <Link href="/features/project-management-software">Management</Link>
+        <div className="spaceButtonGap">
+       <DarkMemateBlackBut
+      link2="/features/project-management-software"
+      className="alignLeft"
+      buttonTextlight="Management"
+      showButton2={true}
+    />
+     </div>
 </div>
 
 </div>

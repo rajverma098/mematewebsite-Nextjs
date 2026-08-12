@@ -16,7 +16,7 @@ export const metadata = {
 export default function EmployeeManagement() {
   return (
     // <AppWrapper>
-      <EmployeeManagementPage />
+      <EmployeeManagementPage /> 
     // </AppWrapper>
   );
 }

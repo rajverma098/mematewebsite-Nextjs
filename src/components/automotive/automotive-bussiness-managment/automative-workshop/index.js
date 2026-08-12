@@ -1,6 +1,6 @@
 import React from "react";
 import style from './workshop.module.scss';
-import Link from "next/link";
+import DarkMemateBlackBut from "@/layout/hover-button/DarkMemateBlackBut";
 const AutomativeWorkshop = () => {
   return (
 <>
@@ -15,7 +15,14 @@ const AutomativeWorkshop = () => {
     <p>Manage quotes, invoices, jobs, purchase orders, and more with full control over your workshop. 
       Every action is recorded in an interconnected system that ensures transparency and cannot be altered. 
       A clean, proven solution for streamlined performance.</p>
-      <Link href="/features/invoicing-software">Invoicing </Link> 
+       <div className="spaceButtonGap">
+       <DarkMemateBlackBut
+      link2="/features/invoicing-software"
+      className="alignLeft"
+      buttonTextlight="Invoicing"
+      showButton2={true}
+    />
+     </div>
 </div>
 
 </div>

@@ -1,6 +1,6 @@
 import React from "react";
 import style from './tailore.module.scss';
-import Link from "next/link";
+import DarkMemateBlackBut from "@/layout/hover-button/DarkMemateBlackBut";
 const TailoredMarketing = () => {
   return (
 <>
@@ -15,7 +15,14 @@ const TailoredMarketing = () => {
     <p>meMate keeps a complete history of all repairs, item IDs, and customer details in one organised place. 
       Nothing is overlooked, and everything stays in order, 
       giving you full accountability and easy access to past records whenever you need them.</p>
-      <Link href="/features/client-management-software">Clients</Link>
+       <div className="spaceButtonGap">
+       <DarkMemateBlackBut
+      link2="/features/client-management-software"
+      className="alignLeft"
+      buttonTextlight="Clients"
+      showButton2={true}
+    />
+     </div>
 </div>
 
 </div>

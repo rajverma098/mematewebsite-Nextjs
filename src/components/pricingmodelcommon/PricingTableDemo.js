@@ -1,21 +1,15 @@
 import React, { useState } from "react";
 import style from "../../components/pricing/pricing-module.module.scss"
 import "../../components/pricing/tableStyle.css";
-// import CheckCircleIcon from "@mui/icons-material/CheckCircle";
-import Link from "next/link";
-// import TronButton from "../../layout/hover-button/tourn-but";
 import CheckIcon from "../../svg/CheckIcon";
 import CheckBlackIcon from "../../svg/CheckBlackIcon";
-import PricingButton from "../../layout/hover-button/PricingButton";
 import { BubbleBackground } from "./BubbleBackground";
+import DarkMemateBlackBut from "@/layout/hover-button/DarkMemateBlackBut";
 const pricingboll =
   "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/pricingboll.png";
 
 const PricingTableDemo = () => {
-  // State to toggle between monthly and yearly prices
   const [isYearly, setIsYearly] = useState(false);
-
-  // Example pricing data
   const plans = [
     {
       name: "Business",
@@ -92,26 +86,13 @@ const PricingTableDemo = () => {
     <>
      
       <div
-        className={style.PricingTableWrap}
-        // data-aos="fade-up"
-        // data-aos-offset="50"
-        // data-aos-delay="50"
-        // data-aos-duration="5500"
-        // data-aos-mirror="true"
-        // data-aos-once="false"
-        // data-aos-anchor-placement="top-bottom"
-      >
+        className={style.PricingTableWrap}>
         <div className={style.pricingtable}>
-          {/* <div className={style.toggleSwitch}>
-            <span id="butMontlyTable">Monthly</span>
-          </div> */}
-
           <div className={`${style.pricingcards}`}>
             {plans.map((plan, index) => (
               (() => {
                 const isFeatured = index === 1;
                 const cardInlineStyle = {
-                  // border: "4px solid black",
                   borderRadius: "24px",
                   ...(isFeatured
                     ? {
@@ -131,7 +112,6 @@ const PricingTableDemo = () => {
               >
                 {isFeatured && (
                   <BubbleBackground
-                    // aria-hidden="true"
                     interactive={true}
                     style={{
                       position: "absolute",
@@ -140,10 +120,9 @@ const PricingTableDemo = () => {
                       pointerEvents: "none",
                       borderRadius: "24px",
                     }}
-                    // Keep bubble colors aligned with brand/gradient
                     colors={{
-                      first: "26,178,255", // #1ab2ff
-                      second: "255,178,88", // #ffb258
+                      first: "26,178,255", 
+                      second: "255,178,88",
                       third: "26,178,255",
                       fourth: "255,178,88",
                       fifth: "26,178,255",
@@ -155,11 +134,6 @@ const PricingTableDemo = () => {
                 <div style={{ position: "relative", zIndex: 1 }}>
                 <div className={style.tophead}>
                   <div className={style.head}>
-                    {/* <div className={style.left1}>
-                      <div className={style.left}>
-                        {plan.image && <img src={plan.image} alt={plan.name} />}
-                      </div>
-                    </div> */}
                     <div className={style.right}>
                       <h2>{plan.name}</h2>
                     </div>
@@ -190,7 +164,6 @@ const PricingTableDemo = () => {
                         </div>
                       ) : (
                         <div className={style.checkcircleicon}>
-                          {/* Default icon */}
                           <CheckBlackIcon />
                         </div>
                       )}
@@ -201,28 +174,27 @@ const PricingTableDemo = () => {
                 {index === 1 ? (
                   <div
                     id="request-btn-pricing"
-                    className="request-btn PricingButton request-btn-bg"
+                    className="lightColorIngradient"
                   >
-                    <Link
-                      href={plan.link}
-                      target="_blank"
-                      className="nav-btn--get-started get-started-border-box navbar-link"
-                    >
-                      <PricingButton text={plan.action} borderVal={'white'}/>
-                    </Link>
+                     <DarkMemateBlackBut
+                        link2={plan.link}
+                        target="_blank"
+                        buttonTextlight={plan.action}
+                        showButton2={true}
+                      />
                   </div>
                 ) : (
                   <div
                     id="request-btn-pricing"
-                    className="request-btn PricingButton request-btn-bg"
+                    className=""
                   >
-                    <Link
-                      href={plan.link}
-                      target="_blank"
-                      className="nav-btn--get-started get-started-border-box navbar-link"
-                    >
-                      <PricingButton text={plan.action} borderVal={'black'}/>
-                    </Link>
+                       <DarkMemateBlackBut
+                        link2={plan.link}
+                        target="_blank"
+                        buttonTextlight={plan.action}
+                        showButton2={true}
+                      />
+                 
                   </div>
                 )}
               </div>

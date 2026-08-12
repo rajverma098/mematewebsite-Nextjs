@@ -16,7 +16,7 @@ export const metadata = {
 export default function Reports() {
   return (
     // <AppWrapper>
-      <ReportsPage />
+      <ReportsPage />   
     // </AppWrapper>
   );
 }

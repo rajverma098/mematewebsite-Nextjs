@@ -1,6 +1,6 @@
 import React from "react";
 import style from './custom.module.scss';
-import Link from 'next/link';
+import DarkMemateBlackBut from "@/layout/hover-button/DarkMemateBlackBut";
 const StartupsCustom = () => {
   return (
 <>
@@ -11,7 +11,14 @@ const StartupsCustom = () => {
 <h2>And Stages</h2>
     <p>Create custom statuses and stages for your projects, keeping clients updated via SMS or email. Add stages, 
       assign tasks, and control everything from one easy-to-use screen in meMate.</p>
-      <Link href="/features/client-management-software">Management</Link>
+       <div className="spaceButtonGap">
+       <DarkMemateBlackBut
+      link2="/features/client-management-software"
+      className="alignLeft"
+      buttonTextlight="Management"
+      showButton2={true}
+    />
+     </div>
       
 </div>
 <div className={style.flexImageBox}>

@@ -58,7 +58,7 @@
 .industryNewHead .LeftSide {
     width: 57%;
 }
-.industryNewHead .LeftSide span {
+.industryNewHead .LeftSide .leftSpan {
     color: #29292B;
     font-size: 32px;
      font-family: "sequel_sans";

@@ -1,6 +1,6 @@
 import React from "react";
 import style from './scalable.module.scss';
-import Link from "next/link";
+import DarkMemateBlackBut from "@/layout/hover-button/DarkMemateBlackBut";
 const ScalableCustomizable = () => {
   return (
 <>
@@ -12,7 +12,14 @@ const ScalableCustomizable = () => {
     <p>meMate allows agencies to manage separate locations or multiple departments with ease, thanks to a multi-location system. 
       You can keep offices or brands distinct while sharing knowledge and calculators across teams. With the built-in results and tracking system, 
       you can monitor performance, scale your operations, and streamline workflows—all with just a few clicks.</p>
-      <Link href="/features/profitability-and-budgeting-software">Profitability</Link>
+      <div className="spaceButtonGap">
+       <DarkMemateBlackBut
+      link2="/features/profitability-and-budgeting-software"
+      className="alignLeft"
+      buttonTextlight="Profitability"
+      showButton2={true}
+    />
+     </div>
       
 </div>
 <div className={style.flexImageBox}>

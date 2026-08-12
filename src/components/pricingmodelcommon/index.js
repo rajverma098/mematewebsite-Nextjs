@@ -1,8 +1,6 @@
 import "./style.css";
 import PricingTableDemo from "./PricingTableDemo";
-import Link from "next/link";
-import TronRequestADemo from "../../layout/hover-button/TronRequestADemo";
-import WhiteButtonBammer from "../../layout/hover-button/WhiteButtonBammer";
+import DarkMemateBlackBut from "@/layout/hover-button/DarkMemateBlackBut";
 
 
 const PricingModelCommon = () => {
@@ -20,26 +18,18 @@ const PricingModelCommon = () => {
           </span>
         </div>
       </div>
-       <div className="dflexbannerbtn dflexbannerbtnFT dflexbannerbtnp">
-                <div className="request-btn">
-                  <Link
-                    href="https://app.memate.com.au/requestdemo"
-                    target="_blank"
-                    className="nav-btn--get-started  navbar-link"
-                  >
-                      <TronRequestADemo text="Book a Demo" />
-                  </Link>
-                </div>
-                <div className="request-btn">
-                  <Link
-                    href="https://app.memate.com.au/onboarding"
-                    target="_blank"
-                    className="nav-btn--get-started  navbar-link"
-                  >
-                      <WhiteButtonBammer text="Start Free Trial"/>
-                  </Link>
-                </div>
-          </div>
+   
+      <div className="dflexbannerbtn dflexbannerbtnFT dflexbannerbtnp">
+            <DarkMemateBlackBut
+      link1="https://app.memate.com.au/requestdemo"
+      link2="https://app.memate.com.au/onboarding"
+      target="_blank"
+      buttonTextdark="Book a Demo"
+      buttonTextlight="Start Free Trial"
+      showButton1={true}
+      showButton2={true}
+    />
+          </div> 
      <PricingTableDemo />
     </div>
   );

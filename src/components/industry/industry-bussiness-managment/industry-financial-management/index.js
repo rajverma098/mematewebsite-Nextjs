@@ -1,6 +1,6 @@
 import React from "react";
 import style from './financial.module.scss';
-import Link from "next/link";
+import DarkMemateBlackBut from "@/layout/hover-button/DarkMemateBlackBut";
 const FinanicalManagement = () => {
   return (
 <>
@@ -11,7 +11,15 @@ const FinanicalManagement = () => {
 <h2>Financial Management</h2>
     <p>Budgeting is made easy in meMate. Based on your quote, you can track the initial project budget at 
       all times and control ongoing expenses and time spent on the project, ensuring you stay on target.</p>
-      <Link href="/features/business-statistics-tools">Statistics</Link>
+      <div className="spaceButtonGap">
+       <DarkMemateBlackBut
+      link2="/features/business-statistics-tools"
+      className="alignLeft"
+      buttonTextlight="Statistics"
+      showButton2={true}
+    />
+     </div>
+  
       
 </div>
 <div className={style.flexImageBox}>

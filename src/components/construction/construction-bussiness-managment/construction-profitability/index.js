@@ -1,6 +1,6 @@
 import React from "react";
 import style from "./profitability.module.scss";
-import Link from "next/link";
+import DarkMemateBlackBut from "@/layout/hover-button/DarkMemateBlackBut";
 const ConstructionProfitability = () => {
   return (
     <>
@@ -20,7 +20,14 @@ const ConstructionProfitability = () => {
           <p>
           Issue invoices on job completion, offer payment via card, PayID, BPAY, and handle late fees and reminders — seamlessly integrated into your workflow
           </p>
-          <Link href="/features/job-management-software">Schedule Jobs</Link>
+           <div className="spaceButtonGap">
+       <DarkMemateBlackBut
+      link2="/features/job-management-software"
+      className="alignLeft"
+      buttonTextlight="Schedule Jobs"
+      showButton2={true}
+    />
+     </div>
         </div>
       </div>
     </>

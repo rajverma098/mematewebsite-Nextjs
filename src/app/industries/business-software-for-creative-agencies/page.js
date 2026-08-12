@@ -16,7 +16,7 @@ export const metadata = {
 export default function Industry() {
   return (
     <AppWrapper>
-      <IndustryPage />
+      <IndustryPage />  
     </AppWrapper>
   );
 }

@@ -1,6 +1,6 @@
 import React from "react";
 import style from './simplified.module.scss';
-import Link from "next/link";
+import DarkMemateBlackBut from "@/layout/hover-button/DarkMemateBlackBut";
 const PhotoSimplified = () => {
   return (
 <>
@@ -13,7 +13,14 @@ Capabilities</h2>
     <p>Easily manage shifts for your team with meMate’s built-in shift management features. Assign, track, 
       and adjust work schedules seamlessly, ensuring that 
       everyone is where they need to be, on time, and with full visibility into availability.</p>
-      <Link href="/features/team-communication-tools">Management</Link>
+       <div className="spaceButtonGap">
+       <DarkMemateBlackBut
+      link2="/features/team-communication-tools"
+      className="alignLeft"
+      buttonTextlight="Management"
+      showButton2={true}
+    />
+     </div>
       
 </div>
 <div className={style.flexImageBox}>

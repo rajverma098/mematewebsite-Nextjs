@@ -11,7 +11,7 @@ export const metadata = {
 export default function InternalChat() {
   return (
     // <AppWrapper>
-      <InternalChatPage />
+      <InternalChatPage /> 
     // </AppWrapper>
   );
 }

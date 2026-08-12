@@ -1,6 +1,6 @@
 import React from "react";
 import style from "./intuitive.module.scss";
-import Link from "next/link";
+import DarkMemateBlackBut from "@/layout/hover-button/DarkMemateBlackBut";
 const ConstructionIntuitive = () => {
   return (
     <>
@@ -14,7 +14,14 @@ const ConstructionIntuitive = () => {
           <p>
           Plan entire job timelines with task assignments,<br/> project scheduling (Gantt chart), and<br/> change‑order tracking—all in one dashboard
           </p>
-          <Link href="/features/sales-management-tools">Sales</Link>
+           <div className="spaceButtonGap">
+       <DarkMemateBlackBut
+      link2="/features/sales-management-tools"
+      className="alignLeft"
+      buttonTextlight="Sales"
+      showButton2={true}
+    />
+     </div>
         </div>
         <div className={`${style.flexImageBox}`}>
           <img

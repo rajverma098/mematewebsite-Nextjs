@@ -1,6 +1,6 @@
 import React from "react";
 import style from "./scheduling.module.scss";
-import Link from "next/link";
+import DarkMemateBlackBut from "@/layout/hover-button/DarkMemateBlackBut";
 const ConstructionScheduling = () => {
   return (
     <>
@@ -24,7 +24,14 @@ const ConstructionScheduling = () => {
             Capture costs on-site—material purchases, labour hours, contractor
             invoices—and compare actuals vs. budgets in real time
           </p>
-          <Link href="/features/invoicing-software">Invoicing</Link>
+           <div className="spaceButtonGap">
+       <DarkMemateBlackBut
+      link2="/features/invoicing-software"
+      className="alignLeft"
+      buttonTextlight="Invoicing"
+      showButton2={true}
+    />
+     </div>
         </div>
       </div>
     </>

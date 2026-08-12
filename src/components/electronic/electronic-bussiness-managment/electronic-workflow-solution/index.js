@@ -1,6 +1,6 @@
 import React from "react";
 import style from './workflow.module.scss';
-import Link from "next/link";
+import DarkMemateBlackBut from "@/layout/hover-button/DarkMemateBlackBut";
 const ElectronicWorkFlowSolution = () => {
   return (
 <>
@@ -12,7 +12,15 @@ const ElectronicWorkFlowSolution = () => {
 <h2>Workflow Management</h2>
     <p>meMate offers a scalable workflow system where managers can assign repairs to multiple specialists and track their performance. This feature helps streamline the repair process, ensuring 
       tasks are efficiently delegated and progress is monitored in real-time, optimising team productivity.</p>
-      <Link href="/features/calendar-timeline-management-software">Calendar</Link>
+      <div className="spaceButtonGap">
+       <DarkMemateBlackBut
+      link2="/features/calendar-timeline-management-software"
+      className="alignLeft"
+      buttonTextlight="Calendar"
+      showButton2={true}
+    />
+     </div>
+
       
 </div>
 <div className={`${style.flexImageBox}`}>

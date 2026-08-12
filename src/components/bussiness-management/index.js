@@ -3,6 +3,7 @@ import Images from "../../assests/images";
 import "./styles.css";
 import Link from "next/link";
 import TronRequestADemo from "../../layout/hover-button/TronRequestADemo";
+import DarkMemateBlackBut from "../../layout/hover-button/DarkMemateBlackBut";
 import WhiteButtonBammer from "../../layout/hover-button/WhiteButtonBammer";
 import Image from "next/image";
 const BussinessManagement = () => {
@@ -49,8 +50,15 @@ const BussinessManagement = () => {
           Simplicity & Control
         </span>
       </div>
-
-      <div className="dflexbannerbtn">
+     <DarkMemateBlackBut
+      link1="https://app.memate.com.au/requestdemo"
+      link2="https://app.memate.com.au/onboarding"
+      buttonTextdark="Show Me How It Works"
+      buttonTextlight="Start Free Trial"
+      showButton1={true}
+      showButton2={true}
+    />
+      {/* <div className="dflexbannerbtn">
         <div className="request-btn">
           <Link
             href="https://app.memate.com.au/requestdemo"
@@ -60,7 +68,7 @@ const BussinessManagement = () => {
             <TronRequestADemo text="Show Me How It Works" />
           </Link>
         </div>
-        <div className="request-btn">
+        <div className="request-btn requestLightButton">
           <Link
             href="https://app.memate.com.au/onboarding"
             target="_blank"
@@ -69,7 +77,7 @@ const BussinessManagement = () => {
             <WhiteButtonBammer text="Start Free Trial" />
           </Link>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };

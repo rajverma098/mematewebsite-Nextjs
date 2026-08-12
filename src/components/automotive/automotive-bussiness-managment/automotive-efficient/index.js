@@ -1,6 +1,6 @@
 import React from "react";
 import style from './efficient.module.scss';
-import Link from "next/link";
+import DarkMemateBlackBut from "@/layout/hover-button/DarkMemateBlackBut";
 const AutomotiveEfficient = () => {
   return (
 <>
@@ -14,7 +14,14 @@ const AutomotiveEfficient = () => {
 <h3>Fast and</h3>
 <h2>Accurate Quoting</h2>
     <p>Quote your customers in seconds using preset products and services, ensuring accuracy and eliminating the risk of underquoting.</p>
-      <Link href="/features/sales-management-tools">Sales Pipeline</Link>
+     <div className="spaceButtonGap">
+       <DarkMemateBlackBut
+      link2="/features/sales-management-tools"
+      className="alignLeft"
+      buttonTextlight="Sales Pipeline"
+      showButton2={true}
+    />
+     </div>
 </div>
 </div>
 </>

@@ -29,6 +29,7 @@ import WatchDemoSVG from "../../svg/WatchDemoSVG";
 import HeaderButtonWithGradient from "../../layout/hover-button/HeaderButtonWithGradient";
 // import TronRequestADemo from "../../layout/hover-button/TronRequestADemo";
 import WhiteButtonBammer from "../../layout/hover-button/WhiteButtonBammer";
+import DarkMemateBlackBut from "@/layout/hover-button/DarkMemateBlackBut";
 
 const DownBlackArrow =
   "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/down-black-arrow.svg";
@@ -207,7 +208,18 @@ const Header = () => {
               </Link>
             </div>
           </div>
-          <div className="dflexbannerbtn dflexbannerHeaderbtn dflexbannerbtnp">
+          <div className="headerMainButton">
+             <DarkMemateBlackBut
+            link1="https://app.memate.com.au/"
+            link2="https://app.memate.com.au/requestdemo"
+            target="_blank"
+            buttonTextdark="Log In"
+            buttonTextlight="Request a Demo"
+            showButton1={true}
+            showButton2={true}
+          />
+          </div>
+          {/* <div className="dflexbannerbtn dflexbannerHeaderbtn dflexbannerbtnp">
                 <div className="request-btn">
                   <Link
                     href="https://app.memate.com.au/requestdemo"
@@ -227,7 +239,7 @@ const Header = () => {
               <TronButton text="Log In" />
             </Link>
           </div>
-          </div>
+          </div> */}
           {/* <div className="navbar-log-in">
             
             <Link
@@ -353,14 +365,23 @@ const Header = () => {
                     </div>
                   </div>
                   <div className="request-a-button-wrapper">
-                    <Link
+                   
+       <DarkMemateBlackBut
+      link2="https://app.memate.com.au/requestdemo"
+      className="alignLeft"
+      target="_blank"
+      buttonTextlight="Request a Demo"
+      showButton2={true}
+    />
+
+                    {/* <Link
                       href="https://app.memate.com.au/requestdemo"
                       >
                       <HeaderButtonWithGradient
                         text="Request a Demo"
                         borderVal="black"
                       />
-                    </Link>
+                    </Link> */}
                   </div>
                 </div>
               </div>

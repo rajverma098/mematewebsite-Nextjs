@@ -3,6 +3,7 @@ import "./style.css";
 import Link from "next/link";
 import WhiteNormalButton from "../../../layout/hover-button/WhiteNormalButton";
 import { LazyLoadImage } from "react-lazy-load-image-component";
+import DarkMemateBlackBut from "@/layout/hover-button/DarkMemateBlackBut";
 const MeMateFeatureMotivateTeam = () => {
   return (
     <div
@@ -22,14 +23,14 @@ const MeMateFeatureMotivateTeam = () => {
                     employees and contractors to perform at their best.
                   </p>
                 </div>
-                <div className="request-btn request-btn-bg">
-                  <Link
-                    href="/features"
-                    className="nav-btn--get-started get-started-border-box navbar-link"
-                  >
-                    <WhiteNormalButton text="See All Features " />
-                  </Link>
-                </div>
+             
+                   <DarkMemateBlackBut
+                  link2="/features"
+                  className="alignLeft"
+                  buttonTextlight="See All Features"
+                  showButton2={true}
+                />
+         
               </div>
               <div className="operation-right">
                 <div className="motivate-image motivate-imagespace motivateImageSetter">

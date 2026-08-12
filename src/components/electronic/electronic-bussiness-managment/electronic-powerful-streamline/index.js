@@ -1,6 +1,6 @@
 import React from "react";
 import style from './electronic.module.scss';
-import Link from "next/link";
+import DarkMemateBlackBut from "@/layout/hover-button/DarkMemateBlackBut";
 const ElectronicPowerfulStreamline = () => {
   return (
 <>
@@ -16,7 +16,14 @@ const ElectronicPowerfulStreamline = () => {
     <p>meMate allows your shop to track every repair from start to finish. Easily add notes, keep detailed records, 
       and update clients on the repair status through email or SMS. This ensures seamless communication and keeps your 
       customers informed every step of the way.</p>
-      <Link href="/features/client-management-software">Management</Link>
+       <div className="spaceButtonGap">
+       <DarkMemateBlackBut
+      link2="/features/client-management-software"
+      className="alignLeft"
+      buttonTextlight="Management"
+      showButton2={true}
+    />
+     </div>
 </div>
 </div>
 </>

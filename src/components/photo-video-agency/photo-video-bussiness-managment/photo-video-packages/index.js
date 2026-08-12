@@ -1,6 +1,6 @@
 import React from "react";
 import style from './packages.module.scss';
-import Link from "next/link";
+import DarkMemateBlackBut from "@/layout/hover-button/DarkMemateBlackBut";
 const Photopackages = () => {
   return (
 <>
@@ -12,7 +12,14 @@ const Photopackages = () => {
     <p>Experience customisable packages and templates with tailored preset calculations for all your services. 
       Set hourly rates or cost of sales with margins defined separately for each product or service. This allows you to quote 
       confidently and have your entire company’s products and services organised in one place.</p>
-      <Link href="/features/client-management-software">Management</Link>
+       <div className="spaceButtonGap">
+       <DarkMemateBlackBut
+      link2="/features/client-management-software"
+      className="alignLeft"
+      buttonTextlight="Management"
+      showButton2={true}
+    />
+     </div>
       
 </div>
 <div className={style.flexImageBox}>

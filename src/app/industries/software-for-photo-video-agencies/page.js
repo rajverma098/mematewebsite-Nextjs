@@ -16,7 +16,7 @@ export const metadata = {
 export default function Photo() {
   return (
     <AppWrapper>
-      <PhotoPage />
+      <PhotoPage /> 
      </AppWrapper>
   );
 }

@@ -1,7 +1,7 @@
 'use client'
 import React from 'react'
 import Layout from '../../layout';
-import FeatureseComponent from '../../components/features';
+import FeatureseComponent from '../../components/features'; 
 import AppWrapper from '../../components/AppWrapper';
 const FeaturesPage = () => {
   return (

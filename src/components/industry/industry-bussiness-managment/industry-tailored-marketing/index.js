@@ -1,6 +1,6 @@
 import React from "react";
 import style from './tailore.module.scss';
-import Link from "next/link";
+import DarkMemateBlackBut from "@/layout/hover-button/DarkMemateBlackBut";
 const TailoredMarketing = () => {
   return (
 <>
@@ -14,7 +14,14 @@ const TailoredMarketing = () => {
 <h2>for Marketing Agencies</h2>
     <p>Our calculation system allows you to preset packages and services, including all the different offerings your agency provides. This helps you quote your 
       customers faster than anyone else, streamlining the entire process.</p>
-      <Link href="/features/business-quote-calculator">Calculators</Link>
+      <div className="spaceButtonGap">
+       <DarkMemateBlackBut
+      link2="/features/business-quote-calculator"
+      className="alignLeft"
+      buttonTextlight="Calculators"
+      showButton2={true}
+    />
+     </div>
 </div>
 
 </div>

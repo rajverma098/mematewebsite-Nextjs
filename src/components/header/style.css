@@ -4,7 +4,20 @@
     margin-right: 18px !important;
 }
 }
-
+.headerMainButton .gridButtonStyle {
+    justify-content: flex-end;
+}
+.headerMainButton .gridButtonStyle {
+    justify-content: flex-end;
+    direction: rtl;
+}
+.headerMainButton .gridButtonStyle .tron-button-in {
+    min-width: 120px;
+}
+.headerMainButton .gridButtonStyle button {
+    height: auto !important;
+    /* padding: 4px 0; */
+}
 .navbar {
   display: flex;
   width: 100%;

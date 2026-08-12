@@ -1,6 +1,6 @@
 import React from "react";
 import style from './invoicing.module.scss';
-import Link from "next/link";
+import DarkMemateBlackBut from "@/layout/hover-button/DarkMemateBlackBut";
 const PhotoInvoicing = () => {
   return (
 <>
@@ -15,7 +15,14 @@ const PhotoInvoicing = () => {
     <p>Invoice your client with the click of a button once the quote is approved. 
       Add deposit payments and receive payments via debit or credit cards. Easily resend invoices with the 
       remaining due amount—all of this with a simple, easy-to-use solution.</p>
-      <Link href="/features/invoicing-software">Invoice</Link>
+       <div className="spaceButtonGap">
+       <DarkMemateBlackBut
+      link2="/features/invoicing-software"
+      className="alignLeft"
+      buttonTextlight="Invoice"
+      showButton2={true}
+    />
+     </div>
 </div>
 
 </div>

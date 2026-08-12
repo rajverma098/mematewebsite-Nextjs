@@ -1,6 +1,6 @@
 import React from "react";
 import style from "./database.module.scss";
-import Link from "next/link";
+import DarkMemateBlackBut from "@/layout/hover-button/DarkMemateBlackBut";
 const ConstructionDatabase = () => {
   return (
     <>
@@ -16,7 +16,14 @@ const ConstructionDatabase = () => {
             <br /> and photos securely in the cloud—attached
             <br /> directly to each job or client folder
           </p>
-          <Link href="/features/task-management-software">Task Management</Link>
+           <div className="spaceButtonGap">
+       <DarkMemateBlackBut
+      link2="/features/task-management-software"
+      className="alignLeft"
+      buttonTextlight="Task Management"
+      showButton2={true}
+    />
+     </div>
         </div>
         <div className={style.flexImageBox}>
           <img

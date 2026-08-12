@@ -1,6 +1,6 @@
 import React from "react";
 import style from './industry.module.scss';
-import Link from "next/link";
+import DarkMemateBlackBut from "@/layout/hover-button/DarkMemateBlackBut";
 const IndustryPowerfulStreamline = () => {
   return (
 <>
@@ -16,7 +16,14 @@ const IndustryPowerfulStreamline = () => {
     <p> MeMate offers powerful project management capabilities, allowing you to efficiently track and manage all 
       your creative projects. From initial concept to final delivery, our software ensures that your team stays 
       organised and productive throughout the entire creative workflow.</p>
-      <Link href="/features/project-management-software">Management</Link>
+     <div className="spaceButtonGap">
+       <DarkMemateBlackBut
+      link2="/features/project-management-software"
+      className="alignLeft"
+      buttonTextlight="Management"
+      showButton2={true}
+    />
+     </div>
 </div>
 </div>
 </>

@@ -3,6 +3,7 @@ import "./style.css";
 import Link from "next/link";
 import TronButton from "../../../layout/hover-button/tourn-but";
 import WhiteNormalButton from "../../../layout/hover-button/WhiteNormalButton";
+import DarkMemateBlackBut from "@/layout/hover-button/DarkMemateBlackBut";
 
 const FeatureCard = (props) => {
  
@@ -21,9 +22,13 @@ const FeatureCard = (props) => {
               </div>
               <div className="request-btn request-btn-bg" 
    >
-        <Link href='/features' className="nav-btn--get-started get-started-border-box navbar-link"><WhiteNormalButton text={props.cardButton} /></Link>
+         <DarkMemateBlackBut
+          link2="/features"
+          className="alignLeft"
+          buttonTextlight="See All Features"
+          showButton2={true}
+        />
       </div>
-              {/* <Link href="https://dev.memate.com.au/onboarding"><button className="get-started-btn">{props.cardButton}</button></Link> */}
             </div>
 
             <div className="operation-right">

@@ -1,6 +1,6 @@
 import React from "react";
 import style from './agile.module.scss';
-import Link from "next/link";
+import DarkMemateBlackBut from "@/layout/hover-button/DarkMemateBlackBut";
 const ClientCollaboration = () => {
   return (
 <>
@@ -15,7 +15,15 @@ const ClientCollaboration = () => {
     <p>meMate’s quotation system allows you to generate quotes within minutes using 
       preset services and parts with predefined margins or markups. This ensures accurate, quick quoting, 
       helping you avoid underestimating costs while maintaining profitability</p>
-      <Link href="/features/internal-communication-tools">Internal Chat</Link>
+        <div className="spaceButtonGap">
+       <DarkMemateBlackBut
+      link2="/features/internal-communication-tools"
+      className="alignLeft"
+      buttonTextlight="Internal Chat"
+      showButton2={true}
+    />
+     </div>
+
 </div>
 
 </div>

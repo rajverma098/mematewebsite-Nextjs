@@ -14,7 +14,7 @@ export const metadata = {
 export default function Feature() {
   return (
     // <AppWrapper>
-      <FeaturePage />
+      <FeaturePage /> 
     // </AppWrapper>
   );
 }

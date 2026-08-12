@@ -1,7 +1,6 @@
-import Link from "next/link";
 import "./style.css";
-import TronRequestADemo from "../../../layout/hover-button/TronRequestADemo";
 import { motion } from "framer-motion";
+import DarkMemateBlackBut from "@/layout/hover-button/DarkMemateBlackBut";
 const CalendarsComponent = () => {
   return (
   <>
@@ -36,7 +35,12 @@ const CalendarsComponent = () => {
         viewport={{ once: true, amount: 0.6 }}
         transition={{ type: "spring", stiffness: 150, damping: 10, mass: 4, delay: 0  }}
         >
-        <Link href='https://app.memate.com.au/requestdemo' target="_blank" className="nav-btn--get-started navbar-link"><TronRequestADemo text="Request a Demo" /></Link>
+     <DarkMemateBlackBut
+      link1="https://app.memate.com.au/requestdemo"
+      target="_blank"
+      buttonTextdark="Request a Demo"
+      showButton1={true}
+    />
       </motion.div>
         </div>
       </div>

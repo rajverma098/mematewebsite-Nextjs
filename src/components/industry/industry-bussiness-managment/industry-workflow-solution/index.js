@@ -1,6 +1,6 @@
 import React from "react";
 import style from './workflow.module.scss';
-import Link from "next/link";
+import DarkMemateBlackBut from "@/layout/hover-button/DarkMemateBlackBut";
 const IndustryWorkFlowSolution = () => {
   return (
 <>
@@ -11,8 +11,14 @@ const IndustryWorkFlowSolution = () => {
 <h2>Workflow Solutions</h2>
     <p>Create simple workflows and custom calculators based on different hourly rates, equipment costs, and more. Easily build complete packages with 
       customizable options, ensuring a clean workflow while avoiding undercharging or missing important service elements.</p>
-      <Link href="/features/calendar-timeline-management-software">Calendar</Link>
-      
+       <div className="spaceButtonGap">
+       <DarkMemateBlackBut
+      link2="/features/calendar-timeline-management-software"
+      className="alignLeft"
+      buttonTextlight="Calendar"
+      showButton2={true}
+    />
+      </div>
 </div>
 <div className={style.flexImageBox}>
   <img src="https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/unique-main-img.svg" alt="unique-main"/>

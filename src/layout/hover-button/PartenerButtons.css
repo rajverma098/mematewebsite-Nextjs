@@ -1,4 +1,4 @@
-
+/* 
 @media only screen and (min-width: 600px) and (max-width: 1024px) {
 
 }
@@ -158,7 +158,7 @@
   
   
   
-  /* Text and Button Background */
+
   .btn-base--black1 {
     z-index: 10;
     background-color: #1d1d1f;
@@ -203,13 +203,12 @@
     inset: -3px 0% 0% -21px;
     display: block;
     position: absolute;
-    /* animation: fadeInOut 4s linear infinite; */
+
     opacity: 0;
     border-radius: 48px;
     align-items: flex-start;
     margin-left: auto;
     margin-right: auto;
-    /* inset: -3.3px 0% -8px -3.5px; */
     animation: fadeInOut 10s linear infinite;
 
 }
@@ -260,10 +259,8 @@
   }
 
 
-  /* White Button  */
 
   .tron-icon_nav2 {
-    /* fill: none; */
     stroke: url(#linear-gradient-tronnav);
     stroke-linecap: round;
     stroke-linejoin: round;
@@ -329,11 +326,9 @@
     inset: -2px 0% 0% -1.5px;
     overflow: hidden;
 }
-/* .btn-base--black2:hover{
-    border: linear-gradient(to right, #1ab2ff 33.15%, #ffb258 62%) !important;
-} */
 
-/* Button 3 */
+
+
 
 .btn-base--black3{
     z-index: 10;
@@ -342,7 +337,7 @@
     border-radius: 2rem;
     flex: none;
     align-items: stretch;
-    /* width: 185% !important; */
+
     height: 52px;
     margin-left: auto;
     margin-right: 0;
@@ -356,10 +351,10 @@
     align-items: center;
     justify-content: center;
     border: 1px solid black;
-    /* width: 182%; */
+  
 }
 
-/* BUTTON 4 */
+
 
 .btn-base--black4{
     z-index: 10;
@@ -368,7 +363,7 @@
     border-radius: 2rem;
     flex: none;
     align-items: stretch;
-    /* width: 185% !important; */
+   
     height: 52px;
     margin-left: auto;
     margin-right: 0;
@@ -383,7 +378,7 @@
     justify-content: center;
     border: 1px solid white;
     margin-top: 11px;
-    /* width: 182%; */
+  
 }
 
     
@@ -398,7 +393,7 @@
   }
 
   
-  /* Button 4 */
+
 .btn-base--black5{
     z-index: 10;
     background-color: #f7f8fa;
@@ -421,7 +416,7 @@
     justify-content: center;
     border: 1px solid black;
     margin-top: 11px;
-    /* width: 182%; */
+
 }
 
     
@@ -433,7 +428,7 @@
     font-weight: 100;
     line-height: normal;
     font-family: 'sequel_sans' !important;
-    /* border: 1px solid black; */
+
     white-space: nowrap;
   }
   
@@ -505,13 +500,12 @@
   display: block;
   position: absolute;
   inset: -5px 0% 0% -24px;
-  /* animation: fadeInOut 4s linear infinite; */
+
   opacity: 0;
   border-radius: 48px;
   align-items: flex-start;
   margin-left: auto;
   margin-right: auto;
-  /* inset: -3.3px 0% -8px -3.5px; */
   animation: none;
 }
 .dflexbannerbtn .btn-base--black2 {
@@ -550,4 +544,4 @@
     position: absolute;
     inset: -2px 0% 0% -1.5px;
     overflow: hidden;
-}
+} */

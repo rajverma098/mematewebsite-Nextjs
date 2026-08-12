@@ -16,7 +16,7 @@ export const metadata = {
 export default function ContactUs() {
   return (
     // <AppWrapper>
-      <ContactUsPage />
+      <ContactUsPage /> 
     // </AppWrapper>
   );
 }

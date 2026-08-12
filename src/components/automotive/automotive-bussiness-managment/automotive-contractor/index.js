@@ -1,6 +1,6 @@
 import React from "react";
 import style from './contractor.module.scss';
-import Link from "next/link";
+import DarkMemateBlackBut from "@/layout/hover-button/DarkMemateBlackBut";
 const AutomotiveContractor = () => {
   return (
 <>
@@ -11,7 +11,14 @@ const AutomotiveContractor = () => {
 <h2>Management</h2>
     <p>Manage contractors effortlessly by presetting time or amounts, assigning tasks, and approving work upon completion. Receive weekly 
       invoices from contractors through a simple, user-friendly system that works for everyone.</p>
-      <Link href="/features/contractor-management-software">Contractor Management </Link>
+       <div className="spaceButtonGap">
+       <DarkMemateBlackBut
+      link2="/features/contractor-management-software"
+      className="alignLeft"
+      buttonTextlight="Contractor Management"
+      showButton2={true}
+    />
+     </div>
       
 </div>
 <div className={style.flexImageBox}>

@@ -23,6 +23,7 @@ import EmployeesActive from "../../svg/EmployeesActive";
 import WhiteButtonBammer from '../../layout/hover-button/WhiteButtonBammer';
 import Link from "next/link";
 import { LazyLoadImage } from 'react-lazy-load-image-component';
+import DarkMemateBlackBut from "@/layout/hover-button/DarkMemateBlackBut";
 const SalesImage = "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/slider/img-sales-banner-min.png";
 // const SalesImage = "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/Sales-image-banner.svg";
 const CalculationImage = "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/slider/img-calculation-min.png";
@@ -289,9 +290,16 @@ function  CenterMode() {
                <div className="businesses-mode">
               <span>{tab.para}</span>
               </div>
-             <div className="request-btn request-btnApp" style={{marginTop: "0"}}>
-        <Link href={tab.link} className="nav-btn--get-started get-started-border-box navbar-link"><WhiteButtonBammer text="Find more" /></Link>
-      </div> 
+            
+        {/* <Link href={tab.link} className="nav-btn--get-started get-started-border-box navbar-link">
+        <WhiteButtonBammer text="Find more" />
+        </Link> */}
+         <DarkMemateBlackBut
+      link2={tab.link}
+      buttonTextlight="Find more"
+      showButton2={true}
+    />
+   
             </div>
           </div>
           </div>

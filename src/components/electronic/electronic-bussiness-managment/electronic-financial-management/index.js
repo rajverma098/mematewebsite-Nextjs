@@ -1,6 +1,6 @@
 import React from "react";
 import style from './financial.module.scss';
-import Link from "next/link";
+import DarkMemateBlackBut from "@/layout/hover-button/DarkMemateBlackBut";
 const FinanicalManagement = () => {
   return (
 <>
@@ -12,7 +12,15 @@ const FinanicalManagement = () => {
     <p>meMate enables you to account for all parts and link expenses directly to each active project. 
       This feature allows you to easily control the budget for every repair and get a clear view of the 
       operational profitability, ensuring efficient cost management and financial oversight.</p>
-      <Link href="/features/time-tracking-tools">Expense</Link>
+       <div className="spaceButtonGap">
+       <DarkMemateBlackBut
+      link2="/features/time-tracking-tools"
+      className="alignLeft"
+      buttonTextlight="Expense"
+      showButton2={true}
+    />
+     </div>
+
       
 </div>
 <div className={style.flexImageBox}>

@@ -1,6 +1,6 @@
 import React from "react";
 import style from './scheduling.module.scss';
-import Link from "next/link";
+import DarkMemateBlackBut from "@/layout/hover-button/DarkMemateBlackBut";
 const AutomotiveScheduling = () => {
   return (
 <>
@@ -16,7 +16,14 @@ const AutomotiveScheduling = () => {
     <p>Schedule projects with full details and book appointments to reduce no-shows. 
       The unique project management dashboard provides 
       a clear view of all active work, ensuring efficient oversight.</p>
-      <Link href="/features/project-management-software">Project Management</Link>
+       <div className="spaceButtonGap">
+       <DarkMemateBlackBut
+      link2="/features/project-management-software"
+      className="alignLeft"
+      buttonTextlight="Project Management"
+      showButton2={true}
+    />
+     </div>
 </div>
 
 </div>

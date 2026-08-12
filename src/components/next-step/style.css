@@ -20,7 +20,7 @@
     background-size: contain;
     background-repeat: no-repeat;
 }
-.nextStepWrapper button {
+/* .nextStepWrapper button {
   border-radius: 60px;
   background: #29292b;
   color: #fff;
@@ -34,7 +34,7 @@
   border: navajowhite;
   outline: none;
   font-family: 'sequel_sans_roman_head'!important;
-}
+} */
 
 .next-title .nextStepHeading {
   margin-top: -35px;

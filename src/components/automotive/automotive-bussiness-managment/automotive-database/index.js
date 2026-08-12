@@ -1,6 +1,6 @@
 import React from "react";
 import style from './database.module.scss';
-import Link from "next/link";
+import DarkMemateBlackBut from "@/layout/hover-button/DarkMemateBlackBut";
 const AutomotiveDatabase = () => {
   return (
 <>
@@ -11,7 +11,15 @@ const AutomotiveDatabase = () => {
 <h2>Database Management</h2>
     <p>Track all your history with suppliers and clients using a comprehensive database. Motivate your team by 
       setting target results and rewarding top-performing workers for their achievements.</p>
-      <Link href="/features/supplier-management-software">Supplier Management</Link>
+       <div className="spaceButtonGap">
+       <DarkMemateBlackBut
+      link2="/features/supplier-management-software"
+      className="alignLeft"
+      buttonTextlight="Supplier Management"
+      showButton2={true}
+    />
+     </div>
+
       
 </div>
 <div className={style.flexImageBox}>

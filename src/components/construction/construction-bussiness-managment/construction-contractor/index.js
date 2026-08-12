@@ -1,6 +1,6 @@
 import React from "react";
 import style from "./contractor.module.scss";
-import Link from "next/link";
+import DarkMemateBlackBut from "@/layout/hover-button/DarkMemateBlackBut";
 const ConstructionContractor = () => {
   return (
     <>
@@ -18,9 +18,14 @@ const ConstructionContractor = () => {
             Schedule crews, clock staff in/out via GPS,<br/> monitor remote teams,
             and forecast labour needs<br/> with built-in time and attendance tools
           </p>
-          <Link href="/features/supplier-management-software">
-          Management
-          </Link>
+           <div className="spaceButtonGap">
+       <DarkMemateBlackBut
+      link2="/features/supplier-management-software"
+      className="alignLeft"
+      buttonTextlight="Management"
+      showButton2={true}
+    />
+     </div>
         </div>
         <div className={style.flexImageBox}>
           <img

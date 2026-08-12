@@ -1,8 +1,6 @@
 import React from 'react'
 import './style.css'
-import TronRequestADemo from "../../../layout/hover-button/TronRequestADemo";
-import WhiteButtonBammer from "../../../layout/hover-button/WhiteButtonBammer";
-import Link from "next/link";
+import DarkMemateBlackBut from '@/layout/hover-button/DarkMemateBlackBut';
 const ElectronicHeader = () => {
   return (
     <>
@@ -14,28 +12,22 @@ const ElectronicHeader = () => {
       <div className='NextHeaderWrapper'>
     <div className='industryNewHead'>
     <div className='LeftSide'>
-      <span>Software that helps Australian repair <br/>shops
+      <span className='leftSpan'>Software that helps Australian repair <br/>shops
 operate efficiently</span>
        <h4>Electronic Repair Specialists</h4>
        <p>With MeMate, you can effortlessly communicate with clients and effortlessly submit jobs, all from a centralised and streamlined interface. Say goodbye to scattered systems and embrace the convenience of MeMate for unparalleled business management in the  electronics repair industry.</p>
-       <div className="dubleButtonLeft">
-                <div className="request-btn">
-                  <Link
-                    href="https://app.memate.com.au/requestdemo"
-                    target="_blank"
-                    className="nav-btn--get-started  navbar-link">
-                      <TronRequestADemo text="Book a Demo" />
-                  </Link>
-                </div>
-                <div className="request-btn">
-                  <Link
-                    href="https://app.memate.com.au/onboarding"
-                    target="_blank"
-                    className="nav-btn--get-started  navbar-link">
-                      <WhiteButtonBammer text="Start Free Trial"/>
-                  </Link>
-                </div>
-          </div>
+        <div className='topSpaceGap'>
+         <DarkMemateBlackBut
+      link1="https://app.memate.com.au/requestdemo"
+      link2="https://app.memate.com.au/onboarding"
+      className="alignLeft"
+      target="_blank"
+      buttonTextdark="Book a Demo"
+      buttonTextlight="Start Free Trial"
+      showButton1={true}
+      showButton2={true}
+    />
+       </div>
     </div>
     <div className='RightSide'>
      <img src="https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/electronic-head-photo.png" width="100%" alt="small repair business software"/>

@@ -1,19 +1,12 @@
-
 import "./style.css";
-// import { Helmet } from 'react-helmet-async';
-// import style from './contactus.module.scss';
 import React, { useState } from 'react';
 import 'react-phone-number-input/style.css';
-import Link from 'next/link';
-// import TronButton from "../../layout/hover-button/tourn-but";
 import CallbackNow from "./callbacknow";
 import EmailNow from "./emailnow";  
 import ChatButton from "./ChatButton";  
-import TronRequestADemo from "../../layout/hover-button/TronRequestADemo";
-import WhiteButtonBammer from "../../layout/hover-button/WhiteButtonBammer";
+import DarkMemateBlackBut from "@/layout/hover-button/DarkMemateBlackBut";
 
 
-// const ContactUsMainImage = "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/max.n.max_An_Office_Girl.png"
 const ContactUsComponent = () => {
 
   return (
@@ -44,27 +37,15 @@ const ContactUsComponent = () => {
         <div className="small-headingc">
           <p className="contactParagraph">Made for Small to Medium Businesses for Simplicity and Order</p>
         </div>
-          <div className="dflexbannerbtn dflexbannerbtnp">
-                <div className="request-btn">
-                  <Link
-                    href="https://app.memate.com.au/requestdemo"
-                    target="_blank"
-                    className="nav-btn--get-started  navbar-link"
-                  >
-                      <TronRequestADemo text="Book a Demo" />
-                  </Link>
-                </div>
-                <div className="request-btn">
-                  <Link
-                    href="https://app.memate.com.au/onboarding"
-                    target="_blank"
-                    className="nav-btn--get-started  navbar-link"
-                  >
-                      <WhiteButtonBammer text="Start Free Trial"/>
-                  </Link>
-                  
-                </div>
-          </div>
+         <DarkMemateBlackBut
+      link1="https://app.memate.com.au/requestdemo"
+      link2="https://app.memate.com.au/onboarding"
+      target="_blank"
+      buttonTextdark="Book a Demo"
+      buttonTextlight="Start Free Trial"
+      showButton1={true}
+      showButton2={true}
+    />
       </div>
       <div className='query-section query-sectionc' data-aos="fade-up"
     data-aos-offset="50"

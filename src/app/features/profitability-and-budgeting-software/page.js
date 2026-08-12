@@ -15,7 +15,7 @@ export const metadata = {
 export default function ProfitabilityAndBudgeting() {
   return (
     // <AppWrapper>
-      <ProfitabilityAndBudgetingPage />
+      <ProfitabilityAndBudgetingPage /> 
     // </AppWrapper>
   );
 }

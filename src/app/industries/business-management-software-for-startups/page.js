@@ -16,7 +16,7 @@ export const metadata = {
 export default function Startups() {
   return (
     <AppWrapper>
-      <StartupsPage />
+      <StartupsPage /> 
     </AppWrapper>
   );
 }

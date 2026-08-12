@@ -1,6 +1,6 @@
 import React from "react";
 import style from './intuitive.module.scss';
-import Link from "next/link";
+import DarkMemateBlackBut from "@/layout/hover-button/DarkMemateBlackBut";
 const AutomotiveIntuitive = () => {
   return (
 <>
@@ -11,7 +11,15 @@ const AutomotiveIntuitive = () => {
 <h3>Quote Follow-Up</h3>
 <h2>and Acceptance </h2>
     <p>Easily follow up on quotes and let customers accept with a single click, reducing miscommunication and streamlining payments for a smoother process.</p>
-      <Link href="/features/business-quote-calculator">Calculators</Link>
+     <div className="spaceButtonGap">
+       <DarkMemateBlackBut
+      link2="/features/business-quote-calculator"
+      className="alignLeft"
+      buttonTextlight="Calculators"
+      showButton2={true}
+    />
+     </div>
+  
       
 </div>
 <div className={`${style.flexImageBox}`}>

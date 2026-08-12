@@ -1,6 +1,6 @@
 import React from "react";
 import style from "./workshop.module.scss";
-import Link from "next/link";
+import DarkMemateBlackBut from "@/layout/hover-button/DarkMemateBlackBut";
 const ConstructionWorkshop = () => {
   return (
     <>
@@ -22,7 +22,14 @@ const ConstructionWorkshop = () => {
           <p>
           Keep your team on the same page—send updates,<br/> job briefs, photos, and checklists via internal chat<br/> built into MeMate. No need for scattered<br/> messaging tools 
           </p>
-          <Link href="/features/business-reporting-tools">Reports</Link>
+           <div className="spaceButtonGap">
+       <DarkMemateBlackBut
+      link2="/features/business-reporting-tools"
+      className="alignLeft"
+      buttonTextlight="Reports"
+      showButton2={true}
+    />
+     </div>
         </div>
       </div>
     </>

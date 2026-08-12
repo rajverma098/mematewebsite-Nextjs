@@ -16,7 +16,7 @@ export const metadata = {
 export default function Electronic() {
   return (
     <AppWrapper>
-      <ElectronicPage />
+      <ElectronicPage /> 
      </AppWrapper>
   );
 }

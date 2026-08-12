@@ -1,6 +1,6 @@
 import React from "react";
 import style from "./efficient.module.scss";
-import Link from "next/link";
+import DarkMemateBlackBut from "@/layout/hover-button/DarkMemateBlackBut";
 const ConstructionEfficient = () => {
   return (
     <>
@@ -26,7 +26,14 @@ const ConstructionEfficient = () => {
             <br /> templates and real-time cost databases—so you
             <br /> can send quotes in minutes instead of hours 
           </p>
-          <Link href="/features/business-quote-calculator">Calculators</Link>
+           <div className="spaceButtonGap">
+       <DarkMemateBlackBut
+      link2="/features/business-quote-calculator"
+      className="alignLeft"
+      buttonTextlight="Calculators"
+      showButton2={true}
+    />
+     </div>
         </div>
       </div>
     </>

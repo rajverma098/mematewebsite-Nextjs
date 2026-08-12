@@ -1,12 +1,12 @@
 
 
+
 import React from 'react';
-import './WhiteButtonBammer.css';
+import './TronButtonRequestADemo.css';
 
 const WhiteButtonBammer = (props) => {
   return (
   <>
-    <div className="nav-btn--get-started">
       <div className="btn-base--tron-radial1">
         <div className="radial-embed-nav1 w-embed">
           <svg
@@ -33,14 +33,14 @@ const WhiteButtonBammer = (props) => {
             </defs>
             <g id="icon_tron_nav" data-name="Layer-icon-tron_nav">
               <path
-                className="tron-icon_nav2"
+                className="tron-icon_nav1"
                 d="M96,3 H26 A13,13 0 0 0 13,16 V16 A13,13 0 0 0 26,29 H96 A13,13 0 0 0 109,16 V16 A13,13 0 0 0 96,3 Z"
               ></path>
             </g>
           </svg>
         </div>
       </div>
-      <div className="btn-base--tron-hover2">
+      <div className="btn-base--tron-hover1">
         <div
           className="tron-hover-rotate1 small1"
           style={{
@@ -50,9 +50,8 @@ const WhiteButtonBammer = (props) => {
           }}
         ></div>
       </div>
-      <div className="btn-base--black2">
-        <div className="text-btn--nav2">{props.text}</div>
-      </div>
+      <div className="btn-base--blackW">
+        <div className="text-btn--nav1">{props.text}</div>
       </div>
   </>
   );

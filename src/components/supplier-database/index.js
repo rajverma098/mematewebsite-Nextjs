@@ -2,12 +2,9 @@ import React, { useEffect, useState } from "react";
 import "./style.css";
 import style from "./supplier-module.module.scss";
 import DataBase from "./database-filter";
-// import { Helmet } from "react-helmet-async";
 import { supplierListApi } from "../../api/supplierApi";
-import Link from "next/link";
 import { useDebounce } from "primereact/hooks";
-// import TronButton from '../../layout/hover-button/tourn-but';
-import TronAddSupplier from "../../layout/hover-button/TronAddSupplier";
+import DarkMemateBlackBut from "@/layout/hover-button/DarkMemateBlackBut";
 
 const SupplierDatabase = () => {
   const [supplier, setSupplier] = useState([]);
@@ -113,13 +110,14 @@ const SupplierDatabase = () => {
           </p>
         </div>
 
-        <div className="request-btn request-btn-bg">
-          <Link
-            href="/add-your-company"
-            className="nav-btn--get-started navbar-link"
-          >
-            <TronAddSupplier text="Add Your Company" />
-          </Link>
+        <div className="request-btn request-btn-bg topSpaceGap">
+             <DarkMemateBlackBut
+      link2="/add-your-company"
+      className="alignLeft"
+      buttonTextlight="Add Your Company"
+      showButton2={true}
+    />
+
         </div>
         {/* <Link to='/add-your-company'>Add Your Company</Link> */}
       </div>

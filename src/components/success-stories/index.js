@@ -6,6 +6,7 @@ import Link from 'next/link';
 // import TronButton from "../../layout/hover-button/tourn-but";
 // import WhiteButton from "../../layout/hover-button/WhiteButton";
 import WhiteButtonWithoutGradient from "../../layout/hover-button/WhiteButtonWithoutGradient";
+import DarkMemateBlackBut from "@/layout/hover-button/DarkMemateBlackBut";
 
 const SuccessStories = () => {
   return (
@@ -28,9 +29,15 @@ const SuccessStories = () => {
           data-aos-mirror="true"
           data-aos-once="false"
           data-aos-anchor-placement="top-bottom">
-        <Link href='/customer-stories' className="nav-btn--get-started get-started-border-box navbar-link"><WhiteButtonWithoutGradient text="Real Examples" /></Link>
+            <DarkMemateBlackBut
+      link2="/customer-stories"
+      buttonTextlight="Real Examples"
+      showButton2={true}
+    />
+        {/* <Link href='/customer-stories' className="nav-btn--get-started get-started-border-box navbar-link"><WhiteButtonWithoutGradient text="Real Examples" /></Link> */}
         {/* 171 */}
       </div>
+       
           {/* <Link to="/customer-stories"><button>All Stories</button></Link> */}
         </div>
         <SliderStories />

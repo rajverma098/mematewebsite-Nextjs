@@ -3,6 +3,7 @@ import "./style.css";
 import Link from 'next/link';
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import InfiniteDualSlider from './InfiniteDualSlider'
+import DarkMemateBlackBut from "@/layout/hover-button/DarkMemateBlackBut";
 
 
 
@@ -18,10 +19,23 @@ const ZeroOfferOnboarding = () => {
             <p>
            Plus, we provide a  <em className="em sequel_sans_semi_bold_head">14-day</em>  free trial because we believe our software will become indispensable to your business.
             </p>
-            <div className="button-container butcontainerzero">
+              <div className="zeroOfferBut">
+                 <DarkMemateBlackBut
+                link1="https://app.memate.com.au/requestdemo"
+                link2="https://app.memate.com.au/onboarding"
+                target="_blank"
+                buttonTextdark="Book a Demo"
+                buttonTextlight="Start Free Trial"
+                showButton1={true}
+                showButton2={true}
+              />
+              </div>
+            {/* <div className="button-container butcontainerzero">
               <Link href="https://app.memate.com.au/requestdemo"><button className="book-a-demo">Book a Demo</button></Link>
               <Link href="https://app.memate.com.au/onboarding"><button className="book-a-demo">Start Free Trial</button></Link>
-            </div>
+            </div> */}
+        
+          
           </div>    
          <InfiniteDualSlider />
         </div>

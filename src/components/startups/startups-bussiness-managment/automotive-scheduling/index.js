@@ -1,6 +1,6 @@
 import React from "react";
 import style from './scheduling.module.scss';
-import Link from "next/link";
+import DarkMemateBlackBut from "@/layout/hover-button/DarkMemateBlackBut";
 const AutomotiveScheduling = () => {
   return (
 <>
@@ -15,7 +15,14 @@ const AutomotiveScheduling = () => {
 <h2>Conversion</h2>
     <p>Let customers accept quotes with a click, instantly turning them into projects. From there, you can schedule tasks, notify customers, 
       collaborate with employees or contractors, add expenses, and much more—all within meMate.</p>
-      <Link href="/features/invoicing-software">Invoicing</Link>
+       <div className="spaceButtonGap">
+       <DarkMemateBlackBut
+      link2="/features/invoicing-software"
+      className="alignLeft"
+      buttonTextlight="Invoicing"
+      showButton2={true}
+    />
+     </div>
 </div>
 
 </div>

@@ -1,9 +1,6 @@
 import React from "react";
 import "./style.css";
-import Link from "next/link";
-import TronButton from "../../layout/hover-button/tourn-but";
-import TronRequestADemo from "../../layout/hover-button/TronRequestADemo";
-import WhiteButtonBammer from "../../layout/hover-button/WhiteButtonBammer";
+import DarkMemateBlackBut from "@/layout/hover-button/DarkMemateBlackBut";
 
 const NextStep = (props) => {
 
@@ -21,23 +18,15 @@ const NextStep = (props) => {
          Strong systems, documented history and operational traceability increase buyer confidence and long-term valuation.
         </span>
       </div>
-      <div className="next-step-btn-container">
-               <div className="dflexbannerbtn">
-      <div className="request-btn request-btn-bg">
-        <Link href="https://app.memate.com.au/requestdemo" target="_blank" className="nav-btn--get-started navbar-link"><TronRequestADemo text={props.text} /></Link>
-      </div>
-      <div className="request-btn">
-        <Link
-          href="https://app.memate.com.au/onboarding"
-          target="_blank"
-          className="nav-btn--get-started  navbar-link"
-        >
-            <WhiteButtonBammer text="Start Free Trial"/>
-        </Link>
-            </div>
-      </div>
-
-      </div>
+       <DarkMemateBlackBut
+      link1="https://app.memate.com.au/requestdemo"
+      link2="https://app.memate.com.au/onboarding"
+      target="_blank"
+      buttonTextdark="Book a Demo"
+      buttonTextlight="Start Free Trial"
+      showButton1={true}
+      showButton2={true}
+    />
     </div>
   );
 };

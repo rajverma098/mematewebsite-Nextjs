@@ -2,10 +2,8 @@
 
 import React from "react";
 import "./style.css";
-import Link from "next/link";
-import WhiteNormalButton from "../../../layout/hover-button/WhiteNormalButton";
-import { LazyLoadImage } from "react-lazy-load-image-component";
 import { motion } from "framer-motion";
+import DarkMemateBlackBut from "@/layout/hover-button/DarkMemateBlackBut";
 
 
 const MeMateFeatureStreamline = () => {
@@ -30,16 +28,17 @@ const MeMateFeatureStreamline = () => {
                     secure.
                   </p>
                 </div>
-                <div className="request-btn request-btn-bg">
-                  <Link
-                    href="https://app.memate.com.au/requestdemo"
+             
+             
+                   <DarkMemateBlackBut
+                    link2="https://app.memate.com.au/requestdemo"
+                    className="alignLeft"
                     target="_blank"
-                    className="nav-btn--get-started get-started-border-box  navbar-link"
-                  >
-                    <WhiteNormalButton text="Book a Demo" />
-                  </Link>
+                    buttonTextlight="Book a Demo"
+                    showButton2={true}
+                  />
                 </div>
-              </div>
+            
               <div className="operation-right">
                 <span className="gradientAnimenate gradiientColor smokeyGradient"> memate </span>
                 <div className="max-image">

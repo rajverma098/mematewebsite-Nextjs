@@ -1,6 +1,6 @@
 import React from "react";
 import style from './essential.module.scss';
-import Link from "next/link";
+import DarkMemateBlackBut from "@/layout/hover-button/DarkMemateBlackBut";
 const StartupsEssential = () => {
   return (
 <>
@@ -16,7 +16,14 @@ Property</h2>
     <p>meMate uses statistics to store all vital information about your company’s performance, 
       while securely storing files for your intellectual property. This transparency and easy access 
       to records adds value to your business operations and boosts overall efficiency.</p>
-      <Link href="/features/business-reporting-tools">Reports </Link>
+       <div className="spaceButtonGap">
+       <DarkMemateBlackBut
+      link2="/features/business-reporting-tools"
+      className="alignLeft"
+      buttonTextlight="Reports"
+      showButton2={true}
+    />
+     </div>
 </div>
 
 </div>

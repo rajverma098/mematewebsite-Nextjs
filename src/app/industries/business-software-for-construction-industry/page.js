@@ -15,7 +15,7 @@ export const metadata = {
 export default function Construction() {
   return (
     <AppWrapper>
-      <ConstructionPage />
+      <ConstructionPage /> 
     </AppWrapper>
   );
 }

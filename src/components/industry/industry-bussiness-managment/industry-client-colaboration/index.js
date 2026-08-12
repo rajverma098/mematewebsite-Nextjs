@@ -1,6 +1,6 @@
 import React from "react";
 import style from './agile.module.scss';
-import Link from "next/link";
+import DarkMemateBlackBut from "@/layout/hover-button/DarkMemateBlackBut";
 const ClientCollaboration = () => {
   return (
 <>
@@ -14,7 +14,14 @@ const ClientCollaboration = () => {
 <h2>Made Easy</h2>
     <p>Update clients via SMS or email directly from the project card, with the entire 
       communication history stored in one place. meMate ensures timely communication and updates are effortlessly managed.</p>
-      <Link href="/features/client-management-software">Clients</Link>
+      <div className="spaceButtonGap">
+       <DarkMemateBlackBut
+      link2="/features/client-management-software"
+      className="alignLeft"
+      buttonTextlight="Clients"
+      showButton2={true}
+    />
+     </div>
 </div>
 
 </div>

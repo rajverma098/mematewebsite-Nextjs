@@ -16,7 +16,7 @@ export const metadata = {
 export default function MultiLocation() {
   return (
     // <AppWrapper>
-      <MultiLocationPage />
+      <MultiLocationPage /> 
     // </AppWrapper>
   );
 }

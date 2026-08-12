@@ -16,7 +16,7 @@ export const metadata = {
 export default function Automotive() {
   return (
     <AppWrapper>
-      <AutomotivePage />
+      <AutomotivePage /> 
     </AppWrapper>
   );
 }

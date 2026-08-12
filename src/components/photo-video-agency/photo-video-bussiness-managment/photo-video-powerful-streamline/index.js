@@ -1,6 +1,6 @@
 import React from "react";
 import style from './photo-masterful.module.scss';
-import Link from "next/link";
+import DarkMemateBlackBut from "@/layout/hover-button/DarkMemateBlackBut";
 const PhotoMasterful = () => {
   return (
 <>
@@ -16,7 +16,15 @@ const PhotoMasterful = () => {
     <p>Imagine managing a project that involves taking photos and videos across multiple locations with multiple 
       contractors. With meMate, it’s a breeze. You can 
       easily add tasks and assign jobs from one place with just a few clicks, streamlining your entire workflow.</p>
-      <Link href="/features/project-management-software">Management</Link>
+       <div className="spaceButtonGap">
+       <DarkMemateBlackBut
+      link2="/features/project-management-software"
+      className="alignLeft"
+      buttonTextlight="Management"
+      showButton2={true}
+    />
+     </div>
+   
 </div>
 </div>
 </>
