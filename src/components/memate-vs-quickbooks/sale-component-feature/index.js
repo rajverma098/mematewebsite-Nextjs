@@ -6,6 +6,7 @@ import ComparisonTabs from './comparison-tabs';
 import FindOneApplication from '@/components/find-one-all';
 import WhiteButtonBammer from '@/layout/hover-button/WhiteButtonBammer';
 import Image from 'next/image';
+import DarkMemateBlackBut from '@/layout/hover-button/DarkMemateBlackBut';
 
 const SalesComponentFeature = () => {
   return (
@@ -17,16 +18,12 @@ const SalesComponentFeature = () => {
     data-aos-mirror="true"
     data-aos-once="false"
     data-aos-anchor-placement="top-bottom">
-        {/* <h2>Memate</h2> */}
         <span className='gradientAnimenate'>the difference</span>
-       
       </div>
       <div className="sales-feature-wrapper">
-
       <div className={style.sectionService8}>
       <div className={`${style.gridService8L} m8InFlexLeftQuick`}>
       <Image src='https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/quickbooklogo.png' alt='Services M8' width={157}
-      
       height={41} />
      <h4>What’s QuickBooks<br/>
       Good For?</h4>
@@ -79,7 +76,7 @@ const SalesComponentFeature = () => {
         <h2>More benefits to switching to MeMate</h2>
           <div className='m8InSection01'>
               <div className='m8InFlexLeft'>
-               <h3>with memate<span>Switching is Easy</span></h3>
+               <h3>with MeMate<span>Switching is Easy</span></h3>
                 <ul style={{ marginLeft: 20 }}>
                 <li>Getting started with MeMate is simple.</li>
                 <li>We handle your data migration, setup, and onboarding  — completely free.</li>
@@ -113,26 +110,18 @@ const SalesComponentFeature = () => {
       <p>QuickBooks is one of the world’s most recognised accounting tools, used by businesses to manage invoices, expenses, payroll, and tax reporting. It’s trusted for bookkeeping — but not built for running jobs, managing teams, or quoting new work.</p>
       <h6>MeMate:</h6>
       <p>on the other hand, is an all-in-one business operations platform built specifically for Australian service providers. It combines quoting, scheduling, CRM, job tracking, invoicing, team management, and expense control — all under one login.</p>
-         <div className="dflexbannerbtn dflexbannerbtnFT dflexbannerbtnp">
-                <div className="request-btn">
-                  <Link
-                    href="https://app.memate.com.au/requestdemo"
-                    target="_blank"
-                    className="nav-btn--get-started  navbar-link"
-                  >
-                      <TronRequestADemo text="Book a Demo" />
-                  </Link>
-                </div>
-                <div className="request-btn">
-                  <Link
-                    href="https://app.memate.com.au/onboarding"
-                    target="_blank"
-                    className="nav-btn--get-started  navbar-link"
-                  >
-                      <WhiteButtonBammer text="Start Free Trial"/>
-                  </Link>
-                </div>
-          </div>
+      <div className='topSpaceGap'>
+         <DarkMemateBlackBut
+      link1="https://app.memate.com.au/requestdemo"
+      link2="https://app.memate.com.au/onboarding"
+      className="alignLeft"
+      target="_blank"
+      buttonTextdark="Book a Demo"
+      buttonTextlight="Start Free Trial"
+      showButton1={true}
+      showButton2={true}
+    />
+       </div>
         </div>
         <div className={style.gridService8R}>
         <img src='https://memate-website.s3.ap-southeast-2.amazonaws.com/memate-inshot-min.png' alt='Services inshort' />
@@ -150,13 +139,13 @@ const SalesComponentFeature = () => {
         data-aos-once="false"
         data-aos-anchor-placement="top-bottom">
            <h3>Compare</h3>
-        <span className='gradientAnimenate'>memate vs Quickbooks</span>
+        <span className='gradientAnimenate'>MeMate vs Quickbooks</span>
        <p>Choosing software is about finding the right balance between functionality and a simple, intuitive interface.</p>
       </div>
         <ComparisonTabs />
         </div>
         <div className={style.sectionSwapWrap}>
-        <h2>Swap Multiple Tools for <span>meMate</span> and <br></br><span>Save Money</span></h2>
+        <h2>Swap Multiple Tools for <span>MeMate</span> and <br></br><span>Save Money</span></h2>
         <div className={style.sectionSwapWrapBg}>
         <div className={style.sectionSwapL}>
           <p><img src='https://memate-website.s3.ap-southeast-2.amazonaws.com/media/pricing-cardLT.png' alt='pricingcard' /></p>
@@ -178,7 +167,7 @@ const SalesComponentFeature = () => {
         <div className={style.sectionOurBenefit}>
         <div className={style.sectionBenefitHead}>
             <h2>Our Benefits</h2>
-            <p>Choosing <strong>MeMate over Microsoft Project </strong> means choosing a system designed to run your business — not just plan it.</p>
+            <p>Choosing <strong>MeMate over QuickBooks </strong> means choosing a system designed to run your business — not just plan it.</p>
           </div>
           <div className={style.sectionBenefitFlex}>
             <ul className={style.boxBenifit}>
@@ -208,7 +197,7 @@ const SalesComponentFeature = () => {
                <img src='https://memate-website.s3.ap-southeast-2.amazonaws.com/check-circle.svg' alt='check-circle' />
                 </div>
                 <h4>ATO-friendly reporting</h4>
-                <p>Plus integrations with Xero or MYOB if needed</p>
+                <p>Plus integrations with Xero or Quickbooks if needed</p>
               </li>
               <li>
               <div className={`${style.iconStyle} ${style.iconStyle5}`}>

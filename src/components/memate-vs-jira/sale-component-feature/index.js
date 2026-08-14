@@ -1,11 +1,9 @@
 import './style.css';
 import style from './difference-module.module.scss';
-import Link from 'next/link';
-import TronRequestADemo from '../../../layout/hover-button/TronRequestADemo';
 import ComparisonTabs from './comparison-tabs';
 import FindOneApplication from '@/components/find-one-all';
-import WhiteButtonBammer from '@/layout/hover-button/WhiteButtonBammer';
 import Image from 'next/image';
+import DarkMemateBlackBut from '@/layout/hover-button/DarkMemateBlackBut';
 
 const SalesComponentFeature = () => {
   return (
@@ -17,9 +15,7 @@ const SalesComponentFeature = () => {
     data-aos-mirror="true"
     data-aos-once="false"
     data-aos-anchor-placement="top-bottom">
-        {/* <h2>Memate</h2> */}
         <span className='gradientAnimenate'>the difference</span>
-       
       </div>
       <div className="sales-feature-wrapper">
 
@@ -71,8 +67,6 @@ const SalesComponentFeature = () => {
         <img src='https://memate-website.s3.ap-southeast-2.amazonaws.com/microsoft-mockup-min.png' alt='Services M8 Services' />
         </div>
         </div>
-
-        
         <div className='m8compaireSwitchingSection01'>
         <h2>More benefits to switching to MeMate</h2>
           <div className='m8InSection01'>
@@ -110,31 +104,23 @@ But most Australian businesses need more than issue tracking.</p>
       <h6>jira:</h6>
       <p>Jira is one of the world’s most popular tools for software teams. It’s built around agile methodology, sprint planning, and ticket tracking. For tech teams, it’s incredibly flexible — but it also comes with complexity and a steep learning curve.</p>
       <h6>MeMate:</h6>
-      <p>MeMate, by contrast, is designed for non-technical business owners. It replaces Jira, Trello, and your invoicing system in one go — letting you manage jobs, teams, quotes, schedules, and clients in one streamlined platform.</p>
+      <p>MeMate, by contrast, is designed for non-technical business owners. It replaces Jira and your invoicing system in one go — letting you manage jobs, teams, quotes, schedules, and clients in one streamlined platform.</p>
 
         <div className='quoteCpmpaireCircle'>
                         <p>If your business isn’t writing code, you probably don’t need issue tickets, sprints, or workflows that require a product manager to configure. MeMate offers real-world job and task management, simplified for service-based teams.</p>
                         </div>
-         <div id='dflexbannerbtnFT1' className="dflexbannerbtn dflexbannerbtnFT  dflexbannerbtnp">
-                <div className="request-btn">
-                  <Link
-                    href="https://app.memate.com.au/requestdemo"
-                    target="_blank"
-                    className="nav-btn--get-started  navbar-link"
-                  >
-                      <TronRequestADemo text="Book a Demo" />
-                  </Link>
-                </div>
-                <div className="request-btn">
-                  <Link
-                    href="https://app.memate.com.au/onboarding"
-                    target="_blank"
-                    className="nav-btn--get-started  navbar-link"
-                  >
-                      <WhiteButtonBammer text="Start Free Trial"/>
-                  </Link>
-                </div>
-          </div>
+ <div className='topSpaceGap'>
+         <DarkMemateBlackBut
+      link1="https://app.memate.com.au/requestdemo"
+      link2="https://app.memate.com.au/onboarding"
+      className="alignLeft"
+      target="_blank"
+      buttonTextdark="Book a Demo"
+      buttonTextlight="Start Free Trial"
+      showButton1={true}
+      showButton2={true}
+    />
+       </div>
         </div>
         <div className={style.gridService8R}>
         <img src='https://memate-website.s3.ap-southeast-2.amazonaws.com/memate-inshot-min.png' alt='Services inshort' />
@@ -152,13 +138,13 @@ But most Australian businesses need more than issue tracking.</p>
         data-aos-once="false"
         data-aos-anchor-placement="top-bottom">
            <h3>Compare</h3>
-        <span className='gradientAnimenate'>memate vs jira</span>
+        <span className='gradientAnimenate'>MeMate vs jira</span>
        <p>Choosing software is about finding the right balance between functionality and a simple, intuitive interface.</p>
       </div>
         <ComparisonTabs />
         </div>
         <div className={style.sectionSwapWrap}>
-        <h2>Swap Multiple Tools for <span>meMate</span> and <br></br><span>Save Money</span></h2>
+        <h2>Swap Multiple Tools for <span>MeMate</span> and <br></br><span>Save Money</span></h2>
         <div className={style.sectionSwapWrapBg}>
         <div className={style.sectionSwapL}>
           <p><img src='https://memate-website.s3.ap-southeast-2.amazonaws.com/media/pricing-cardLT.png' alt='pricingcard' /></p>

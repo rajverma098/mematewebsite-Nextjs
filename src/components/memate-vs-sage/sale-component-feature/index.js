@@ -6,6 +6,7 @@ import ComparisonTabs from './comparison-tabs';
 import FindOneApplication from '@/components/find-one-all';
 import WhiteButtonBammer from '@/layout/hover-button/WhiteButtonBammer';
 import Image from 'next/image';
+import DarkMemateBlackBut from '@/layout/hover-button/DarkMemateBlackBut';
 
 const SalesComponentFeature = () => {
   return (
@@ -17,12 +18,9 @@ const SalesComponentFeature = () => {
     data-aos-mirror="true"
     data-aos-once="false"
     data-aos-anchor-placement="top-bottom">
-        {/* <h2>Memate</h2> */}
         <span className='gradientAnimenate'>the difference</span>
-       
       </div>
       <div className="sales-feature-wrapper">
-
       <div className={style.sectionService8}>
       <div className={style.gridService8L}>
       <Image src='https://memate-website.s3.ap-southeast-2.amazonaws.com/sagelogo.png' alt='Services M8' width={102.403}
@@ -31,7 +29,6 @@ const SalesComponentFeature = () => {
       Good For?</h4>
       <p>Sage is a trusted accounting platform offering cloud-based financial tools, payroll processing, and inventory tracking. It’s ideal for businesses focused heavily on bookkeeping, with multiple options tailored to different countries and compliance standards.
     </p>
-      
         </div>
         <div className={style.gridService8R}>
         <Image src='https://memate-website.s3.ap-southeast-2.amazonaws.com/sage-macbook-pro-mockup-min.png' alt='Services M8 map' width={567.595}
@@ -52,18 +49,15 @@ const SalesComponentFeature = () => {
         <img src='https://memate-website.s3.ap-southeast-2.amazonaws.com/sagem-ockup-min.png' alt='Services M8 Services' />
         </div>
         </div>
-
-        
         <div className='m8compaireSwitchingSection01'>
         <h2>More benefits to switching to MeMate</h2>
           <div className='m8InSection01'>
               <div className='m8InFlexLeft'>
-               <h3>with memate<span>Switching is Easy</span></h3>
+               <h3>with Memate<span>Switching is Easy</span></h3>
                 <ul style={{ marginLeft: 20 }}>
                 <li>We handle the entire setup and migration for free,<br/> including your customer data, contacts, and job history.  </li>
                 <li>No third-party consultants. No hidden onboarding fees.</li>
               </ul>
-            
               </div>
               <div className='m8InFlexRight'>
                 <img src='https://memate-website.s3.ap-southeast-2.amazonaws.com/m8image01-min.jpg' alt='m8image01'/>
@@ -80,7 +74,6 @@ const SalesComponentFeature = () => {
                <p>Sage is a solid accounting tool, but it stops short when it comes to managing jobs, quoting, scheduling, or running your team. </p>
               <p>MeMate is the all-in-one alternative — built for Aussie businesses that need everything in one place, from client management to job delivery to payment.</p>
               </div>
-             
           </div>
         </div>
       <div className={`${style.sectionService8grey} sectionService8greyNew sectionService8greyNew1`}>
@@ -90,25 +83,18 @@ const SalesComponentFeature = () => {
       <p>Great for accountants and finance departments.</p>
       <h6>MeMate:</h6>
       <p>Built for everyday Australian business owners who want to manage quotes, projects, payments, and teams — all in one powerful system.</p>
-         <div className="dflexbannerbtn dflexbannerbtnFT dflexbannerbtnp">
-                <div className="request-btn">
-                 <Link
-                    href="/features"
-                    className="nav-btn--get-started  navbar-link"
-                  >
-                      <TronRequestADemo text="See all features" />
-                  </Link>
-                </div>
-                <div className="request-btn">
-                  <Link
-                    href="https://app.memate.com.au/requestdemo"
-                    target="_blank"
-                    className="nav-btn--get-started  navbar-link"
-                  >
-                      <WhiteButtonBammer text="Book a demo"/>
-                  </Link>
-                </div>
-          </div>
+           <div className='topSpaceGap'>
+         <DarkMemateBlackBut
+      link1="https://app.memate.com.au/requestdemo"
+      link2="https://app.memate.com.au/onboarding"
+      className="alignLeft"
+      target="_blank"
+      buttonTextdark="Book a Demo"
+      buttonTextlight="Start Free Trial"
+      showButton1={true}
+      showButton2={true}
+    />
+       </div>
         </div>
         <div className={style.gridService8R}>
         <img src='https://memate-website.s3.ap-southeast-2.amazonaws.com/memate-inshot-min.png' alt='Services inshort' />
@@ -126,7 +112,7 @@ const SalesComponentFeature = () => {
         data-aos-once="false"
         data-aos-anchor-placement="top-bottom">
            <h3>Compare</h3>
-        <span className='gradientAnimenate'>memate vs Sage</span>
+        <span className='gradientAnimenate'>Memate vs Sage</span>
        <p>Choosing software is about finding the right balance between functionality and a simple, intuitive interface.</p>
       </div>
         <ComparisonTabs />

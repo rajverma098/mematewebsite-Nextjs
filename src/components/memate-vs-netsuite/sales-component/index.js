@@ -1,6 +1,7 @@
 import Link from "next/link";
 import "./style.css";
 import TronRequestADemo from "../../../layout/hover-button/TronRequestADemo";
+import DarkMemateBlackBut from "@/layout/hover-button/DarkMemateBlackBut";
 const SalesComponent = () => {
   return (
   <>
@@ -14,18 +15,14 @@ const SalesComponent = () => {
         <h2 className="compaireMainH2">Compare the solutions</h2>
        <h1 className="comapirMainH1">MeMate vs NetSuite Comparison</h1>
       <div className="sales-componet-content-wrapper client-component-para">
-     
         <div className="compaire-service01">
         <img
             srcSet={`${'https://memate-website.s3.ap-southeast-2.amazonaws.com/brand/servicem8-3x_avrxqe.png'} 1800w, ${'https://memate-website.s3.ap-southeast-2.amazonaws.com/brand/servicem8-2x_jpqla6.png'} 1200w, ${'https://memate-website.s3.ap-southeast-2.amazonaws.com/brand/servicem8-1x_g4d12q.png'} 600w`}
             sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 25vw"
             src={'https://memate-website.s3.ap-southeast-2.amazonaws.com/brand/servicem8-3x_avrxqe.png'}
             alt="Pricing main image"
-
           />
-        {/* <img src="https://memate-website.s3.ap-southeast-2.amazonaws.com/media/Mockup.png" width="100%" alt="Mockup" /> */}
         </div>
-
         <div className="compaireHeadPara">
           <h2>Work Smarter with the #1 NetSuite Alternative <br/>
 for Australian SMEs</h2>
@@ -38,7 +35,12 @@ for Australian SMEs</h2>
     data-aos-mirror="true"
     data-aos-once="false"
     data-aos-anchor-placement="top-bottom">
-        <Link href='https://app.memate.com.au/requestdemo' target="_blank" className="nav-btn--get-started navbar-link"><TronRequestADemo  text="Book a Demo" /></Link>
+        <DarkMemateBlackBut
+      link1="https://app.memate.com.au/requestdemo"
+      target="_blank"
+      buttonTextdark="Book a Demo"
+      showButton1={true}
+    />
       </div>
         </div>
       </div>

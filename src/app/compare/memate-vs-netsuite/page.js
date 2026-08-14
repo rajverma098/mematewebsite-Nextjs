@@ -15,7 +15,7 @@ export const metadata = {
 export default function ServicesNetsuite() {
   return (
     // <AppWrapper>
-      <ServicesNetsuitePage />
+      <ServicesNetsuitePage />   
     // </AppWrapper>
   );
 }

@@ -15,7 +15,7 @@ export const metadata = {
 export default function ServicesVsQuickBooks() {
   return (
     // <AppWrapper>
-      <ServicesVsQuickBooksPage />
+      <ServicesVsQuickBooksPage />  
     // </AppWrapper>
   );
 }

@@ -15,7 +15,7 @@ export const metadata = {
 export default function ServicesVsMicrosoft() {
   return (
     // <AppWrapper>
-      <ServicesVsMicrosoftPage />
+      <ServicesVsMicrosoftPage /> 
     // </AppWrapper>
   );
 }

@@ -14,7 +14,6 @@ const MicrosoftAppStoreIcon = "https://memate-website.s3.ap-southeast-2.amazonaw
 const Footer = () => {
   return (
     <>
-  
     <div className="footer-section">
       <div className="main-footer">
         <div className="section1" data-aos="fade-up"
@@ -31,8 +30,7 @@ const Footer = () => {
           src="https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/logos/MeMate-Grey-BG-675x75.gif"
           alt="MeMate Logo"
           width="675"
-          height="75"
-        />
+          height="75"/>
                 </p>
             </div>
             <div className="footer-icons">
@@ -75,20 +73,17 @@ const Footer = () => {
               <div className="page-links">
                 <Link href="/">Home</Link>
                 <Link href="/about">About</Link>
-                <Link href="https://www.linkedin.com/company/mematesoftware/" target="_blank">Carreers</Link>
+                <Link href="https://www.linkedin.com/company/mematesoftware/" target="_blank">Careers</Link>
               </div>
             </div>
-
             <div className="links">
               <p className="link-heading">Business Software</p>
               <div className="page-links" style={{width:"117px"}}>
                 <Link href="/pricing">Plan and Pricing</Link>
                 <Link href="/features">Features</Link>
                 <Link href="/industries">Industries</Link>
-                
               </div>
             </div>
-
             <div className="links">
               <p className="link-heading">Features</p>
               <div className="page-links" style={{width:"141px"}}>
@@ -103,7 +98,6 @@ const Footer = () => {
               <Link href="/features/business-reporting-tools">Reports</Link>
               </div>
             </div>
-
             <div className="links">
               <p className="link-heading">Resources & Tools</p>
               <div className="page-links" style={{width:"118px"}}>
@@ -119,7 +113,6 @@ const Footer = () => {
                 <Link href="https://app.memate.com.au/onboarding" target="_blank">My Account</Link>
               </div>
             </div>
-
             <div className="links">
               <p className="link-heading">Industries</p>
               <div className="page-links" style={{width: "181px"}}>
@@ -131,39 +124,32 @@ const Footer = () => {
               <Link href="/industries/business-software-for-construction-industry">Construction</Link>
               </div>
             </div>
-
             <div className="links">
               <p className="link-heading">Compare</p>
               <div className="page-links" style={{width: "149px"}}>
               <Link href="/compare/memate-vs-quickbooks">MeMate vs QuickBooks</Link>
-              {/* <Link href="/legalvision">Run Your Business</Link> */}
-              <Link href="/">MeMate vs Myob</Link>
+              <Link href="/compare/memate-vs-myob">MeMate vs Myob</Link>
               <Link href="/compare/memate-vs-jira">MeMate Vs Jira</Link>
-              <Link href="/">MeMate vs Monday</Link>
-              <Link href="/">MeMate vs Trello</Link>
-              <Link href="/">MeMate vs SalesForce</Link>
-              <Link href="/">MeMate vs Airtable</Link>
-              <Link href="/">MeMate vs Wrike</Link>
+              <Link href="/compare/memate-vs-monday">MeMate vs Monday</Link>
+              <Link href="/compare/memate-vs-trello">MeMate vs Trello</Link>
+              <Link href="/compare/memate-vs-salesForce">MeMate vs SalesForce</Link>
+              <Link href="/compare/meMate-vs-airtable">MeMate vs Airtable</Link>
+              <Link href="/compare/memate-vs-wrike">MeMate vs Wrike</Link>
               <Link href="/compare/memate-vs-servicem8">MeMate vs Servicem8</Link>
-              <Link href="/">MeMate vs Reckon</Link>
-              <Link href="/">MeMate vs Xero</Link>
+              <Link href="/compare/memate-vs-reckon">MeMate vs Reckon</Link>
+              <Link href="/compare/memate-vs-xero">MeMate vs Xero</Link>
               <Link href="/compare/memate-vs-microsoft-project">MeMate vs ms Project</Link>
               <Link href="/compare/memate-vs-sage">MeMate vs Sage</Link>
               <Link href="/compare/memate-vs-netsuite">MeMate vs NetSuite</Link>
               </div>
             </div>
-
             <div className="links">
               <p className="link-heading">Legal</p>
               <div className="page-links" style={{width: "142px"}}>
                 <Link href="/terms">Terms And Conditions</Link>
                 <Link href="/privacy">Privacy Policy</Link>
-                {/* <Link href="/terms-of-use">Website Terms of Use</Link> */}
-                {/* <Link href="/security">Security</Link> */}
-                {/* <Link href="/legal">Legal</Link> */}
               </div>
             </div>
-
             <div className="links">
               <p className="link-heading">Support</p>
               <div className="page-links" style={{width: "109px"}}>
@@ -175,17 +161,14 @@ const Footer = () => {
 
           </div>
         </div>
-
         <div className="section3 copyrightWrapper">
           <div className="copyright">
-            {/* <p>© MeMate 2024 </p> */}
-           <p>Copyright © 2022-2025 | meMate</p>
+           <p>Copyright © 2022-2026 | MeMate</p>
             <div className="copyright-links">
               <LazyLoadImage
                 alt="contact MeMate"
                 src="https://memate-website.s3.ap-southeast-2.amazonaws.com/brand/Powered-By_logo-stack_CMYK_ew121c.webp"
-                effect="blur" 
-              />
+                effect="blur" />
               </div>
           </div>
           <div className="copyrightright">
@@ -194,7 +177,6 @@ const Footer = () => {
         </div>
       </div>
     </div>
-    
     </>
   );
 };

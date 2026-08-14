@@ -15,7 +15,7 @@ export const metadata = {
 export default function Services8() {
   return (
     // <AppWrapper>
-      <Services8Page />
+      <Services8Page /> 
     // </AppWrapper>
   );
 }

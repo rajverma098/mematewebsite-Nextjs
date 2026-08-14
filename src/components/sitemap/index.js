@@ -109,7 +109,7 @@ const SitemapComponent = () => {
       <li>
         <h3>Legal</h3>
             <Link href="/terms">Terms & Conditions</Link>
-            <Link href="https://www.linkedin.com/uas/login?session_redirect=%2Fcompany%2F78408530" target='_blank'>Carreers</Link>
+            <Link href="https://www.linkedin.com/uas/login?session_redirect=%2Fcompany%2F78408530" target='_blank'>Careers</Link>
             <Link href="/privacy">Privacy</Link>
       </li>
       {/* <li>

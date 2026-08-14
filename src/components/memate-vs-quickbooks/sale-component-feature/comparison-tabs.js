@@ -52,7 +52,7 @@ const data = [
     },
     {
       category: "Accounting & Compliance",
-      meMate: "Basic tracking + Xero/MYOB integration for full compliance",
+      meMate: "Basic tracking + Xero/Quickbooks integration for full compliance",
       meMateM8: "Full accounting suite with tax, payroll, ATO reports",
       trueIcon: `https://memate-website.s3.ap-southeast-2.amazonaws.com/trueIcon.png`,
        falseIcon: `https://memate-website.s3.ap-southeast-2.amazonaws.com/slash-circle.png`,

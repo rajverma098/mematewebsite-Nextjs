@@ -1,11 +1,9 @@
 import './style.css';
 import style from './difference-module.module.scss';
-import Link from 'next/link';
-import TronRequestADemo from '../../../layout/hover-button/TronRequestADemo';
 import ComparisonTabs from './comparison-tabs';
 import FindOneApplication from '@/components/find-one-all';
-import WhiteButtonBammer from '@/layout/hover-button/WhiteButtonBammer';
 import Image from 'next/image';
+import DarkMemateBlackBut from '@/layout/hover-button/DarkMemateBlackBut';
 
 const SalesComponentFeature = () => {
   return (
@@ -17,9 +15,7 @@ const SalesComponentFeature = () => {
     data-aos-mirror="true"
     data-aos-once="false"
     data-aos-anchor-placement="top-bottom">
-        {/* <h2>Memate</h2> */}
         <span className='gradientAnimenate'>the difference</span>
-       
       </div>
       <div className="sales-feature-wrapper">
 
@@ -31,7 +27,6 @@ const SalesComponentFeature = () => {
       Good For?</h4>
       <p>Microsoft Project is a powerful project planning tool used in enterprise settings for Gantt charts, resource allocation, and long-term program tracking. It’s ideal for teams with dedicated project managers and complex workflows.
     </p>
-      
         </div>
         <div className={style.gridService8R}>
         <Image src='https://memate-website.s3.ap-southeast-2.amazonaws.com/microsoft-mro-mockup-min.png' alt='Services M8 map' width={567.595}
@@ -91,25 +86,18 @@ const SalesComponentFeature = () => {
       <p>For planning large projects with detailed dependencies.</p>
       <h6>MeMate:</h6>
       <p>For running real-world jobs, teams, and workflows — every day, across Australia.</p>
-         <div className="dflexbannerbtn dflexbannerbtnFT dflexbannerbtnp">
-                <div className="request-btn">
-                  <Link
-                    href="/features"
-                    className="nav-btn--get-started  navbar-link"
-                  >
-                      <TronRequestADemo text="See all features" />
-                  </Link>
-                </div>
-                <div className="request-btn">
-                  <Link
-                    href="https://app.memate.com.au/requestdemo"
-                    target="_blank"
-                    className="nav-btn--get-started  navbar-link"
-                  >
-                      <WhiteButtonBammer text="Book a demo"/>
-                  </Link>
-                </div>
-          </div>
+	    <div className='topSpaceGap'>
+         <DarkMemateBlackBut
+      link1="https://app.memate.com.au/requestdemo"
+      link2="https://app.memate.com.au/onboarding"
+      className="alignLeft"
+      target="_blank"
+      buttonTextdark="Book a Demo"
+      buttonTextlight="Start Free Trial"
+      showButton1={true}
+      showButton2={true}
+    />
+       </div>
         </div>
         <div className={style.gridService8R}>
         <img src='https://memate-website.s3.ap-southeast-2.amazonaws.com/memate-inshot-min.png' alt='Services inshort' />

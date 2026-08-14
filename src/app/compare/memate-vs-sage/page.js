@@ -15,7 +15,7 @@ export const metadata = {
 export default function ServicesVsSage() {
   return (
     // <AppWrapper>
-      <ServicesVsSagePage />
+      <ServicesVsSagePage /> 
     // </AppWrapper>
   );
 }

@@ -1,11 +1,59 @@
 
 
 @media screen and (max-width: 767px) {
-    .cardContainer12 {
+.cardContainer12 {
     height: auto !important;
+    margin: 14px 0;
 }
 .cardContainer12 p {
     padding: 0 20px;
+}
+.home-page-content .gridButtonStyle {
+    margin-top: 20px;
+}
+.cardContainer12 .gridButtonStyle {
+    margin-bottom: 30px;
+}
+.cardContainer12 {
+    min-height: auto !important;
+}
+
+.page-home .offer-opt1 .ui-col {
+    height: auto;
+    overflow: visible;
+}
+.page-home .offer-opt1 .ui-grid {
+    height: 400px;
+    overflow: hidden;
+}
+.page-home .offer-opt1 .page-home .introTextTopBottom {
+    padding: 0 15px;
+}
+// .page-home .success-stories-section {
+//     padding: 0;
+// }
+.page-home .slider-container {
+    max-width: 100%;
+}
+.page-home .slider-section1 {
+    padding: 0;
+}
+.page-home .question-answer-content {
+    padding: 0px !important;
+}
+.page-home .NewsflexWrap {
+    padding: 0;
+}
+.page-home .bgshadowwrapper {
+    padding-bottom: 0px;
+}
+.topSpaceGap {
+    margin-bottom: 25px;
+}
+.industry-page-parent {
+    width: auto !important;
+    margin: 0 auto;
+    padding: 0 12px;
 }
 .integrationOuter .row {
     gap: 10px !important;

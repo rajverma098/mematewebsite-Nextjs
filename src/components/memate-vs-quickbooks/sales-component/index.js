@@ -1,6 +1,7 @@
 import Link from "next/link";
 import "./style.css";
 import TronRequestADemo from "../../../layout/hover-button/TronRequestADemo";
+import DarkMemateBlackBut from "@/layout/hover-button/DarkMemateBlackBut";
 const SalesComponent = () => {
   return (
   <>
@@ -30,14 +31,19 @@ const SalesComponent = () => {
           <h2>Work Smarter with the #1 QuickBooks Alternative <br/> for Australian Service Businesses</h2>
           <p>QuickBooks is built for bookkeeping. MeMate is built for small and medium Australian businesses that need to run jobs, manage teams, and get paid — all in one platform.</p>
         <br></br>
-        <div className="request-btn request-btn-center" data-aos="fade-up"
+        <div data-aos="fade-up"
     data-aos-offset="50"
     data-aos-delay="50"
     data-aos-duration="1000"
     data-aos-mirror="true"
     data-aos-once="false"
     data-aos-anchor-placement="top-bottom">
-        <Link href='https://app.memate.com.au/requestdemo' target="_blank" className="nav-btn--get-started navbar-link"><TronRequestADemo  text="Book a Demo" /></Link>
+        <DarkMemateBlackBut
+      link1="https://app.memate.com.au/requestdemo"
+      target="_blank"
+      buttonTextdark="Book a Demo"
+      showButton1={true}
+    />
       </div>
         </div>
       </div>

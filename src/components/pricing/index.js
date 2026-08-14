@@ -1,11 +1,8 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import style from "./pricing-module.module.scss";
 import PricingLightTable from "./pricingtable/pricing-light-table";
-import { Helmet } from "react-helmet-async";
 import PricingTable from "./dark-pricing-table";
-import TronRequestADemo from "../../layout/hover-button/TronRequestADemo";
-import WhiteButtonBammer from "../../layout/hover-button/WhiteButtonBammer";
-import Link from "next/link";
+import DarkMemateBlackBut from "@/layout/hover-button/DarkMemateBlackBut";
 
 
 const PricingComponent = () => {
@@ -35,7 +32,18 @@ const PricingComponent = () => {
             We offer a 14-day free trial because we’re confident our software<br/>
             will become indispensable to your business
           </p>
-           <div className="dflexbannerbtn dflexbannerbtnp">
+           <div className='topSpaceGap'>
+         <DarkMemateBlackBut
+      link1="https://app.memate.com.au/requestdemo"
+      link2="https://app.memate.com.au/onboarding"
+      target="_blank"
+      buttonTextdark="Book a Demo"
+      buttonTextlight="Start Free Trial"
+      showButton1={true}
+      showButton2={true}
+    />
+       </div>
+           {/* <div className="dflexbannerbtn dflexbannerbtnp">
                 <div className="request-btn">
                   <Link
                     href="https://app.memate.com.au/requestdemo"
@@ -54,7 +62,7 @@ const PricingComponent = () => {
                       <WhiteButtonBammer text="Start Free Trial"/>
                   </Link>
                 </div>
-          </div>
+          </div> */}
         </div>
       <PricingTable />
       <PricingLightTable />

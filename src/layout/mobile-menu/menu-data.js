@@ -76,7 +76,7 @@ const MenuData = () => {
 
                     <div className="header-menu-features">
                       <img src={menuImages.meMateCheck} alt='meMateCheck'/>
-                      <p className="header-menu-feature-texts">Remote Acess</p>
+                      <p className="header-menu-feature-texts">Remote Access</p>
                     </div>
 
                     <div className="header-menu-features">
@@ -94,7 +94,7 @@ const MenuData = () => {
                     <div className="header-menu-features">
                       <img src={menuImages.meMateCheck} alt='meMateCheck'/>
                       <p className="header-menu-feature-texts">
-                        Build for Australia
+                       Built for Australia
                       </p>
                     </div>
 

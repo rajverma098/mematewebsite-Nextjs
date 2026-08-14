@@ -1,6 +1,5 @@
-import Link from "next/link";
 import "./style.css";
-import TronRequestADemo from "../../../layout/hover-button/TronRequestADemo";
+import DarkMemateBlackBut from "@/layout/hover-button/DarkMemateBlackBut";
 const SalesComponent = () => {
   return (
   <>
@@ -23,12 +22,11 @@ const SalesComponent = () => {
             alt="Pricing main image"
 
           />
-        {/* <img src="https://memate-website.s3.ap-southeast-2.amazonaws.com/media/Mockup.png" width="100%" alt="Mockup" /> */}
         </div>
 
         <div className="compaireHeadPara">
           <h2>Work smarter with the #1 Service M8 alternative.</h2>
-          <p>Despite the similarities in name and target audience, these two software solutions are quite different. ServiceM8 is focused more on “on-the-go” tradespeople, while meMate caters to more established businesses with a more robust workflow.</p>
+          <p>Despite the similarities in name and target audience, these two software solutions are quite different. ServiceM8 is focused more on “on-the-go” tradespeople, while MeMate caters to more established businesses with a more robust workflow.</p>
         <br></br>
         <div className="request-btn request-btn-center" data-aos="fade-up"
     data-aos-offset="50"
@@ -37,7 +35,12 @@ const SalesComponent = () => {
     data-aos-mirror="true"
     data-aos-once="false"
     data-aos-anchor-placement="top-bottom">
-        <Link href='https://app.memate.com.au/requestdemo' target="_blank" className="nav-btn--get-started navbar-link"><TronRequestADemo  text="Book a Demo" /></Link>
+      <DarkMemateBlackBut
+      link1="https://app.memate.com.au/requestdemo"
+      target="_blank"
+      buttonTextdark="Book a Demo"
+      showButton1={true}
+    />
       </div>
         </div>
       </div>

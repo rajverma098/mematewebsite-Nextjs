@@ -1,20 +1,15 @@
 import React, { useState } from "react";
 import style from "./pricing-module.module.scss";
 import "./tableStyle.css";
-// import CheckCircleIcon from "@mui/icons-material/CheckCircle";
-import Link from "next/link";
-// import TronButton from "../../layout/hover-button/tourn-but";
 import CheckIcon from "../../svg/CheckIcon";
 import CheckBlackIcon from "../../svg/CheckBlackIcon";
-import PricingButton from "../../layout/hover-button/PricingButton";
+import DarkMemateBlackBut from "@/layout/hover-button/DarkMemateBlackBut";
 const pricingboll =
   "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/pricingboll.png";
 
 const PricingTable = () => {
-  // State to toggle between monthly and yearly prices
   const [isYearly, setIsYearly] = useState(false);
 
-  // Example pricing data
   const plans = [
     {
       name: "Business",
@@ -63,7 +58,7 @@ const PricingTable = () => {
       ],
     },
     {
-      name: "Entreprise",
+      name: "Enterprise",
       image: pricingboll,
       whatsInclude: "Complete Package",
       companypara:
@@ -101,23 +96,13 @@ const PricingTable = () => {
         data-aos-anchor-placement="top-bottom"
       >
         <div className={style.pricingtable}>
-          {/* <div className={style.toggleSwitch}>
-            <span id="butMontlyTable">Monthly</span>
-          </div> */}
-
           <div className={` ${style.pricingcards}`}>
             {plans.map((plan, index) => (
               <div
                 key={index}
-                className={`pricingCardsWrap ${style.pricingcard}`}
-              >
+                className={`pricingCardsWrap ${style.pricingcard}`}>
                 <div className={style.tophead}>
                   <div className={style.head}>
-                    {/* <div className={style.left1}>
-                      <div className={style.left}>
-                        {plan.image && <img src={plan.image} alt={plan.name} />}
-                      </div>
-                    </div> */}
                     <div className={style.right}>
                       <h2>{plan.name}</h2>
                     </div>
@@ -159,28 +144,26 @@ const PricingTable = () => {
                 {index === 1 ? (
                   <div
                     id="request-btn-pricing"
-                    className="request-btn PricingButton request-btn-bg"
+                    className="lightColorIngradient"
                   >
-                    <Link
-                      href={plan.link}
-                      target="_blank"
-                      className="nav-btn--get-started get-started-border-box navbar-link"
-                    >
-                      <PricingButton text={plan.action} borderVal={'white'}/>
-                    </Link>
+                     <DarkMemateBlackBut
+                        link2={plan.link}
+                        target="_blank"
+                        buttonTextlight={plan.action}
+                        showButton2={true}
+                      />
                   </div>
                 ) : (
                   <div
                     id="request-btn-pricing"
                     className="request-btn PricingButton request-btn-bg"
                   >
-                    <Link
-                      href={plan.link}
-                      target="_blank"
-                      className="nav-btn--get-started get-started-border-box navbar-link"
-                    >
-                      <PricingButton text={plan.action} borderVal={'black'}/>
-                    </Link>
+                     <DarkMemateBlackBut
+                        link2={plan.link}
+                        target="_blank"
+                        buttonTextlight={plan.action}
+                        showButton2={true}
+                      />
                   </div>
                 )}
               </div>

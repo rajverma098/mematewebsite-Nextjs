@@ -12,7 +12,11 @@
     direction: rtl;
 }
 .headerMainButton .gridButtonStyle .tron-button-in {
-    min-width: 120px;
+    min-width: 152px;
+    padding: 0 0;
+}
+.headerMainButton .tron-button-light-in {
+    padding: 0;
 }
 .headerMainButton .gridButtonStyle button {
     height: auto !important;

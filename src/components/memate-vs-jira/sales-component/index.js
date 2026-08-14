@@ -1,6 +1,5 @@
-import Link from "next/link";
 import "./style.css";
-import TronRequestADemo from "../../../layout/hover-button/TronRequestADemo";
+import DarkMemateBlackBut from "@/layout/hover-button/DarkMemateBlackBut";
 const SalesComponent = () => {
   return (
   <>
@@ -38,7 +37,12 @@ Australian Business</h2>
     data-aos-mirror="true"
     data-aos-once="false"
     data-aos-anchor-placement="top-bottom">
-        <Link href='https://app.memate.com.au/requestdemo' target="_blank" className="nav-btn--get-started navbar-link"><TronRequestADemo  text="Book a Demo" /></Link>
+        <DarkMemateBlackBut
+      link1="https://app.memate.com.au/requestdemo"
+      target="_blank"
+      buttonTextdark="Book a Demo"
+      showButton1={true}
+    />
       </div>
         </div>
       </div>

@@ -1,10 +1,6 @@
 import React from "react";
 import "./pricing-light-table.scss";
-// import TronButton from "../../../layout/hover-button/tourn-but";
-import Link from 'next/link';
-// import HeaderButtonWithGradient from "../../../layout/hover-button/HeaderButtonWithGradient";
-// import BlackBigHeaderButtonWithGradient from "../../../layout/hover-button/BlackBigHeaderButtonWithGradient";
-import BigHeaderButtonWithGradient from "../../../layout/hover-button/BigHeaderButtonWithGradient";
+import DarkMemateBlackBut from "@/layout/hover-button/DarkMemateBlackBut";
 const pricingboll =
   "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/pricingboll.png";
 const checkIcon =
@@ -30,16 +26,12 @@ const PricingLightTable = () => {
                   $99.85 <span>/monthly</span>
                 </h2>
                 <p>Essentials you need to run your company</p>
-                <div className="request-btn request-btn-bg">
-                  <Link
-                    href="https://app.memate.com.au/onboarding"
-                    target="_blank"
-                    className="nav-btn--get-started navbar-link"
-                  >
-                    <BigHeaderButtonWithGradient text="Get started" background="black" color='white'/>
-                  </Link>
-                </div>
-                {/* <a href="https://dev.memate.com.au/onboarding" target="_blank">Get started</a> */}
+                   <DarkMemateBlackBut
+                        link1="https://app.memate.com.au/onboarding"
+                        target="_blank"
+                        buttonTextdark="Get started"
+                        showButton1={true}
+                      />
               </div>
             </th>
             <th className="imp-plan">
@@ -48,7 +40,6 @@ const PricingLightTable = () => {
                   <div className="iconbox">
                     <img src={pricingboll} alt={pricingboll} />
                   </div>
-                  {/* <div className="badge">Popular</div> */}
                 </div>
                 <h3>Business + Work</h3>
                 <h2>
@@ -58,19 +49,12 @@ const PricingLightTable = () => {
                 <p>
                   Everything in Business + Employee and Contractor Management
                 </p>
-                <div
-                  id="request-btn-pricing"
-                  className="request-btn request-btn-bg"
-                >
-                  <Link
-                    href="https://app.memate.com.au/onboarding"
-                    target="_blank"
-                    className="nav-btn--get-started get-started-border-box  navbar-link"
-                  >
-                    <BigHeaderButtonWithGradient text="Get started" background="white" color='black'/>
-                  </Link>
-                </div>
-                {/* <a className="getstartedBtnPricing"  href="https://dev.memate.com.au/onboarding" target="_blank">Get started</a> */}
+                   <DarkMemateBlackBut
+                        link2="https://app.memate.com.au/onboarding"
+                        target="_blank"
+                        buttonTextlight="Get started"
+                        showButton2={true}
+                      />
               </div>
             </th>
             <th>
@@ -83,16 +67,11 @@ const PricingLightTable = () => {
                 <h3>Enterprise</h3>
                 <h2>Contact us</h2>
                 <p>Unlimited Customization to Your Needs</p>
-                {/* <a href="/contact-us" target="_blank">Contact us</a> */}
-                <div className="request-btn request-btn-bg">
-                  <Link
-                    href="/contact-us"
-                    target="_blank"
-                    className="nav-btn--get-started navbar-link"
-                  >
-                    <BigHeaderButtonWithGradient text="Contact us" background="black" color='white'/>
-                  </Link>
-                </div>
+                  <DarkMemateBlackBut
+                        link1="/contact-us"
+                        buttonTextdark="Contact us"
+                        showButton1={true}
+                      />
               </div>
             </th>
           </tr>

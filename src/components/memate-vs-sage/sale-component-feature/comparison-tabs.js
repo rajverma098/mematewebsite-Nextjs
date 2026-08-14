@@ -52,11 +52,11 @@ const data = [
     },
     {
       category: "Accounting & Compliance",
-      meMate: "Basic expense tracking, GST & BAS summaries, Xero/MYOB integration",
+      meMate: "Basic expense tracking, GST & BAS summaries, Xero/Sage integration",
       meMateM8: "Full accounting suite, BAS, payroll, ATO compliance",
       trueIcon: `https://memate-website.s3.ap-southeast-2.amazonaws.com/trueIcon.png`,
       falseIcon: `https://memate-website.s3.ap-southeast-2.amazonaws.com/falseIcon.png`,
-       toolTip: "Basic expense tracking, GST & BAS summaries, Xero/MYOB integration"
+       toolTip: "Basic expense tracking, GST & BAS summaries, Xero/Sage integration"
     },
     {
       category: "Local Support & Setup",

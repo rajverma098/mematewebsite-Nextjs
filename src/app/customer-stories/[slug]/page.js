@@ -68,7 +68,7 @@ export default async function CustomerStorySlug({ params }) {
 
   return (
     // <AppWrapper>
-      <CustomerStoriesPageSingle params={resolvedParams} />
+      <CustomerStoriesPageSingle params={resolvedParams} /> 
     // </AppWrapper>
   );
   

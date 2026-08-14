@@ -84,7 +84,7 @@
   -moz-osx-font-smoothing: grayscale; 
 }
 /* changeds */
-.sales-componet-content-wrapper span {
+/* .sales-componet-content-wrapper span {
   text-align: center;
   font-family: 'sequel_sans_roman_head' !important;
   font-weight: 100;
@@ -92,7 +92,7 @@
   color: #757B8A;
   font-size:18px;
   
-}
+} */
 .sales-component-content h1{
   color: #757B8A;
   text-align: center;

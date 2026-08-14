@@ -1,11 +1,9 @@
 import './style.css';
 import style from './difference-module.module.scss';
-import Link from 'next/link';
-import TronRequestADemo from '../../../layout/hover-button/TronRequestADemo';
 import ComparisonTabs from './comparison-tabs';
 import FindOneApplication from '@/components/find-one-all';
-import WhiteButtonBammer from '@/layout/hover-button/WhiteButtonBammer';
 import Image from 'next/image';
+import DarkMemateBlackBut from '@/layout/hover-button/DarkMemateBlackBut';
 
 const SalesComponentFeature = () => {
   return (
@@ -17,7 +15,6 @@ const SalesComponentFeature = () => {
     data-aos-mirror="true"
     data-aos-once="false"
     data-aos-anchor-placement="top-bottom">
-        {/* <h2>Memate</h2> */}
         <span className='gradientAnimenate'>the difference</span>
        
       </div>
@@ -89,30 +86,23 @@ const SalesComponentFeature = () => {
       <div className={`${style.sectionService8grey} sectionService8greyNew sectionService8greyNew1`}>
       <div className={style.gridService8L}>
       <h4>In short</h4>
-      <p>meMate could be a great alternative to ServiceM8 for your business. Reach out to our onboarding team today for a free demo!</p>
+      <p>meMate could be a great alternative to NetSuite for your business. Reach out to our onboarding team today for a free demo!</p>
       <h6>NetSuite:</h6>
       <p>Complex, expensive, and built for global enterprises.</p>
       <h6>MeMate:</h6>
       <p>Simple, powerful, and built for everyday Australian business owners — even those running national operations.</p>
-         <div className="dflexbannerbtn dflexbannerbtnFT dflexbannerbtnp">
-                <div className="request-btn">
-                 <Link
-                    href="/features"
-                    className="nav-btn--get-started  navbar-link"
-                  >
-                      <TronRequestADemo text="See all features" />
-                  </Link>
-                </div>
-                <div className="request-btn">
-                  <Link
-                    href="https://app.memate.com.au/requestdemo"
-                    target="_blank"
-                    className="nav-btn--get-started  navbar-link"
-                  >
-                      <WhiteButtonBammer text="Book a demo"/>
-                  </Link>
-                </div>
-          </div>
+         <div className='topSpaceGap'>
+         <DarkMemateBlackBut
+      link1="https://app.memate.com.au/requestdemo"
+      link2="https://app.memate.com.au/onboarding"
+      className="alignLeft"
+      target="_blank"
+      buttonTextdark="Book a Demo"
+      buttonTextlight="Start Free Trial"
+      showButton1={true}
+      showButton2={true}
+    />
+       </div>
         </div>
         <div className={style.gridService8R}>
         <img src='https://memate-website.s3.ap-southeast-2.amazonaws.com/memate-inshot-min.png' alt='Services inshort' />
@@ -130,7 +120,7 @@ const SalesComponentFeature = () => {
         data-aos-once="false"
         data-aos-anchor-placement="top-bottom">
            <h3>Compare</h3>
-        <span className='gradientAnimenate'>MeMate vs ServiceM8</span>
+        <span className='gradientAnimenate'>MeMate vs NetSuite</span>
        <p>Choosing software is about finding the right balance between functionality and a simple, intuitive interface.</p>
       </div>
         <ComparisonTabs />
@@ -155,7 +145,7 @@ const SalesComponentFeature = () => {
       <div className={style.sectionOurBenefit}>
         <div className={style.sectionBenefitHead}>
             <h2>Our Benefits</h2>
-            <p>Choosing <strong>MeMate over jira Project </strong> means choosing a system designed to run your business — not just plan it.</p>
+            <p>Choosing <strong>MeMate over NetSuite Project </strong> means choosing a system designed to run your business — not just plan it.</p>
           </div>
           <div className={style.sectionBenefitFlex}>
             <ul className={style.boxBenifit}>

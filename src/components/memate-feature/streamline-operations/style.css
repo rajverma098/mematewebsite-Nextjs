@@ -250,7 +250,7 @@ button.get-started-btn {
     position: relative;
     left: 0;
     right: 0;
-    top: -24px;
+    top: -74px;
     width: 69%;
 }
     .memate span, .operation-right span {
@@ -317,8 +317,8 @@ button.get-started-btn {
     .all-in-one {
         padding: 0 15px;
     }
-    .operation-right {
-        margin-top: 20px;
+    .features-section .stream-line .operation-right {
+        margin-top: 101px;
     }
     .efficiency-section {
         max-width: 100%;

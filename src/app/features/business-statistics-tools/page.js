@@ -11,7 +11,7 @@ export const metadata = {
 export default function Statistic() {
   return (
     // <AppWrapper>
-      <StatisticPage />
+      <StatisticPage /> 
     // </AppWrapper>
   );
 }

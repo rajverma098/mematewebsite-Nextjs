@@ -58,7 +58,7 @@ const PricingTableDemo = () => {
       ],
     },
     {
-      name: "Entreprise",
+      name: "Enterprise",
       image: pricingboll,
       whatsInclude: "Complete Package",
       companypara:

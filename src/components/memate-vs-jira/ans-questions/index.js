@@ -11,13 +11,13 @@ const QuestionAnswer = () => {
 
   const questions = [
     {
-      question: "Why choose MeMate instead of Microsoft Project?",
+      question: "Why choose MeMate instead of jira Project?",
       key: 1,
       answer:
-        "Microsoft Project is made for professional project planners — not business owners running teams, jobs, and clients day to day. MeMate includes quoting, invoicing, time tracking, and CRM, all in one system, without the complexity or high licensing costs.",
+        "jira Project is made for professional project planners — not business owners running teams, jobs, and clients day to day. MeMate includes quoting, invoicing, time tracking, and CRM, all in one system, without the complexity or high licensing costs.",
     },
     {
-      question: "Can MeMate replace Microsoft Project for job tracking?",
+      question: "Can MeMate replace jira Project for job tracking?",
       key: 2,
       answer:
         "Yes. MeMate offers job boards, scheduling, task management, approvals, and reporting — all designed for real operational workflows, not just visual timelines.",
@@ -32,13 +32,13 @@ const QuestionAnswer = () => {
       question: "Does MeMate have Gantt charts or timeline views?",
       key: 4,
       answer:
-        "MeMate uses a simplified job scheduling board, calendar views, and task flows — built for getting things done. For full Gantt-style planning, Microsoft Project is better suited — but often overkill for most SMEs.",
+        "MeMate uses a simplified job scheduling board, calendar views, and task flows — built for getting things done. For full Gantt-style planning, jira Project is better suited — but often overkill for most SMEs.",
     },
     {
-      question: "Is MeMate cheaper than Microsoft Project?",
+      question: "Is MeMate cheaper than jira Project?",
       key: 5,
       answer:
-        "Yes. MeMate uses flat monthly pricing with all features included, whereas MS Project typically charges per user and requires additional Microsoft 365 licenses for full functionality.",
+        "Yes. MeMate uses flat monthly pricing with all features included, whereas MS Project typically charges per user and requires additional jira 365 licenses for full functionality.",
     },
     {
       question: "Can I track multiple jobs and team members in MeMate?",
@@ -47,7 +47,7 @@ const QuestionAnswer = () => {
         "Absolutely. MeMate is made to handle multiple crews, subcontractors, locations, and job types — with internal chat, approvals, and real-time job updates.",
     },
     {
-      question: "How easy is it to switch from Microsoft Project to MeMate?",
+      question: "How easy is it to switch from jira Project to MeMate?",
       key: 7,
       answer:
         "Very easy. We provide free onboarding and data migration, and help you map your current jobs and projects into MeMate so you’re ready to go from day one.",
