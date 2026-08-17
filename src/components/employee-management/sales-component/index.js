@@ -25,7 +25,7 @@ const SalesComponent = () => {
         viewport={{ once: true, amount: 0.6 }}
         transition={{ type: "spring", stiffness: 180, damping: 18, mass: 0.6, delay: 1  }}
         >
-         meMate allows you to use time tracking and clock-in/clock-out functionality for your office team members, making it an all-in-one solution for managing your company’s workforce.
+         MeMate allows you to use time tracking and clock-in/clock-out functionality for your office team members, making it an all-in-one solution for managing your company’s workforce.
           </motion.span>
         </div>
         <div className="sales-component-button-wrapper">

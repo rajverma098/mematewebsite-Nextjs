@@ -44,7 +44,7 @@ const SalesComponentFeature = () => {
       <h4>What’s MeMate<br/>
       Good For?</h4>
       <p>MeMate, on the other hand, is designed to be run from an office environment. It offers features for quoting, invoicing, and project management, with the ability to assign and track jobs for employees and contractors. </p>
-      <p>Although it is less flexible in terms of on-the-go usage, meMate provides a more structured and secure system, enabling managers to maintain a strict workflow.</p>
+      <p>Although it is less flexible in terms of on-the-go usage, MeMate provides a more structured and secure system, enabling managers to maintain a strict workflow.</p>
         </div>
         <div className={style.gridService8R}>
         <img src='https://memate-website.s3.ap-southeast-2.amazonaws.com/compaire-servicem8-01-min.png' alt='Services M8 Services' />
@@ -56,7 +56,7 @@ const SalesComponentFeature = () => {
         <h2>More benefits to switching to MeMate</h2>
           <div className='m8InSection01'>
               <div className='m8InFlexLeft'>
-               <h3>memate offers<span>a simpler, faster path</span></h3>
+               <h3>MeMate offers<span>a simpler, faster path</span></h3>
              
                 <ul style={{ marginLeft: 20 }}>
                 <li>No learning curve </li>
@@ -86,7 +86,7 @@ const SalesComponentFeature = () => {
       <div className={`${style.sectionService8grey} sectionService8greyNew sectionService8greyNew1`}>
       <div className={style.gridService8L}>
       <h4>In short</h4>
-      <p>meMate could be a great alternative to NetSuite for your business. Reach out to our onboarding team today for a free demo!</p>
+      <p>MeMate could be a great alternative to NetSuite for your business. Reach out to our onboarding team today for a free demo!</p>
       <h6>NetSuite:</h6>
       <p>Complex, expensive, and built for global enterprises.</p>
       <h6>MeMate:</h6>
@@ -126,7 +126,7 @@ const SalesComponentFeature = () => {
         <ComparisonTabs />
         </div>
         <div className={style.sectionSwapWrap}>
-        <h2>Swap Multiple Tools for <br></br><span>meMate</span> and <span>Save Money</span></h2>
+        <h2>Swap Multiple Tools for <br></br><span>MeMate</span> and <span>Save Money</span></h2>
         <div className={style.sectionSwapWrapBg}>
         <div className={style.sectionSwapL}>
           <p><img src='https://memate-website.s3.ap-southeast-2.amazonaws.com/media/pricing-cardLT.png' alt='pricingcard' /></p>

@@ -15,7 +15,7 @@ export const metadata = {
 export default function JobApproval() {
   return (
     // <AppWrapper>
-      <JobApprovalPage /> 
+      <JobApprovalPage />  
     // </AppWrapper>
   );
 }

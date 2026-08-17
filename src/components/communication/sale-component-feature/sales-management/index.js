@@ -4,13 +4,7 @@ import Images from "../../../../assests/images";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 const SalesManagement = () => {
   return (
-    <div className="sales-management-wrapper-dataF flextMobile" data-aos="fade-up"
-    data-aos-offset="50"
-    data-aos-delay="50"
-    data-aos-duration="1000"
-    data-aos-mirror="true"
-    data-aos-once="false"
-    data-aos-anchor-placement="top-bottom">
+    <div className="sales-management-wrapper-dataF flextMobile">
       <div className="sales-imageF">
         <LazyLoadImage
           alt="business chat tools"
@@ -26,7 +20,7 @@ const SalesManagement = () => {
         <p className="sales-description-salesF">
         There’s nothing better than starting with clear and<br></br> transparent communication.
          Send quotes for<br></br> approval with automatic reminders directly from<br></br> your 
-         meMate system with just one click.
+         MeMate system with just one click.
        </p>
       </div>
     </div>

@@ -69,6 +69,7 @@ const LessBusyness = () => {
                    <video
                   width="100%"
                   height="100%"
+                  // poster="https://memate-website.s3.ap-southeast-2.amazonaws.com/videoposter-memate-bg.jpg"
                   autoPlay
                   muted
                   loop
@@ -100,6 +101,7 @@ const LessBusyness = () => {
                 <video
                   width="100%"
                   height="100%"
+                  poster="https://memate-website.s3.ap-southeast-2.amazonaws.com/videoposter-memate-bg.jpg"
                   autoPlay
                   muted
                   loop
@@ -124,13 +126,6 @@ const LessBusyness = () => {
                 </div>
               </div>
               <div className={style.videoWrapper2}></div>
-              {/* <div className={style.videooverlyImage}>
-                <LazyLoadImage
-                  alt="CRM for Small Business"
-                  src="https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/slider/video-sticky-img-min.png"
-                  effect="blur"
-                />
-              </div> */}
             </div>
           </div>
         </div>

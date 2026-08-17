@@ -24,7 +24,6 @@ const SalesComponent = () => {
             alt="Pricing main image"
 
           />
-        {/* <img src="https://memate-website.s3.ap-southeast-2.amazonaws.com/media/Mockup.png" width="100%" alt="Mockup" /> */}
         </div>
 
         <div className="compaireHeadPara">

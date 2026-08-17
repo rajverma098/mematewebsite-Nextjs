@@ -15,7 +15,7 @@ export const metadata = {
 export default function Communication() {
   return (
     // <AppWrapper>
-      <CommunicationPage /> 
+      <CommunicationPage />        
     // </AppWrapper>
   );
 }

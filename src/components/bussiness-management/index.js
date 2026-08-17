@@ -58,26 +58,6 @@ const BussinessManagement = () => {
       showButton1={true}
       showButton2={true}
     />
-      {/* <div className="dflexbannerbtn">
-        <div className="request-btn">
-          <Link
-            href="https://app.memate.com.au/requestdemo"
-            target="_blank"
-            className="nav-btn--get-started  navbar-link"
-          >
-            <TronRequestADemo text="Show Me How It Works" />
-          </Link>
-        </div>
-        <div className="request-btn requestLightButton">
-          <Link
-            href="https://app.memate.com.au/onboarding"
-            target="_blank"
-            className="nav-btn--get-started  navbar-link"
-          >
-            <WhiteButtonBammer text="Start Free Trial" />
-          </Link>
-        </div>
-      </div> */}
     </div>
   );
 };

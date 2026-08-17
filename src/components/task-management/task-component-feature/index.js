@@ -38,7 +38,7 @@ const ChatComponentFeature = () => {
             duration: 5,
           }}
         >
-          Memate
+          MeMate
         </motion.h2>
 
         <motion.span

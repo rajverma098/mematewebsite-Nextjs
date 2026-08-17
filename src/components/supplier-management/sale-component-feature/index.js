@@ -49,7 +49,7 @@ const SalesComponentFeature = () => {
             duration: 5,
           }}
         >
-          Memate
+          MeMate
         </motion.h2>
 
         <motion.span
@@ -78,14 +78,6 @@ const SalesComponentFeature = () => {
         <ScrollStack CardDataComponent={AgilePipeLineManagement} color="white" i={5} />
         <ScrollStack CardDataComponent={SuitableTender} color="white" i={6} />
       </div>
-      {/* <div className="sales-feature-wrapperF">
-          <SalesManagement/>
-           <CRMSalesTool/>
-           <PipeLineTool/>
-           <SalesProcessOptimiation/>
-           <AgilePipeLineManagement/>
-           <SuitableTender/> 
-        </div> */}
     </div>
   );
 };

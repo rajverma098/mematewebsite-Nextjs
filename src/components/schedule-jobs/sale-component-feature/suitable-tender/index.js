@@ -4,13 +4,7 @@ import Images from "../../../../assests/images";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 const SuitableTender = () => {
   return (
-    <div className="suitable-tender-wrapper marginSpaceTop" data-aos="fade-up"
-    data-aos-offset="50"
-    data-aos-delay="50"
-    data-aos-duration="4000"
-    data-aos-mirror="true"
-    data-aos-once="false"
-    data-aos-anchor-placement="top-bottom">
+    <div className="suitable-tender-wrapper marginSpaceTop">
       <div className="content-wrapper">
         <p className="sale-title">Strategic</p>
         <p className="sales-heading-sales">Shift and   </p>

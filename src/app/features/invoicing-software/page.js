@@ -15,7 +15,7 @@ export const metadata = {
 export default function Invoicing() {
   return (
     // <AppWrapper>
-      <InvoicingPage /> 
+      <InvoicingPage />  
     // </AppWrapper>
   );
 }

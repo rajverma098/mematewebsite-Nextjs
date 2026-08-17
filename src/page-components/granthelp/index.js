@@ -7,7 +7,7 @@ import {
   TryToBestComponent,
 } from "../../components/granthelp";
 import AppWrapper from "../../components/AppWrapper";
-import SmoothScroll from "./SmoothScroll";
+import SmoothScroll from "./SmoothScroll"; 
 const RunYourBusinessPage = () => {
   return (
     <>

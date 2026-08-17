@@ -4,13 +4,7 @@ import Images from "../../../../assests/images";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 const SalesManagement = () => {
   return (
-    <div className="sales-management-wrapper-dataF flextMobile" data-aos="fade-up"
-    data-aos-offset="50"
-    data-aos-delay="50"
-    data-aos-duration="1000"
-    data-aos-mirror="true"
-    data-aos-once="false"
-    data-aos-anchor-placement="top-bottom">
+    <div className="sales-management-wrapper-dataF flextMobile" >
        <div className="sales-imageF">
         <LazyLoadImage
           alt="manage contractors online"
@@ -25,7 +19,7 @@ const SalesManagement = () => {
         <p className="sales-typeF">Management </p>
         <p className="sales-description-salesF">
         Designed for companies with multiple <br />
-        subcontractors working regularly, meMate’s <br />
+        subcontractors working regularly, MeMate’s <br />
         Contractor Management feature enables you to <br />
         assign, track, and manage jobs efficiently. This <br />
         tool keeps project coordination straightforward <br />

@@ -10,7 +10,7 @@ export const metadata = {
 export default function Calculators() {
   return (
     // <AppWrapper>
-      <CalculatorsPage /> 
+      <CalculatorsPage />  
     // </AppWrapper>
   );
 }

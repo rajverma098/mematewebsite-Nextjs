@@ -38,7 +38,7 @@ const QuestionAnswer = () => {
       question: "Can MeMate handle payroll like Sage?",
       key: 5,
       answer:
-        "While MeMate supports timesheets, team tracking, and scheduling, we integrate with tools like Xero or MYOB for payroll. This gives you flexibility without locking you into a specific finance ecosystem.",
+        "While MeMate supports timesheets, team tracking, and scheduling, we integrate with tools like Sage for payroll. This gives you flexibility without locking you into a specific finance ecosystem.",
     },
     {
       question: "Is MeMate suitable for tradies and service-based teams?",

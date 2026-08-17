@@ -53,7 +53,7 @@ const SalesComponentFeature = () => {
         <h2>More benefits to switching to MeMate</h2>
           <div className='m8InSection01'>
               <div className='m8InFlexLeft'>
-               <h3>with Memate<span>Switching is Easy</span></h3>
+               <h3>with MeMate<span>Switching is Easy</span></h3>
                 <ul style={{ marginLeft: 20 }}>
                 <li>We handle the entire setup and migration for free,<br/> including your customer data, contacts, and job history.  </li>
                 <li>No third-party consultants. No hidden onboarding fees.</li>
@@ -112,13 +112,13 @@ const SalesComponentFeature = () => {
         data-aos-once="false"
         data-aos-anchor-placement="top-bottom">
            <h3>Compare</h3>
-        <span className='gradientAnimenate'>Memate vs Sage</span>
+        <span className='gradientAnimenate'>MeMate vs Sage</span>
        <p>Choosing software is about finding the right balance between functionality and a simple, intuitive interface.</p>
       </div>
         <ComparisonTabs />
         </div>
         <div className={style.sectionSwapWrap}>
-        <h2>Swap Multiple Tools for <br></br><span>meMate</span> and <span>Save Money</span></h2>
+        <h2>Swap Multiple Tools for <br></br><span>MeMate</span> and <span>Save Money</span></h2>
         <div className={style.sectionSwapWrapBg}>
         <div className={style.sectionSwapL}>
           <p><img src='https://memate-website.s3.ap-southeast-2.amazonaws.com/media/pricing-cardLT.png' alt='pricingcard' /></p>

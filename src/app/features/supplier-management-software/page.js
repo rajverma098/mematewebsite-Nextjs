@@ -15,7 +15,7 @@ export const metadata = {
 export default function SupplierManagement() {
   return (
     // <AppWrapper>
-      <SupplierManagementPage />
+      <SupplierManagementPage /> 
     // </AppWrapper>
   );
 }

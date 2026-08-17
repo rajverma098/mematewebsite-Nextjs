@@ -5,7 +5,7 @@ import { LazyLoadImage } from "react-lazy-load-image-component";
 const AgilePipeLineManagement = () => {
   return (
     <div className="sales-management-wrapper-dataF flextMobile">
-       <div className="sales-imageF">
+       <div className="sales-imageF ">
         <LazyLoadImage
             alt="Aussie team collaboration software"
             src={Images.commOrganised}
@@ -18,7 +18,7 @@ const AgilePipeLineManagement = () => {
         <p className="sales-heading-salesF">Internal</p>
         <p className="sales-typeF">To-Do list </p>
         <p className="sales-description-salesF">
-        meMate includes an internal to-do list for you and<br></br> your team. You can add 
+        MeMate includes an internal to-do list for you and<br></br> your team. You can add 
         project segments and<br></br> assign them to different contractors, improving <br></br>
         communication and reducing mistakes.
         </p>

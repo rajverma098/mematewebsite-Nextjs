@@ -11,7 +11,7 @@ export const metadata = {
 export default function Calendar() {
   return (
     // <AppWrapper>
-      <CalendarPage /> 
+      <CalendarPage />  
     // </AppWrapper>
   );
 }

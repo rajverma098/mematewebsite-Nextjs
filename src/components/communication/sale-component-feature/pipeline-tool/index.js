@@ -19,8 +19,8 @@ const PipeLineTool = () => {
         <p className="sales-heading-salesF">Integration with</p>
         <p className="sales-typeF">your team</p>
         <p className="sales-description-salesF">
-        You can start a chat on meMate to discuss your <br></br>project, assign tasks 
-        to your team, and use the <br></br>meMate mobile app to communicate seamlessly <br></br>on the go.
+        You can start a chat on MeMate to discuss your <br></br>project, assign tasks 
+        to your team, and use the <br></br>MeMate mobile app to communicate seamlessly <br></br>on the go.
         </p>
       </div>
     </div>

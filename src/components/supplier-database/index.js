@@ -34,6 +34,7 @@ const SupplierDatabase = () => {
           debouncedLetterValue
         );
         const { data, total } = response;
+        console.log('data: ', data);
 
         setTotalSupplier(total);
         if (currentPage === 1) {
@@ -135,7 +136,7 @@ const SupplierDatabase = () => {
           <p>Find the business you need</p>
         </div>
         <div className={style.databaseWrapper}>
-          <DataBase
+          <DataBase 
             supplier={supplier}
             loading={loading}
             totalSupplier={totalSupplier}

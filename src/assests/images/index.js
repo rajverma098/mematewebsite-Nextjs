@@ -29,7 +29,7 @@ const Images = {
     commReliable:"https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/features/communication-01-min.png",
     commComprehensive:"https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/features/communication-02-min.png",
     commDynamic:"https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/features/communication-03-min.png",
-    commModern:"https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/features/communication-04-min.png",
+    commModern:"https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/features/communication-041.png",
     commOrganised:"https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/features/communication-05-min.png",
     commSeamless:"https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/features/communication-06-min.png",
 

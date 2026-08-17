@@ -20,7 +20,7 @@ import HowItWork from "../../components/how-it-work";
 import HomePageFeatuchers from "./HomePageFeatuchers";
 
 // import AppWrapper from "../../components/AppWrapper";
-import SmoothScroll from "../granthelp/SmoothScroll";
+import SmoothScroll from "./SmoothScroll";
 
 const ORANGE_GRADIENT =
   "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='371' height='674' viewBox='0 0 371 674' fill='none'%3E%3Cg filter='url(%23f0)'%3E%3Cellipse cx='216.899' cy='336.822' rx='47.1992' ry='167.122' fill='%23FFB259' fill-opacity='0.44'/%3E%3C/g%3E%3Cdefs%3E%3Cfilter id='f0' x='0' y='0' width='433.798' height='673.644' filterUnits='userSpaceOnUse' color-interpolation-filters='sRGB'%3E%3CfeFlood flood-opacity='0'/%3E%3CfeBlend in='SourceGraphic'/%3E%3CfeGaussianBlur stdDeviation='84.85'/%3E%3C/filter%3E%3C/defs%3E%3C/svg%3E\")";
@@ -74,16 +74,15 @@ const LandingPage = ({ postsLatest }) => {
   return (
     <>
       {/* <AppWrapper> */}
+        <SmoothScroll/>
         <Layout>
-           <SmoothScroll/>
-          <BussinessManagement /> 
+        
+          <BussinessManagement />   
           <LessBusyness />     
           <FeaturedOn />   
           <FindOneApplication />
-        
           <CommonChallenges /> 
-            <HowItWork />
-        
+          <HowItWork />
           <div className="bgshadowwrapper salesFeatureBg">
            <HomePageFeatuchers /> 
          </div>

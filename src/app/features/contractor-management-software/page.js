@@ -16,7 +16,7 @@ export const metadata = {
 export default function Contractor() {
   return (
     // <AppWrapper>
-      <ContractorPage /> 
+      <ContractorPage />  
     // </AppWrapper>
   );
 }
