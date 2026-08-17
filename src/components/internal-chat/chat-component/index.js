@@ -25,7 +25,7 @@ const ChatComponent = () => {
         viewport={{ once: true, amount: 0.6 }}
         transition={{ type: "spring", stiffness: 180, damping: 18, mass: 0.6, delay: 1  }}
         >
-       Keep every conversation where it belongs. With Memate’s Internal Chat, your team can communicate in real time, create project-specific chat groups, and loop in only the people involved. No more messy email chains or scattered messages—just focused, organized communication that keeps everyone on the same page.
+       Keep every conversation where it belongs. With meMate’s Internal Chat, your team can communicate in real time, create project-specific chat groups, and loop in only the people involved. No more messy email chains or scattered messages—just focused, organized communication that keeps everyone on the same page.
           </motion.span>
         </div>
         <div className="sales-component-button-wrapper">

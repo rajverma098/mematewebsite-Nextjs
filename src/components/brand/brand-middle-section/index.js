@@ -16,9 +16,9 @@ const knowledgeData = [
     description: `
    <div class="brandTabsGuidelines">
     <h3>How to use these Guidelines:</h3>
-    <p>Just like building a great workspace, there are many elements that make up the MeMate brand. From a solid foundation of values, through to the tools, features, and personality that power everyday business, the MeMate experience takes shape.</p>
+    <p>Just like building a great workspace, there are many elements that make up the meMate brand. From a solid foundation of values, through to the tools, features, and personality that power everyday business, the meMate experience takes shape.</p>
     <p>Starting with our tone of voice, typeface, colours, and visual style, our brand comes to life. These guidelines are here to help you create communications with clarity, consistency, and the flexibility to adapt to different audiences and situations.</p>
-    <p>By following them, every interaction will stay true to the MeMate brand — professional, approachable, and built for Australian businesses.</p>
+    <p>By following them, every interaction will stay true to the meMate brand — professional, approachable, and built for Australian businesses.</p>
    </div>
 `,
   },
@@ -39,7 +39,7 @@ const knowledgeData = [
    description: `
    <div class="things-to-avoid-guidelines">
  <p>The gradient transition from blue to orange in our brand palette symbolizes a journey from stability and trust to energy and innovation. The blue tones represent reliability and professionalism, while the warm orange hues convey enthusiasm and creativity. </p>
- <p>This gradient reflects MeMate’s commitment to providing dependable business management solutions while embracing forward-thinking and dynamic approaches. </p>
+ <p>This gradient reflects meMate’s commitment to providing dependable business management solutions while embracing forward-thinking and dynamic approaches. </p>
 <img src="https://memate-website.s3.ap-southeast-2.amazonaws.com/brand/color-palette-image.png" style="width: 100%; height: auto;" alt="Icons" />
    </div>
 `,

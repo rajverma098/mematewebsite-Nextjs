@@ -51,8 +51,8 @@ const MemateWiki = () => {
     <>
     <div className={`${style.mainMenuPages} ${style.ResourcesPages}`}>
     <div className={`titleHead ${style.mainHeadTitle}`}>
-          <h2>memate <br />wiki</h2>
-          <h1 className="h1tagsseow">Business Tips & Insights for Aussie SMEs | MeMate Wiki</h1><span>
+          <h2>meMate <br />wiki</h2>
+          <h1 className="h1tagsseow">Business Tips & Insights for Aussie SMEs | meMate Wiki</h1><span>
           </span>
           <h4>
           Here, we gather valuable knowledge about general business<br/> management practices and tools, from job scheduling to<br/> invoicing and quote calculations.

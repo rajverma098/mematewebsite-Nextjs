@@ -56,12 +56,12 @@ const IndustriesComponent = () => {
     <>
       <div className={style.mainMenuPages}>
      <div className={`sales-component-wrapper salesfeaturesWrapper ${style.mainHeadTitle}`}>
-         <h1 className="h1tagsseo h1tagsseof fontWeight">Industry-Specific Software Solutions for Every Business | MeMate</h1>
+         <h1 className="h1tagsseo h1tagsseof fontWeight">Industry-Specific Software Solutions for Every Business | meMate</h1>
           <h2>industries</h2>
           <span>
           Here are meMate’s main features to help you quickly understand if it will be suitable for your<br/> business.
           </span>
-           <h4 className={style.h4Heading}>Transform Your Industry with MeMate’s Business Management Software</h4>
+           <h4 className={style.h4Heading}>Transform Your Industry with meMate’s Business Management Software</h4>
         </div>
 
 

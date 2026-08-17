@@ -9,66 +9,66 @@ const IndustyQuesitonAndAns = () => {
 
   const questions = [
     {
-      question: "Is MeMate specifically designed for creative agencies?",
+      question: "Is meMate specifically designed for creative agencies?",
       key: 0,
       answer:
         "Yes, our CRM system includes features specifically designed to manage prospective clients. It helps you track leads, nurture prospects, and convert them into loyal customers.",
     },
     {
-      question: "How can MeMate benefit my creative agency?",
+      question: "How can meMate benefit my creative agency?",
       key: 1,
       answer:
         "Yes, our CRM system includes features specifically designed to manage prospective clients. It helps you track leads, nurture prospects, and convert them into loyal customers.",
     },
     {
       question:
-        "Can MeMate handle the unique requirements of marketing and advertising agencies?",
+        "Can meMate handle the unique requirements of marketing and advertising agencies?",
       key: 2,
       answer:
         "Yes, our CRM system includes features specifically designed to manage prospective clients. It helps you track leads, nurture prospects, and convert them into loyal customers.",
     },
     {
       question:
-        "How does MeMate simplify project management for creative agencies?",
+        "How does meMate simplify project management for creative agencies?",
       key: 3,
       answer:
         "Yes, our CRM system includes features specifically designed to manage prospective clients. It helps you track leads, nurture prospects, and convert them into loyal customers.",
     },
     {
       question:
-        "Can MeMate assist in financial management for creative agencies?",
+        "Can meMate assist in financial management for creative agencies?",
       key: 4,
       answer:
         "Yes, our CRM system includes features specifically designed to manage prospective clients. It helps you track leads, nurture prospects, and convert them into loyal customers.",
     },
     {
-      question: "How does MeMate help with client communication?",
+      question: "How does meMate help with client communication?",
       key: 5,
       answer:
         "Yes, our CRM system includes features specifically designed to manage prospective clients. It helps you track leads, nurture prospects, and convert them into loyal customers.",
     },
     {
       question:
-        "Is MeMate suitable for both small and large creative agencies?",
+        "Is meMate suitable for both small and large creative agencies?",
       key: 6,
       answer:
         "Yes, our CRM system includes features specifically designed to manage prospective clients. It helps you track leads, nurture prospects, and convert them into loyal customers.",
     },
     {
-      question: "Does MeMate offer creative workflow solutions?",
+      question: "Does meMate offer creative workflow solutions?",
       key: 7,
       answer:
         "Yes, our CRM system includes features specifically designed to manage prospective clients. It helps you track leads, nurture prospects, and convert them into loyal customers.",
     },
     {
       question:
-        "Is MeMate compatible with other tools or software commonly used by creative agencies?",
+        "Is meMate compatible with other tools or software commonly used by creative agencies?",
       key: 8,
       answer:
         "Yes, our CRM system includes features specifically designed to manage prospective clients. It helps you track leads, nurture prospects, and convert them into loyal customers.",
     },
     {
-      question: "How can I learn more about MeMate and its features?",
+      question: "How can I learn more about meMate and its features?",
       key: 9,
       answer:
         "Yes, our CRM system includes features specifically designed to manage prospective clients. It helps you track leads, nurture prospects, and convert them into loyal customers.",

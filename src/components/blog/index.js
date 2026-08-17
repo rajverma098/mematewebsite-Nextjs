@@ -78,7 +78,7 @@ function Blog({ PostsCategories, activeCategory, handleTabClick, posts, totalPos
             <div className="heading-blog">
              Articles
             </div>
-              <h1>Latest News and <br/>Updates from MeMate</h1>
+              <h1>Latest News and <br/>Updates from meMate</h1>
             <div className="dog-img-container1 dog-img-container">
               <img
               className="dog-img"

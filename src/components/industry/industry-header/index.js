@@ -5,7 +5,7 @@ const IndustryHeader = () => {
   return (
     <>
     <div className='NextHeaderWrap'>
-      <h1>Agency Management Software for Creative Agencies | MeMate</h1>
+      <h1>Agency Management Software for Creative Agencies | meMate</h1>
       <h2>software for creatives</h2>
       <p>Easily create and quote your projects based on hourly rates or cost-of-sale models, <br/>ensuring accurate and efficient pricing for your creative work.</p>
     </div>
@@ -14,7 +14,7 @@ const IndustryHeader = () => {
     <div className='LeftSide'>
       <span className='leftSpan'>Empower your</span>
        <h4>marketing & creative agencies</h4>
-       <p>MeMate – Comprehensive Business Management Software for Creative Agencies. Allows you to combine the best features of project management, accounting, quoting, and invoicing. Communicate with clients and submit jobs from a single, centralised platform.</p>
+       <p>meMate – Comprehensive Business Management Software for Creative Agencies. Allows you to combine the best features of project management, accounting, quoting, and invoicing. Communicate with clients and submit jobs from a single, centralised platform.</p>
        <div className='topSpaceGap'>
          <DarkMemateBlackBut
       link1="https://app.memate.com.au/requestdemo"

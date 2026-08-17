@@ -9,7 +9,7 @@ const ChatProcessOptimiation = () => {
         <p className="sales-heading-salesF">Mobile App Chat Access </p>
         <p className="sales-typeF">for Contractors</p>
         <p className="sales-description-salesF">
-        Your contractors can stay in the loop and respond<br/> on the go through the Memate mobile app—easy,<br/> direct communication wherever they are.
+        Your contractors can stay in the loop and respond<br/> on the go through the memate mobile app—easy,<br/> direct communication wherever they are.
         </p>
       </div>
       <div className="sales-imageF imageResizeHeight">

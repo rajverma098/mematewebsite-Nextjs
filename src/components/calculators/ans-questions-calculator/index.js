@@ -10,7 +10,7 @@ const QuestionAnswer = () => {
 
   const questions = [
     {
-      question: "What kind of calculators can I create in Memate?",
+      question: "What kind of calculators can I create in meMate?",
       key: 1,
       answer:
         "You can build fully customisable calculators tailored to your business—whether it’s for budgeting, quoting, cost estimating, or margin calculation.",
@@ -19,7 +19,7 @@ const QuestionAnswer = () => {
       question: "Can I automatically set a budget using the calculator?",
       key: 2,
       answer:
-        "Yes! Memate lets you define rules and inputs so budgets are automatically calculated based on your business logic.",
+        "Yes! meMate lets you define rules and inputs so budgets are automatically calculated based on your business logic.",
     },
     {
       question: "Is it possible to add both margin and markup to calculations?",
@@ -43,13 +43,13 @@ const QuestionAnswer = () => {
       question: "Can I see profit projections in real time?",
       key: 6,
       answer:
-        "Yes! Memate shows you the operational profitability of each quote or calculation instantly as you build it.",
+        "Yes! meMate shows you the operational profitability of each quote or calculation instantly as you build it.",
     },
     {
       question: "Is the calculator easy to set up, or do I need technical knowledge?",
       key: 7,
       answer:
-        "No technical skills required. The setup is intuitive, user-friendly, and fully guided within Memate.",
+        "No technical skills required. The setup is intuitive, user-friendly, and fully guided within meMate.",
     },
     {
       question: "Can I reuse calculator templates for future quotes?",
@@ -66,7 +66,7 @@ const QuestionAnswer = () => {
     {
       question: "Is the calculator feature available on the mobile app?",
       answer:
-        "While most functionality is desktop-optimised, key calculator features and results can be viewed and referenced via the Memate mobile app.",
+        "While most functionality is desktop-optimised, key calculator features and results can be viewed and referenced via the meMate mobile app.",
       key: 10,
     },
   ];

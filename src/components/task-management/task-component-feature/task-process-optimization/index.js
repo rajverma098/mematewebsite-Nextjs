@@ -7,9 +7,9 @@ const TaskProcessOptimiation = () => {
       <div className="content-wrapperF">
         <p className="sale-titleF">Fast</p>
         <p className="sales-heading-salesF">Manage To-Do Lists</p>
-        <p className="sales-typeF">via the MeMate App</p>
+        <p className="sales-typeF">via the meMate App</p>
         <p className="sales-description-salesF">
-        Send, view, and update tasks from anywhere<br/> using the MeMate mobile app—ideal for teams on<br/> the move.
+        Send, view, and update tasks from anywhere<br/> using the meMate mobile app—ideal for teams on<br/> the move.
         </p>
       </div>
       <div className="sales-imageF imageResizeHeight">

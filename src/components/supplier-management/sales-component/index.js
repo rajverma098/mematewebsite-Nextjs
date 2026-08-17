@@ -12,7 +12,7 @@ const SalesComponent = () => {
          viewport={{ once: true, amount: 0.6 }}
          transition={{ type: "spring", stiffness: 180, damping: 18, mass: 0.6, delay: 0.5 }}
        >
-         Stay on Top of Suppliers, Vendors & Contractors with MeMate
+         Stay on Top of Suppliers, Vendors & Contractors with meMate
        </motion.h1>
        <div className="sales-headingF gradientText">supplier<br></br> management</div>
       <div className="sales-componet-content-wrapperF client-component-para">

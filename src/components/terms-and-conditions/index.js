@@ -236,7 +236,7 @@ const article =  {
 
            <div className="tmsheadF">
             <p className="tos-section-headingF" id="section1">
-              memate
+              meMate
             </p>
            <h1 className="blackH1Tag">Terms & Conditions</h1>
         </div>

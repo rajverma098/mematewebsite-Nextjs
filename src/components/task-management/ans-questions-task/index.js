@@ -34,16 +34,16 @@ const QuestionAnswer = () => {
         "You can add a title, description, due date, attachments, and even tag the person responsible—everything in one spot.",
     },
     {
-      question: "Can contractors receive tasks through Memate?",
+      question: "Can contractors receive tasks through meMate?",
       key: 5,
       answer:
-        "Yes! Contractors can receive and manage their tasks directly through Memate, either on desktop or via the mobile app.",
+        "Yes! Contractors can receive and manage their tasks directly through meMate, either on desktop or via the mobile app.",
     },
     {
       question: "How does the mobile app help with task management?",
       key: 6,
       answer:
-        "With the Memate app, you can create, view, assign, and track tasks on the go—perfect for field teams and remote work.",
+        "With the meMate app, you can create, view, assign, and track tasks on the go—perfect for field teams and remote work.",
     },
     {
       question: "Can I see an overview of all tasks for a project?",
@@ -55,7 +55,7 @@ const QuestionAnswer = () => {
       question: "Are team members notified when they’re assigned a task?",
       key: 8,
       answer:
-        "Yes, they’ll receive instant notifications via Memate, ensuring nothing slips through the cracks.",
+        "Yes, they’ll receive instant notifications via meMate, ensuring nothing slips through the cracks.",
     },
     {
       question: "Can I edit or reassign tasks after they’ve been created?",

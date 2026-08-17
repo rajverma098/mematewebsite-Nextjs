@@ -22,7 +22,7 @@ const PricingComponent = () => {
           />
         </div>
         <div className={style.midheading}>
-          <h1>MeMate Pricing | Affordable All-in-One Business Software</h1>
+          <h1>meMate Pricing | Affordable All-in-One Business Software</h1>
         </div>
      
       </div>

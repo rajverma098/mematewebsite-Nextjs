@@ -8,7 +8,7 @@ const StartupsHeader = () => {
   return (
     <>
      <div className='NextHeaderWrap'>
-      <h1>Business Management Software for Startups | MeMate</h1>
+      <h1>Business Management Software for Startups | meMate</h1>
       <h2>startups and new companies</h2>
       <p>All-in-one business management software designed to help startups and new companies<br/> stay organized and grow with confidence.</p>
     </div>

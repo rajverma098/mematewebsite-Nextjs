@@ -6,7 +6,7 @@ const PhotoHeader = () => {
     <>
 
      <div className='NextHeaderWrap'>
-      <h1>Studio Management Software for Photo & Video Teams | MeMate</h1>
+      <h1>Studio Management Software for Photo & Video Teams | meMate</h1>
       <h2>software for photographers & videographers </h2>
       <p>Simplify project management, team collaboration, and production workflows for your photography and video agency.</p>
     </div>

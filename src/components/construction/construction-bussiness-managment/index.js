@@ -18,7 +18,7 @@ const ConstructionBussinessManagement = () => {
     data-aos-anchor-placement="top-bottom">
       <div className='industrySectionHead'>
      <h5>meMate is your solution.</h5>
-     <p>From quoting to invoicing — MeMate replaces spreadsheets, apps, and <br/>whiteboards with a single system.</p>
+     <p>From quoting to invoicing — meMate replaces spreadsheets, apps, and <br/>whiteboards with a single system.</p>
       </div>
       <div className='industry-bussiness-category-wrapper'>
             <ConstructionEfficient/>

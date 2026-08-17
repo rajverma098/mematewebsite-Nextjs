@@ -10,16 +10,16 @@ const QuestionAnswer = () => {
 
   const questions = [
     {
-      question: "Can I chat with both employees and contractors in Memate?",
+      question: "Can I chat with both employees and contractors in meMate?",
       key: 1,
       answer:
-        "Yes, Memate allows you to connect with both your internal team and external contractors in one centralised, secure chat space.",
+        "Yes, meMate allows you to connect with both your internal team and external contractors in one centralised, secure chat space.",
     },
     {
       question: "How do I organise chats by project?",
       key: 2,
       answer:
-        "Each project in Memate can have its own dedicated chat. Just assign team members to the project, and they’ll automatically join the relevant discussion group.",
+        "Each project in meMate can have its own dedicated chat. Just assign team members to the project, and they’ll automatically join the relevant discussion group.",
     },
     {
       question: "Is it possible to control who sees each chat?",
@@ -43,7 +43,7 @@ const QuestionAnswer = () => {
       question: "Can contractors use the chat from their phones?",
       key: 6,
       answer:
-        "They sure can. Contractors can access Memate’s chat feature through the Memate mobile app for instant communication on the go.",
+        "They sure can. Contractors can access meMate’s chat feature through the meMate mobile app for instant communication on the go.",
     },
     {
       question: "Is the Internal Chat secure?",
@@ -66,7 +66,7 @@ const QuestionAnswer = () => {
     {
       question: "Do I need to use any third-party tools for chat?",
       answer:
-        "Nope! Memate’s Internal Chat is fully built-in, so you don’t need Slack, WhatsApp, or any other external messaging apps.",
+        "Nope! meMate’s Internal Chat is fully built-in, so you don’t need Slack, WhatsApp, or any other external messaging apps.",
       key: 10,
     },
   ];

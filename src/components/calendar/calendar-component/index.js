@@ -25,7 +25,7 @@ const CalendarsComponent = () => {
         viewport={{ once: true, amount: 0.6 }}
         transition={{ type: "spring", stiffness: 180, damping: 18, mass: 0.6, delay: 1  }}
         >
-          Keep your team aligned and your projects on schedule with Memate’s all-in-one Company Calendar. From task deadlines and team events to contractor schedules and key project milestones—it’s all visible, organised, and easy to manage in a single place. Say goodbye to missed meetings and overlapping plans.
+          Keep your team aligned and your projects on schedule with meMate’s all-in-one Company Calendar. From task deadlines and team events to contractor schedules and key project milestones—it’s all visible, organised, and easy to manage in a single place. Say goodbye to missed meetings and overlapping plans.
           </motion.span>
         </div>
         <div className="sales-component-button-wrapper">

@@ -80,7 +80,7 @@ const NewsAndUpdate = ({ postsLatest }) => {
       <div className="success-stories-section">
         <div className="section-header" style={{ textAlign: 'center', marginBottom: '50px' }}>
           <h2>News and Updates</h2>
-          <p>Stay up to date with the latest news from MeMate and our newest software updates</p>
+          <p>Stay up to date with the latest news from meMate and our newest software updates</p>
         </div>
         <div className="newsandUpdates">
           <div className="NewsflexWrap">
@@ -106,7 +106,7 @@ const NewsAndUpdate = ({ postsLatest }) => {
                         </Link>
                       </div>
                       <div className="textBox">
-                        <span>{formatDate(post.publish_date)} | {post.author || 'MeMate Team'}</span>
+                        <span>{formatDate(post.publish_date)} | {post.author || 'meMate Team'}</span>
                         <h3 className="postH2Title">
                           <Link href={`/news/${post.slug}`}>
                             {post.title}

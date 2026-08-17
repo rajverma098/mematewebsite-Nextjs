@@ -91,7 +91,7 @@ const SupplierDatabase = () => {
           data-aos-once="false"
           data-aos-anchor-placement="top-bottom"
         >
-          <h1 className="supplierText supdatabaseHeadFS">Get Your Business Listed in the MeMate Supplier Directory</h1>
+          <h1 className="supplierText supdatabaseHeadFS">Get Your Business Listed in the meMate Supplier Directory</h1>
         </div>
         <div
           className={style.smallheading}

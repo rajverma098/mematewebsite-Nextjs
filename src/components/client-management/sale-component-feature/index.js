@@ -37,7 +37,7 @@ const SalesComponentFeature = () => {
             duration: 5,
           }}
         >
-          MeMate
+          meMate
         </motion.h2>
 
         <motion.span

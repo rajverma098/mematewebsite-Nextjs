@@ -11,7 +11,7 @@ const KnowledgeBaseComponent = () => {
     <>
       <div className="kb-main-section">
         <div className="kb-main-heading">knowledge <br /> base</div>
-        <h1 className="metatags">MeMate Help Centre | Tutorials & Feature Walkthroughs</h1>
+        <h1 className="metatags">meMate Help Centre | Tutorials & Feature Walkthroughs</h1>
         <div className="kb-main-image KnowledgeBaseMain">
           <img src={KnowledgeBaseMain} alt="contact us main image"  />
         </div>

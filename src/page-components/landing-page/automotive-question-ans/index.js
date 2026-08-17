@@ -9,37 +9,37 @@ const AutomotiveQuesitonAndAns = () => {
 
   const questions = [
     {
-      question: "What is MeMate?",
+      question: "What is meMate?",
       key: 0,
       answer:
-        "MeMate is an all-in-one business management software that helps companies manage projects, teams, clients, finances, and workflows from one platform.",
+        "meMate is an all-in-one business management software that helps companies manage projects, teams, clients, finances, and workflows from one platform.",
     },
     {
-      question: "Is MeMate suitable for small businesses?",
+      question: "Is meMate suitable for small businesses?",
       key: 1,
       answer:
-        "Yes. MeMate is designed as a powerful small business management software, offering simple setup, intuitive workflows, and the ability to scale as your business grows.",
+        "Yes. meMate is designed as a powerful small business management software, offering simple setup, intuitive workflows, and the ability to scale as your business grows.",
     },
     {
       question:
-        "What type of businesses uses MeMate?",
+        "What type of businesses uses meMate?",
       key: 2,
       answer:
-        "MeMate is ideal for service-based businesses, agencies, trades, consultants, and growing SMEs that need better control over operations and reporting.",
+        "meMate is ideal for service-based businesses, agencies, trades, consultants, and growing SMEs that need better control over operations and reporting.",
     },
     {
       question:
-        "Can MeMate replace multiple tools?",
+        "Can meMate replace multiple tools?",
       key: 3,
       answer:
-        "Absolutely. MeMate is built to replace spreadsheets, CRMs, project tools, invoicing software, and scheduling apps with one integrated solution.",
+        "Absolutely. meMate is built to replace spreadsheets, CRMs, project tools, invoicing software, and scheduling apps with one integrated solution.",
     },
     {
       question:
-        "Is MeMate cloud-based?",
+        "Is meMate cloud-based?",
       key: 4,
       answer:
-        "Yes. MeMate is a secure, cloud-based company management software accessible from anywhere.",
+        "Yes. meMate is a secure, cloud-based company management software accessible from anywhere.",
     },
   
   ];

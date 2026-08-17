@@ -230,7 +230,7 @@ Indicative estimate based on operational, financial and risk inputs.
  
  <div className="value-block uplift-block">
  <p>
- On average, businesses using MeMate<br /> increased their valuation by 12.9%
+ On average, businesses using meMate<br /> increased their valuation by 12.9%
  </p>
  <h2 className="uplift-value gradientText">
  ${uplift > 0 ? uplift.toLocaleString() : "0"}

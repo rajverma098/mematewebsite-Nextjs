@@ -13,7 +13,7 @@ const IndustryPowerfulStreamline = () => {
 <h4>Powerful</h4>
 <h3>Streamlined</h3>
 <h2>Project Management</h2>
-    <p> MeMate offers powerful project management capabilities, allowing you to efficiently track and manage all 
+    <p> meMate offers powerful project management capabilities, allowing you to efficiently track and manage all 
       your creative projects. From initial concept to final delivery, our software ensures that your team stays 
       organised and productive throughout the entire creative workflow.</p>
      <div className="spaceButtonGap">

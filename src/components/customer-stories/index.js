@@ -39,7 +39,7 @@ function CustomerStories() {
 <>
 <div className="StoriesNewWrap">
 <div className="StoriesHead">
-  <h1>Success Stories: Real Businesses, Real Results with MeMate</h1>
+  <h1>Success Stories: Real Businesses, Real Results with meMate</h1>
   <h2 className="smokeyGradient">customer stories</h2>
   {/* <h3>Power of meMate Put to Work</h3> */}
   <p>How Small Businesses Use meMate in Their Everyday Activities to Increase Profitability</p>

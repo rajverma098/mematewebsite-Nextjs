@@ -12,6 +12,7 @@ const MacAppStoreIcon = "https://memate-website.s3.ap-southeast-2.amazonaws.com/
 const MicrosoftAppStoreIcon = "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/microsoft-app-store.svg"
 
 const Footer = () => {
+  let date = new Date;
   return (
     <>
     <div className="footer-section">
@@ -127,20 +128,20 @@ const Footer = () => {
             <div className="links">
               <p className="link-heading">Compare</p>
               <div className="page-links" style={{width: "149px"}}>
-              <Link href="/compare/memate-vs-quickbooks">MeMate vs QuickBooks</Link>
-              <Link href="/compare/memate-vs-myob">MeMate vs Myob</Link>
-              <Link href="/compare/memate-vs-jira">MeMate Vs Jira</Link>
-              <Link href="/compare/memate-vs-monday">MeMate vs Monday</Link>
-              <Link href="/compare/memate-vs-trello">MeMate vs Trello</Link>
-              <Link href="/compare/memate-vs-salesForce">MeMate vs SalesForce</Link>
-              <Link href="/compare/meMate-vs-airtable">MeMate vs Airtable</Link>
-              <Link href="/compare/memate-vs-wrike">MeMate vs Wrike</Link>
-              <Link href="/compare/memate-vs-servicem8">MeMate vs Servicem8</Link>
-              <Link href="/compare/memate-vs-reckon">MeMate vs Reckon</Link>
-              <Link href="/compare/memate-vs-xero">MeMate vs Xero</Link>
-              <Link href="/compare/memate-vs-microsoft-project">MeMate vs ms Project</Link>
-              <Link href="/compare/memate-vs-sage">MeMate vs Sage</Link>
-              <Link href="/compare/memate-vs-netsuite">MeMate vs NetSuite</Link>
+              <Link href="/compare/memate-vs-quickbooks">meMate vs QuickBooks</Link>
+              <Link href="/compare/memate-vs-myob">meMate vs Myob</Link>
+              <Link href="/compare/memate-vs-jira">meMate Vs Jira</Link>
+              <Link href="/compare/memate-vs-monday">meMate vs Monday</Link>
+              <Link href="/compare/memate-vs-trello">meMate vs Trello</Link>
+              <Link href="/compare/memate-vs-salesForce">meMate vs SalesForce</Link>
+              <Link href="/compare/meMate-vs-airtable">meMate vs Airtable</Link>
+              <Link href="/compare/memate-vs-wrike">meMate vs Wrike</Link>
+              <Link href="/compare/memate-vs-servicem8">meMate vs Servicem8</Link>
+              <Link href="/compare/memate-vs-reckon">meMate vs Reckon</Link>
+              <Link href="/compare/memate-vs-xero">meMate vs Xero</Link>
+              <Link href="/compare/memate-vs-microsoft-project">meMate vs ms Project</Link>
+              <Link href="/compare/memate-vs-sage">meMate vs Sage</Link>
+              <Link href="/compare/memate-vs-netsuite">meMate vs NetSuite</Link>
               </div>
             </div>
             <div className="links">
@@ -163,7 +164,7 @@ const Footer = () => {
         </div>
         <div className="section3 copyrightWrapper">
           <div className="copyright">
-           <p>Copyright © 2022-2026 | MeMate</p>
+           <p>Copyright © 2022-{date.getFullYear()} | meMate</p>
             <div className="copyright-links">
               <LazyLoadImage
                 alt="contact MeMate"

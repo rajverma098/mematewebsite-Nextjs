@@ -54,7 +54,7 @@ const article =  {
                         </div>
                 <div className="tmsheadF">
                  <p className="tos-section-headingF" id="section1">
-                   memate
+                   meMate
                  </p>
                 <h1 className="blackH1Tag">Privacy Policy</h1>
              </div>
@@ -91,7 +91,7 @@ const article =  {
 
   <h3>Google User Data Access</h3>
   <p>
-    When users connect their Google account to MeMate, we may access certain Google user
+    When users connect their Google account to meMate, we may access certain Google user
     data via Google APIs, including:
   </p>
   <ul>
@@ -103,7 +103,7 @@ const article =  {
   <h3>How We Use This Data</h3>
   <p>We use this data only to:</p>
   <ul>
-    <li>Display analytics dashboards inside MeMate</li>
+    <li>Display analytics dashboards inside meMate</li>
     <li>Provide insights and reports to users</li>
     <li>Improve user experience</li>
   </ul>
@@ -147,7 +147,7 @@ const article =  {
 
   <h3>Google API Compliance</h3>
   <p>
-    MeMate’s use and transfer of information received from Google APIs will adhere to the
+    meMate’s use and transfer of information received from Google APIs will adhere to the
     Google API Services User Data Policy, including Limited Use requirements.
   </p>
 </div>

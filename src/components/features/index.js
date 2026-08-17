@@ -186,7 +186,7 @@ const FeaturesComponent = () => {
           </span>
         </div>
 
-        <h4 className={style.h4Heading}>No need to juggle ten different apps. MeMate gives you the full toolkit — from client management to quoting, scheduling, and getting paid — all in one spot.</h4>
+        <h4 className={style.h4Heading}>No need to juggle ten different apps. meMate gives you the full toolkit — from client management to quoting, scheduling, and getting paid — all in one spot.</h4>
 
         {featuresData.map((featureCategory, categoryIndex) => (
           <div key={categoryIndex} className={style.mainGridWrap}>

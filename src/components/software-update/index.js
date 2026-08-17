@@ -113,7 +113,7 @@ const SoftwareUpdate = () => {
           <h4>meMate’s</h4>
           <div className="latestUpdatesSU">
             <h2>Latest Updates</h2>
-            <h1 className="h1tagsseo">MeMate Software Updates</h1>
+            <h1 className="h1tagsseo">meMate Software Updates</h1>
           </div>
         </div>
         <div className="parentSU">

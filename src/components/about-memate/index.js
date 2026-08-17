@@ -18,8 +18,8 @@ const AboutMemateComponent = () => {
     data-aos-anchor-placement="top-bottom">
       <h1>Helping Australian</h1>
      <h2>companies</h2>
-     <p>MeMate is a user-friendly, all-in-one business management software. It gives you real-time insights into your company’s performance, helps speed up operations, reduces mistakes, and keeps all your business records in one place.</p>
-     <p>With MeMate, managing your business becomes simpler and more effective, preparing you for the future.</p>
+     <p>meMate is a user-friendly, all-in-one business management software. It gives you real-time insights into your company’s performance, helps speed up operations, reduces mistakes, and keeps all your business records in one place.</p>
+     <p>With meMate, managing your business becomes simpler and more effective, preparing you for the future.</p>
       </div>
       <div className={`${style.centerHeadPages}`} data-aos="fade-up"
     data-aos-offset="50"
@@ -65,13 +65,13 @@ const AboutMemateComponent = () => {
       <div className='aboutSwitchingSection01'>
           <div className='m8InSection01'>
               <div className='m8InFlexLeft'>
-               <h3>The name memate:</h3>
+               <h3>The name meMate:</h3>
                <strong>It’s a uniquely Australian brand identity that blends <br/>function with friendliness.</strong>
                <ul>
                 <li>“Me” — representing yourself or your business, reflecting<br/> personal ownership, simplicity, and directness.</li>
                 <li>“Mate” — a distinctly Australian term for friend, colleague, or<br/> trusted companion. It carries a cultural meaning of reliability, <br/>approachability, and down-to-earth support.</li>
                </ul>
-               <p>Together, MeMate suggests a helpful, easy-to-use system that acts as “your mate in business.” The brand positioning reflects a locally built tool for everyday Australian business owners — not overly corporate or complicated, but something trustworthy, relatable, and effective.</p>
+               <p>Together, meMate suggests a helpful, easy-to-use system that acts as “your mate in business.” The brand positioning reflects a locally built tool for everyday Australian business owners — not overly corporate or complicated, but something trustworthy, relatable, and effective.</p>
               </div>
               <div className='m8InFlexRight'>
                 <img src='https://memate-website.s3.ap-southeast-2.amazonaws.com/aboutbgimg1.jpg' alt='aboutbgimg'/>
@@ -107,7 +107,7 @@ const AboutMemateComponent = () => {
     data-aos-mirror="true"
     data-aos-once="false"
     data-aos-anchor-placement="top-bottom">
-         <h3>Meet the memate team</h3>
+         <h3>Meet the meMate team</h3>
       </div>
       <div className={`${style.teamflexWrap} `} data-aos="fade-up"
     data-aos-offset="50"

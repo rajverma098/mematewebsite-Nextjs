@@ -20,7 +20,7 @@ const ConstructionWorkshop = () => {
           Internal Chat & Team Communication
           </h2>
           <p>
-          Keep your team on the same page—send updates,<br/> job briefs, photos, and checklists via internal chat<br/> built into MeMate. No need for scattered<br/> messaging tools 
+          Keep your team on the same page—send updates,<br/> job briefs, photos, and checklists via internal chat<br/> built into meMate. No need for scattered<br/> messaging tools 
           </p>
            <div className="spaceButtonGap">
        <DarkMemateBlackBut

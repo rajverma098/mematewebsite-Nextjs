@@ -35,7 +35,7 @@ export default function HowItWorks() {
        <BackgroundShape className="hero-bg" />
      <div className="hero-content">
       <div className="how-it-works-header">
-              <h2>Memate</h2>
+              <h2>meMate</h2>
               <div className="sales-heading-works gradientText"> How it works </div>
             </div>
             <Tabs tabs={tabs} />

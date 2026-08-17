@@ -95,7 +95,7 @@ const SliderStories = () => {
         </Link> 
         <div className="customerstoriesitem">
               <div className="category sequel_sans_roman_head">PROvinyl</div>
-              <div className="date-heading-title "><Link className="sequel_sans_roman_head" href='/customer-stories/case-study-provinyl-car-wrapping-business-software'>Running a Car Wrapping Company on MeMate</Link></div>
+              <div className="date-heading-title "><Link className="sequel_sans_roman_head" href='/customer-stories/case-study-provinyl-car-wrapping-business-software'>Running a Car Wrapping Company on meMate</Link></div>
             </div>
             <div className="customerBrandlogo">
             <img src="https://memate-website.s3.ap-southeast-2.amazonaws.com/brand/provinyl-logo_aezk46.png" alt="Camera Fix Logo"  style={{ width: '175.888px' }}/>

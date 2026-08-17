@@ -17,7 +17,7 @@ const ConstructionHeader = () => {
             <span className='leftSpan'>Management Software for</span>
             <h4>Builders, Trades & Construction Teams</h4>
             <p>
-            Run your construction business the smart way — with everything in one dashboard. From job quotes to on-site contractor coordination, MeMate <br/>handles it all.           </p>
+            Run your construction business the smart way — with everything in one dashboard. From job quotes to on-site contractor coordination, meMate <br/>handles it all.           </p>
          <div className='topSpaceGap'>
          <DarkMemateBlackBut
       link1="https://app.memate.com.au/requestdemo"

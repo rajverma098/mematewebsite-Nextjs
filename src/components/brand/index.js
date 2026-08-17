@@ -20,7 +20,7 @@ const BrandComponent = () => {
       <h2 className="latest-update-text latest-brandMain latest-update-head memate-brand headerPadding">
       brand <br></br>overview
       </h2>
-      <h1 className="heading-text-blog">MeMate Brand Assets & Media Kit</h1>
+      <h1 className="heading-text-blog">meMate Brand Assets & Media Kit</h1>
       </div>
       <MiddleSection /> 
       <div>

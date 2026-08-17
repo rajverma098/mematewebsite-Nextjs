@@ -31,7 +31,7 @@ const ContactUsComponent = () => {
           />
           </div>
         <div className="mid-headingc">
-          <h1 className="h1tags">Get in Touch with MeMate – Support, Demos & Enquiries</h1>
+          <h1 className="h1tags">Get in Touch with meMate – Support, Demos & Enquiries</h1>
           {/* <p>a friendly memate specialist is ready to help.</p> */}
         </div>
         <div className="small-headingc">

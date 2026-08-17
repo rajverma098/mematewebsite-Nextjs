@@ -13,7 +13,7 @@ const SalesComponent = () => {
          viewport={{ once: true, amount: 0.6 }}
          transition={{ type: "spring", stiffness: 180, damping: 18, mass: 0.6, delay: 0.5 }}
        >
-         Business Reporting Software for Aussie Businesses | MeMate
+         Business Reporting Software for Aussie Businesses | meMate
        </motion.h1>
        <div className="sales-headingF gradientText">reports</div>
       <div className="sales-componet-content-wrapperF client-component-para">

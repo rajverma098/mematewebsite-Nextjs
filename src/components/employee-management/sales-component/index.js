@@ -13,7 +13,7 @@ const SalesComponent = () => {
          viewport={{ once: true, amount: 0.6 }}
          transition={{ type: "spring", stiffness: 180, damping: 18, mass: 0.6, delay: 0.5 }}
        >
-        Manage Staff, Shifts & Tasks with MeMate Employee Management System
+        Manage Staff, Shifts & Tasks with meMate Employee Management System
        </motion.h1>
        <div className="sales-headingF gradientText">employee<br></br>management</div>
       <div className="sales-componet-content-wrapperF client-component-para">
@@ -25,7 +25,7 @@ const SalesComponent = () => {
         viewport={{ once: true, amount: 0.6 }}
         transition={{ type: "spring", stiffness: 180, damping: 18, mass: 0.6, delay: 1  }}
         >
-         MeMate allows you to use time tracking and clock-in/clock-out functionality for your office team members, making it an all-in-one solution for managing your company’s workforce.
+         meMate allows you to use time tracking and clock-in/clock-out functionality for your office team members, making it an all-in-one solution for managing your company’s workforce.
           </motion.span>
         </div>
         <div className="sales-component-button-wrapper">

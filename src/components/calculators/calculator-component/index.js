@@ -25,7 +25,7 @@ const CalculatorComponent = () => {
         viewport={{ once: true, amount: 0.6 }}
         transition={{ type: "spring", stiffness: 180, damping: 18, mass: 0.6, delay: 1  }}
         >
-         Memate’s flexible Calculator feature lets you build custom calculators designed specifically for your business needs. Whether you’re estimating costs, calculating margins, or managing time and resources—do it all with a simple, robust tool that lives right inside your workflow. No coding needed, just powerful results.
+         meMate’s flexible Calculator feature lets you build custom calculators designed specifically for your business needs. Whether you’re estimating costs, calculating margins, or managing time and resources—do it all with a simple, robust tool that lives right inside your workflow. No coding needed, just powerful results.
           </motion.span>
         </div>
         <div className="sales-component-button-wrapper">

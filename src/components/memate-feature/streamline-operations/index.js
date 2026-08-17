@@ -40,7 +40,7 @@ const MeMateFeatureStreamline = () => {
                 </div>
             
               <div className="operation-right">
-                <span className="gradientAnimenate gradiientColor smokeyGradient"> memate </span>
+                <span className="gradientAnimenate gradiientColor smokeyGradient"> meMate </span>
                 <div className="max-image">
             <motion.div
   className="downClickButton"

@@ -10,63 +10,63 @@ const QuestionAnswer = () => {
 
   const questions = [
     {
-      question: "What features does memate offer as a Sales Management Software?",
+      question: "What features does meMate offer as a Sales Management Software?",
       key: 1,
       answer:
-        "Memate, as a comprehensive Sales Management Software, offers a range of features including real-time sales tracking, customer relationship management, and performance analytics to help businesses streamline their sales operations and enhance productivity.",
+        "meMate, as a comprehensive Sales Management Software, offers a range of features including real-time sales tracking, customer relationship management, and performance analytics to help businesses streamline their sales operations and enhance productivity.",
     },
     {
-      question: "How does memate enhance efficiency with its Sales Pipeline Management Tool?",
+      question: "How does meMate enhance efficiency with its Sales Pipeline Management Tool?",
       key: 2,
       answer:
-        "Memate’s Sales Pipeline Management Tool provides a visual representation of your sales pipeline, allowing you to effectively monitor and manage each stage of the sales process. This tool helps in identifying bottlenecks and optimizing sales strategies for better conversion rates.",
+        "meMate’s Sales Pipeline Management Tool provides a visual representation of your sales pipeline, allowing you to effectively monitor and manage each stage of the sales process. This tool helps in identifying bottlenecks and optimizing sales strategies for better conversion rates.",
     },
     {
-      question: "What advantages does memate’s CRM Sales Tool offer for Small Businesses?",
+      question: "What advantages does meMate’s CRM Sales Tool offer for Small Businesses?",
       key: 3,
       answer:
         "Yes, our CRM system includes features specifically designed to manage prospective clients. It helps you track leads, nurture prospects, and convert them into loyal customers.",
     },
     {
-      question: "Can memate be used for Sales Tracking in various industries?",
+      question: "Can meMate be used for Sales Tracking in various industries?",
       key: 4,
       answer:
-        "Yes, memate’s Sales Tracking Software is versatile and can be effectively used across different industries. It offers customizable features that cater to the unique needs of each industry, enhancing tracking accuracy and providing valuable insights into sales trends.",
+        "Yes, meMate’s Sales Tracking Software is versatile and can be effectively used across different industries. It offers customizable features that cater to the unique needs of each industry, enhancing tracking accuracy and providing valuable insights into sales trends.",
     },
     {
-      question: "What makes memate a reliable Lead Management Solution?",
+      question: "What makes meMate a reliable Lead Management Solution?",
       key: 5,
       answer:
-        "Memate provides a robust Lead Management Solution that automates the capture, tracking, and nurturing of leads. It integrates seamlessly with marketing efforts to ensure that no opportunity is missed and helps in converting leads into loyal customers.",
+        "meMate provides a robust Lead Management Solution that automates the capture, tracking, and nurturing of leads. It integrates seamlessly with marketing efforts to ensure that no opportunity is missed and helps in converting leads into loyal customers.",
     },
     {
-      question: "How does memate optimise business operations with its Sales Process Optimisation Software?",
+      question: "How does meMate optimise business operations with its Sales Process Optimisation Software?",
       key: 6,
       answer:
-        "Memate’s Sales Process Optimisation Software uses advanced analytics and automation tools to streamline and enhance sales processes. It reduces redundancy, accelerates workflows, and ensures that sales efforts are aligned with business goals.",
+        "meMate’s Sales Process Optimisation Software uses advanced analytics and automation tools to streamline and enhance sales processes. It reduces redundancy, accelerates workflows, and ensures that sales efforts are aligned with business goals.",
     },
     {
-      question: "What is unique about memate’s Pipeline Management Software?",
+      question: "What is unique about meMate’s Pipeline Management Software?",
       key: 7,
       answer:
-        "Memate’s Pipeline Management Software stands out for its intuitive design and powerful analytics. It helps businesses monitor their sales pipeline in real-time, providing actionable insights to prioritize and push deals towards closure more efficiently.",
+        "meMate’s Pipeline Management Software stands out for its intuitive design and powerful analytics. It helps businesses monitor their sales pipeline in real-time, providing actionable insights to prioritize and push deals towards closure more efficiently.",
     },
     {
-      question: "How can memate’s Sales Funnel for Small Business help in growth?",
+      question: "How can meMate’s Sales Funnel for Small Business help in growth?",
       key: 8,
       answer:
-        "Memate’s Sales Funnel tool is specifically designed for small businesses, focusing on guiding potential customers through each stage of the buying process. It helps in refining marketing strategies and improving conversion rates, essential for growth and scalability.",
+        "meMate’s Sales Funnel tool is specifically designed for small businesses, focusing on guiding potential customers through each stage of the buying process. It helps in refining marketing strategies and improving conversion rates, essential for growth and scalability.",
     },
     {
-      question: "What features does memate include in its Sales Pipeline Software?",
+      question: "What features does meMate include in its Sales Pipeline Software?",
       key: 9,
       answer:
-        "Memate’s Sales Pipeline Software includes features like automated task management, detailed reporting, and customer engagement tracking. These features help in maintaining a healthy sales pipeline and ensure consistent sales growth.",
+        "meMate’s Sales Pipeline Software includes features like automated task management, detailed reporting, and customer engagement tracking. These features help in maintaining a healthy sales pipeline and ensure consistent sales growth.",
     },
     {
-      question: "Why choose memate for Lead Management Software?",
+      question: "Why choose meMate for Lead Management Software?",
       answer:
-        "Choosing memate for Lead Management Software means selecting a system that offers comprehensive lead segmentation, automated follow-ups, and detailed performance reporting, making it easier to manage leads and convert them into successful sales.",
+        "Choosing meMate for Lead Management Software means selecting a system that offers comprehensive lead segmentation, automated follow-ups, and detailed performance reporting, making it easier to manage leads and convert them into successful sales.",
       key: 10,
     },
   ];
