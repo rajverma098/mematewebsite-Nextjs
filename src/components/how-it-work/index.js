@@ -2,6 +2,8 @@
 
 import Tabs from "./Tabs";
 import Business from "./Business";
+import BusinessMap from "./BusinessMap";
+import WorkMap from "./WorkMap";
 import WorkTabs from "./WorkTabs";
 import "./HowItWorks.css";
 import BackgroundShape from "./BackgroundShape";

@@ -81,6 +81,7 @@ h1.midheading{
         line-height: 24px; 
         &:focus-visible {
             outline: -webkit-focus-ring-color auto 0px;
+            outline: 0;
         }
         &:focus{
             border: 0;

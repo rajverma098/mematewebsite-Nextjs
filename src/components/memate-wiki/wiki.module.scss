@@ -266,6 +266,10 @@ element.style {
         width: 100%;
         border: 0;
         margin-left: 4px;
+        &:focus-visible {
+            outline: -webkit-focus-ring-color auto 0px;
+            outline: 0;
+        }
        }
   }
 

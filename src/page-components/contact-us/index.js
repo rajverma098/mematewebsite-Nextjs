@@ -9,7 +9,7 @@ const ContactUsPage = () => {
     <AppWrapper>
     <Layout>
         <div className="bgshadowwrapper">
-      <ContactUsComponent/>   
+      <ContactUsComponent/>    
       </div> 
     </Layout>
     </AppWrapper>

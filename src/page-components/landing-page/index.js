@@ -64,7 +64,7 @@ const LandingPage = ({ postsLatest }) => {
         ...yPositions.map((y) => `right ${y}`),
       ].join(", ");
   
-      salesFeatureWrapper.style.backgroundImage = images;
+     salesFeatureWrapper.style.backgroundImage = images;
       salesFeatureWrapper.style.backgroundRepeat = "no-repeat";
       salesFeatureWrapper.style.backgroundPosition = positions;
       salesFeatureWrapper.style.backgroundSize = "auto";
@@ -74,7 +74,7 @@ const LandingPage = ({ postsLatest }) => {
   return (
     <>
       {/* <AppWrapper> */}
-        <SmoothScroll/>
+        <SmoothScroll/> 
         <Layout>
         
           <BussinessManagement />   

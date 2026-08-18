@@ -15,6 +15,7 @@ html {
     position: sticky;
     top: 0;
 }
+
 .imageResizeHeight img {
     width: 80%;
     margin: 0 auto;

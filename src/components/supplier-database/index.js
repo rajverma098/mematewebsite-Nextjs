@@ -136,7 +136,7 @@ const SupplierDatabase = () => {
           <p>Find the business you need</p>
         </div>
         <div className={style.databaseWrapper}>
-          <DataBase 
+          <DataBase   
             supplier={supplier}
             loading={loading}
             totalSupplier={totalSupplier}

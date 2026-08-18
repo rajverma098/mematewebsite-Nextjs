@@ -135,19 +135,13 @@
 }
 
 
-.animated-dash {
-  stroke-dasharray: 3 6;
-  stroke-linecap: round;
-  animation: dash-flow 1.5s linear infinite;
-  will-change: stroke-dashoffset;
+/* .animated-dash {
+  stroke-dasharray: 4 4;
+  animation: dash-flow 1s linear infinite;
 }
 
 @keyframes dash-flow {
-  from {
-    stroke-dashoffset: 0;
-  }
-
   to {
-    stroke-dashoffset: -9;
+    stroke-dashoffset: -8;
   }
-}
+} */

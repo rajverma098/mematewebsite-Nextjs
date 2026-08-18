@@ -199,3 +199,17 @@
     margin-bottom: 21px;
 }
   }
+
+
+.btnFormNewDesign ,.btnFormNewDesign1{
+  border: 0;
+  background: transparent;
+}
+.btnFormNewDesign .tron-button-in  {
+    background: hsl(0, 0%, 99%);
+    border: 1px solid #fff;
+    color: #000;
+}
+.btnFormNewDesign .tron-button-in span {
+    color: #000;
+}

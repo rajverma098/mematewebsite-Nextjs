@@ -11,6 +11,7 @@ import WebsiteUrlIcon from "../../svg/WebsiteUrlIcon";
 import EmailIcon from "../../svg/EmailIcon";
 import AddressIcon from "../../svg/AddressIcon";
 import Images from "../../assests/blog-images";
+import FormMemateBlackBut from "@/layout/hover-button/FormMemateBlackBut";
 const FilterIcon =
   "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/search-filter.svg";
 // const LogoFilter = "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/logo-filter.svg";
@@ -208,9 +209,18 @@ const DataBase = ({
       </ul>
 
       {totalSupplier > supplier?.length && (
-        <button onClick={onNext} className={style.loadmoreSupplyersbut}>
-          {loading ? "Loading..." : "Load More"}
-        </button>
+     
+<button
+  onClick={onNext}
+  className={`btnFormNewDesign1 ${style.loadmoreSupplyersbut}`}
+>
+  <FormMemateBlackBut
+    className="alignLeft"
+    target="_blank"
+    buttonTextdark={loading ? "Loading..." : "Load More"}
+    showButton1={true}
+  />
+</button>
       )}
     </div>
   );

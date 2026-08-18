@@ -8,6 +8,7 @@ import { Dialog } from 'primereact/dialog';
 import PhoneInput, { getCountryCallingCode } from 'react-phone-number-input';
 import 'react-phone-number-input/style.css';
 import ReCAPTCHA from 'react-google-recaptcha';
+import FormMemateBlackBut from "@/layout/hover-button/FormMemateBlackBut";
 
 // ✅ API BASE
 const API_BASE_URL = process.env.API_BASE_URL || "https://app.memate.com.au/api/v1";
@@ -125,39 +126,17 @@ const CallbackNow = () => {
 
   return (
     <>
-      {/* BUTTON */}
-           <div className="query-button ">
-   <button onClick={() => setVisible(true)} className="btnHoNewDesign">
-  <svg width="170" height="49" viewBox="0 0 170 49">
-    
-    <defs>
-      <linearGradient id="borderGradient" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="170" y2="0">
-        <stop offset="0%" stopColor="#1ab2ff"/>
-        <stop offset="100%" stopColor="#ffb258"/>
-      </linearGradient>
-    </defs>
-
-    <rect
-      x="1"
-      y="1"
-      width="168"
-      height="47"
-      rx="25"
-      ry="25"
-      className="border-line"
-    />
-
-  </svg>
-
-  <span>Request</span>
-</button>
-
-
-
-
-
+<div className="query-button ">
+ <button onClick={() => setVisible(true)} className="btnFormNewDesign">
+  <FormMemateBlackBut 
+        className="alignLeft"
+        target="_blank"
+        buttonTextdark="Request"
+        showButton1={true}
+  />
+  </button>
         </div>
-      {/* MODAL */}
+
       <Dialog
         visible={visible}
         style={{ width: '566px' }}

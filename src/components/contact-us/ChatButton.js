@@ -2,6 +2,7 @@
 
 import { useEffect, useRef } from "react";
 import { usePathname } from "next/navigation";
+import FormMemateBlackBut from "@/layout/hover-button/FormMemateBlackBut";
 
 export default function ChatButton() {
   const pathname = usePathname();
@@ -93,30 +94,16 @@ export default function ChatButton() {
   }, [pathname]);
 
   return (
-  <button onClick={handleClick} className="btnHoNewDesign openChatBox">
-  <svg width="170" height="49" viewBox="0 0 170 49">
-    
-    <defs>
-      <linearGradient id="borderGradient" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="170" y2="0">
-        <stop offset="0%" stopColor="#1ab2ff"/>
-        <stop offset="100%" stopColor="#ffb258"/>
-      </linearGradient>
-    </defs>
 
-    <rect
-      x="1"
-      y="1"
-      width="168"
-      height="47"
-      rx="25"
-      ry="25"
-      className="border-line"
-    />
+ <button onClick={handleClick} className="btnFormNewDesign openChatBox">
+  <FormMemateBlackBut 
+        className="alignLeft"
+        target="_blank"
+        buttonTextdark="Chat now"
+        showButton1={true}
+  />
+  </button>
 
-  </svg>
-
-  <span> Chat now</span>
-</button>
 
   );
 }
