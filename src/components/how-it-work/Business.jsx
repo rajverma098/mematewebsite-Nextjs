@@ -1,28 +1,44 @@
 import * as React from "react";
 import { useState } from "react";
+import DiagramTooltip from "./DiagramTooltip";
 const tooltipData = [
-  { heading: "Supplier Database", paragraph: "All your contractors and suppliers with full order history and contacts." },
-  { heading: "Sales - Quotes", paragraph: "Where all your quotes are waiting to be calculated or approved." },
-  { heading: "Project", paragraph: "All your ongoing projects in one timeline — clear and visible." },
-  { heading: "Internal Chat", paragraph: "For all your team to communicate internally." },
-  { heading: "Client Database", paragraph: "All client history and contacts for all your clients, stored in one place." },
-  { heading: "Expense", paragraph: "All your bills from all team members, linked to projects or monthly ongoings before they can be processed." },
-  { heading: "Request", paragraph: "All requests coming into one place from your websites, forms or social media." },
-  { heading: "Invoicing", paragraph: "Create invoices, send to clients, send statements and reminders with one click." },
-  { heading: "Employees", paragraph: "Assign shifts to your employees with ease." },
-  { heading: "Contractors", paragraph: "Assign jobs to your contractors based on hourly or fixed rate." },
-  { heading: "Statistics", paragraph: "Simple yet comprehensive — real-time stats of your business activity." },
+  { heading: "Supplier Database", paragraph: "All your contractors and suppliers with full order history and contacts.", color: "#6C48C3" },
+  { heading: "Sales - Quotes", paragraph: "Where all your quotes are waiting to be calculated or approved.", color: "#0284C7" },
+  { heading: "Project", paragraph: "All your ongoing projects in one timeline — clear and visible.", color: "#16A34A" },
+  { heading: "Internal Chat", paragraph: "For all your team to communicate internally.", color: "#65A30D" },
+  { heading: "Client Database", paragraph: "All client history and contacts for all your clients, stored in one place.", color: "#2563EB" },
+  { heading: "Expense", paragraph: "All your bills from all team members, linked to projects or monthly ongoings before they can be processed.", color: "#EF4444" },
+  { heading: "Request", paragraph: "All requests coming into one place from your websites, forms or social media.", color: "#F97368" },
+  { heading: "Invoicing", paragraph: "Create invoices, send to clients, send statements and reminders with one click.", color: "#14B8A6" },
+  { heading: "Employees", paragraph: "Assign shifts to your employees with ease.", color: "#64748B" },
+  { heading: "Contractors", paragraph: "Assign jobs to your contractors based on hourly or fixed rate.", color: "#DB5AA7" },
+  { heading: "Statistics", paragraph: "Simple yet comprehensive — real-time stats of your business activity.", color: "#E08D16" },
 ];
 
 
 const Business = (props) => {
   const [activeBox, setActiveBox] = useState(null);
+  const [tooltip, setTooltip] = useState(null);
 
-  const showTooltip = (index) => setActiveBox(index);
-  const hideTooltip = () => setActiveBox(null);
+  const showTooltip = (index, event) => {
+    const bounds = event.currentTarget.ownerSVGElement.getBoundingClientRect();
+    setActiveBox(index);
+    setTooltip({
+      title: tooltipData[index].heading,
+      description: tooltipData[index].paragraph,
+      color: tooltipData[index].color,
+      x: `${((event.clientX - bounds.left) / bounds.width) * 100}%`,
+      y: `${((event.clientY - bounds.top) / bounds.height) * 100}%`,
+    });
+  };
+  const hideTooltip = () => {
+    setActiveBox(null);
+    setTooltip(null);
+  };
 
 
   return (
+<div className="business-diagram">
 <svg
     width={1100}
     height={600}
@@ -37,7 +53,7 @@ const Business = (props) => {
   }}
   >
 
-    <g filter="url(#filter0_dddd_4025_352791)" onMouseEnter={() => showTooltip(0)} onMouseLeave={hideTooltip} style={{ cursor: "pointer" }}>
+    <g className="business-card" onMouseEnter={(event) => showTooltip(0, event)} onMouseLeave={hideTooltip} style={{ cursor: "pointer" }}>
       <rect x={413} y={7} width={211} height={52} rx={12} fill={activeBox === 0 ? "#825FD8" : "#F7F3FD"} />
       <rect
         x={413.5}
@@ -202,40 +218,9 @@ const Business = (props) => {
         fill={activeBox === 0 ? "#ffffff" : "#6C48C3"}
       />
     </g>
-      {activeBox === 0 && (
-        <foreignObject
-          x={470}
-          y={-10}
-          width={190}
-          height={115}
-          style={{ overflow: "visible", pointerEvents: "none" }}
-        >
-          <div
-            xmlns="http://www.w3.org/1999/xhtml"
-            style={{
-              width: "190px",
-              boxSizing: "border-box",
-              padding: "12px 14px",
-              background: "#ffffff",
-              border: "1px solid #e5e7eb",
-              borderRadius: "8px",
-              boxShadow: "0 8px 24px rgba(0,0,0,0.18)",
-              fontFamily: "inter, sans-serif",
-              zIndex: 999,
-              textAlign: "left",
-            }}
-          >
-            <div style={{ fontSize: "15px", fontWeight: 500, color: "#6C48C3", marginBottom: "6px",letterSpacing: "-0.5%",lineHeight: "100%" }}>
-              {tooltipData[0].heading}
-            </div>
-            <div style={{ fontSize: "13px", color: "#29292B",letterSpacing: "-0.5%", lineHeight: "100%" }}>
-              {tooltipData[0].paragraph}
-            </div>
-          </div>
-        </foreignObject>
-      )}
+      
 
-    <g filter="url(#filter1_dddd_4025_352791)" onMouseEnter={() => showTooltip(1)} onMouseLeave={hideTooltip} style={{ cursor: "pointer" }}>
+    <g className="business-card" onMouseEnter={(event) => showTooltip(1, event)} onMouseLeave={hideTooltip} style={{ cursor: "pointer" }}>
       <rect x={222} y={211} width={184} height={52} rx={12} fill={activeBox === 1 ? "#0284C7" : "#F0F9FF"} />
       <rect
         x={222.5}
@@ -261,39 +246,9 @@ const Business = (props) => {
         fill={activeBox === 1 ? "#ffffff" : "#0284C7"}
       />
     </g>
-      {activeBox === 1 && (
-        <foreignObject
-          x={260}
-          y={190}
-          width={190}
-          height={115}
-          style={{ overflow: "visible", pointerEvents: "none", zIndex: 999 }}
-        >
-          <div
-            xmlns="http://www.w3.org/1999/xhtml"
-            style={{
-              width: "190px",
-              boxSizing: "border-box",
-              padding: "12px 14px",
-              background: "#ffffff",
-              border: "1px solid #e5e7eb",
-              borderRadius: "8px",
-              boxShadow: "0 8px 24px rgba(0,0,0,0.18)",
-              fontFamily: "inter, sans-serif",
-              zIndex: 999,
-              textAlign: "left",
-            }}
-          >
-             <div style={{ fontSize: "15px", fontWeight: 500, color: "#0284C7", marginBottom: "6px",letterSpacing: "-0.5%",lineHeight: "100%" }}>
-              {tooltipData[1].heading}
-            </div>
-            <div style={{ fontSize: "13px", color: "#29292B",letterSpacing: "-0.5%", lineHeight: "100%" }}>
-              {tooltipData[1].paragraph}
-            </div></div>
-        </foreignObject>
-      )}
+      
 
-    <g filter="url(#filter2_dddd_4025_352791)" onMouseEnter={() => showTooltip(2)} onMouseLeave={hideTooltip} style={{ cursor: "pointer" }}>
+    <g className="business-card" onMouseEnter={(event) => showTooltip(2, event)} onMouseLeave={hideTooltip} style={{ cursor: "pointer" }}>
       <rect x={456} y={211} width={126} height={52} rx={12} fill={activeBox === 2 ? "#16A34A" : "#F0FDF4"} />
       <rect
         x={456.5}
@@ -376,39 +331,9 @@ const Business = (props) => {
         fill={activeBox === 2 ? "#F0FDF4" : "#22C55E"}
       />
     </g>
-      {activeBox === 2 && (
-        <foreignObject
-          x={440}
-          y={200}
-          width={190}
-          height={115}
-          style={{ overflow: "visible", pointerEvents: "none" }}
-        >
-          <div
-            xmlns="http://www.w3.org/1999/xhtml"
-            style={{
-              width: "190px",
-              boxSizing: "border-box",
-              padding: "12px 14px",
-              background: "#ffffff",
-              border: "1px solid #e5e7eb",
-              borderRadius: "8px",
-              boxShadow: "0 8px 24px rgba(0,0,0,0.18)",
-              fontFamily: "inter, sans-serif",
-              zIndex: 999,
-              textAlign: "left",
-            }}
-          >
-           <div style={{ fontSize: "15px", fontWeight: 500, color: "#22C55E", marginBottom: "6px",letterSpacing: "-0.5%",lineHeight: "100%" }}>
-              {tooltipData[2].heading}
-            </div>
-            <div style={{ fontSize: "13px", color: "#29292B",letterSpacing: "-0.5%", lineHeight: "100%" }}>
-              {tooltipData[2].paragraph}
-            </div></div>
-        </foreignObject>
-      )}
+      
 
-    <g filter="url(#filter3_dddd_4025_352791)" onMouseEnter={() => showTooltip(3)} onMouseLeave={hideTooltip} style={{ cursor: "pointer" }}>
+    <g className="business-card" onMouseEnter={(event) => showTooltip(3, event)} onMouseLeave={hideTooltip} style={{ cursor: "pointer" }}>
       <rect x={772} y={7} width={170} height={52} rx={12} fill={activeBox === 3 ? "#65A30D" : "#F6FFE9"}  />
       <rect
         x={772.5}
@@ -432,41 +357,9 @@ const Business = (props) => {
       fill={activeBox === 3 ? "#ffffff" : "#84CC16"}
       />
     </g>
-      {activeBox === 3 && (
-        <foreignObject
-          x={800}
-          y={-5}
-          width={190}
-          height={115}
-          style={{ overflow: "visible", pointerEvents: "none" }}
-        >
-          <div
-            xmlns="http://www.w3.org/1999/xhtml"
-            style={{
-             width: "190px",
-              boxSizing: "border-box",
-              padding: "12px 14px",
-              background: "#ffffff",
-              border: "1px solid #e5e7eb",
-              borderRadius: "8px",
-              boxShadow: "0 8px 24px rgba(0,0,0,0.18)",
-              fontFamily: "inter, sans-serif",
-              zIndex: 999,
-              textAlign: "left",
-            }}
-          >
-             <div style={{ fontSize: "15px", fontWeight: 500, color: "#84CC16", marginBottom: "6px",letterSpacing: "-0.5%",lineHeight: "100%" }}>
-              {tooltipData[3].heading}
-            </div>
-            <div style={{ fontSize: "13px", color: "#29292B",letterSpacing: "-0.5%", lineHeight: "100%" }}>
-              {tooltipData[3].paragraph}
-            </div>
-          
-          </div>
-        </foreignObject>
-      )}
+      
 
-    <g filter="url(#filter4_dddd_4025_352791)" onMouseEnter={() => showTooltip(4)} onMouseLeave={hideTooltip} style={{ cursor: "pointer" }}>
+    <g className="business-card" onMouseEnter={(event) => showTooltip(4, event)} onMouseLeave={hideTooltip} style={{ cursor: "pointer" }}>
       <rect x={217} y={109} width={193} height={52} rx={12} fill={activeBox === 4 ? "#2563EB" : "#F1F5FD"} />
       <rect
         x={217.5}
@@ -560,40 +453,9 @@ const Business = (props) => {
         fill={activeBox === 4 ? "#fff" : "#3A84DA"}
       />
     </g>
-      {activeBox === 4 && (
-        <foreignObject
-          x={250.5}
-          y={90}
-          width={190}
-          height={115}
-          style={{ overflow: "visible", pointerEvents: "none" }}
-        >
-          <div
-            xmlns="http://www.w3.org/1999/xhtml"
-            style={{
-              width: "190px",
-              boxSizing: "border-box",
-              padding: "12px 14px",
-              background: "#ffffff",
-              border: "1px solid #e5e7eb",
-              borderRadius: "8px",
-              boxShadow: "0 8px 24px rgba(0,0,0,0.18)",
-              fontFamily: "inter, sans-serif",
-              zIndex: 999,
-              textAlign: "left",
-            }}
-          >
-           <div style={{ fontSize: "15px", fontWeight: 500, color: "#3A84DA", marginBottom: "6px",letterSpacing: "-0.5%",lineHeight: "100%" }}>
-              {tooltipData[4].heading}
-            </div>
-            <div style={{ fontSize: "13px", color: "#29292B",letterSpacing: "-0.5%", lineHeight: "100%" }}>
-              {tooltipData[4].paragraph}
-            </div>
-          </div>
-        </foreignObject>
-      )}
+      
 
-    <g filter="url(#filter5_dddd_4025_352791)" onMouseEnter={() => showTooltip(5)} onMouseLeave={hideTooltip} style={{ cursor: "pointer" }}>
+    <g className="business-card" onMouseEnter={(event) => showTooltip(5, event)} onMouseLeave={hideTooltip} style={{ cursor: "pointer" }}>
       <rect x={450} y={109} width={137} height={52} rx={12} fill={activeBox === 5 ? "#EF4444" : "#FEF2F2"} />
       <rect
         x={450.5}
@@ -634,37 +496,7 @@ const Business = (props) => {
         fill={activeBox === 5 ? "#ffffff" : "#F87171"}
       />
     </g>
-      {activeBox === 5 && (
-        <foreignObject
-          x={490}
-          y={80}
-          width={190}
-          height={115}
-          style={{ overflow: "visible", pointerEvents: "none" }}
-        >
-          <div
-            xmlns="http://www.w3.org/1999/xhtml"
-            style={{
-               width: "190px",
-              boxSizing: "border-box",
-              padding: "12px 14px",
-              background: "#ffffff",
-              border: "1px solid #e5e7eb",
-              borderRadius: "8px",
-              boxShadow: "0 8px 24px rgba(0,0,0,0.18)",
-              fontFamily: "inter, sans-serif",
-              zIndex: 999,
-              textAlign: "left",
-            }}
-          >
-           <div style={{ fontSize: "15px", fontWeight: 500, color: "#F87171", marginBottom: "6px",letterSpacing: "-0.5%",lineHeight: "100%" }}>
-              {tooltipData[5].heading}
-            </div>
-            <div style={{ fontSize: "13px", color: "#29292B",letterSpacing: "-0.5%", lineHeight: "100%" }}>
-              {tooltipData[5].paragraph}
-            </div></div>
-        </foreignObject>
-      )}
+      
 
     {/* <path
       d="M519 62C519 61.7239 518.776 61.5 518.5 61.5C518.224 61.5 518 61.7239 518 62H518.5H519ZM518.146 106.354C518.342 106.549 518.658 106.549 518.854 106.354L522.036 103.172C522.231 102.976 522.231 102.66 522.036 102.464C521.84 102.269 521.524 102.269 521.328 102.464L518.5 105.293L515.672 102.464C515.476 102.269 515.16 102.269 514.964 102.464C514.769 102.66 514.769 102.976 514.964 103.172L518.146 106.354ZM518 62.9565C518 63.2327 518.224 63.4565 518.5 63.4565C518.776 63.4565 519 63.2327 519 62.9565H518.5H518ZM519 66.7826C519 66.5065 518.776 66.2826 518.5 66.2826C518.224 66.2826 518 66.5065 518 66.7826H518.5H519ZM518 67.7391C518 68.0153 518.224 68.2391 518.5 68.2391C518.776 68.2391 519 68.0153 519 67.7391H518.5H518ZM519 71.5652C519 71.2891 518.776 71.0652 518.5 71.0652C518.224 71.0652 518 71.2891 518 71.5652H518.5H519ZM518 72.5217C518 72.7979 518.224 73.0217 518.5 73.0217C518.776 73.0217 519 72.7979 519 72.5217H518.5H518ZM519 76.3478C519 76.0717 518.776 75.8478 518.5 75.8478C518.224 75.8478 518 76.0717 518 76.3478H518.5H519ZM518 77.3043C518 77.5805 518.224 77.8043 518.5 77.8043C518.776 77.8043 519 77.5805 519 77.3043H518.5H518ZM519 81.1304C519 80.8543 518.776 80.6304 518.5 80.6304C518.224 80.6304 518 80.8543 518 81.1304H518.5H519ZM518 82.087C518 82.3631 518.224 82.587 518.5 82.587C518.776 82.587 519 82.3631 519 82.087H518.5H518ZM519 85.913C519 85.6369 518.776 85.413 518.5 85.413C518.224 85.413 518 85.6369 518 85.913H518.5H519ZM518 86.8696C518 87.1457 518.224 87.3696 518.5 87.3696C518.776 87.3696 519 87.1457 519 86.8696H518.5H518ZM519 90.6957C519 90.4195 518.776 90.1957 518.5 90.1957C518.224 90.1957 518 90.4195 518 90.6957H518.5H519ZM518 91.6522C518 91.9283 518.224 92.1522 518.5 92.1522C518.776 92.1522 519 91.9283 519 91.6522H518.5H518ZM519 95.4783C519 95.2021 518.776 94.9783 518.5 94.9783C518.224 94.9783 518 95.2021 518 95.4783H518.5H519ZM518 96.4348C518 96.7109 518.224 96.9348 518.5 96.9348C518.776 96.9348 519 96.7109 519 96.4348H518.5H518ZM519 100.261C519 99.9847 518.776 99.7609 518.5 99.7609C518.224 99.7609 518 99.9847 518 100.261H518.5H519ZM518 101.217C518 101.494 518.224 101.717 518.5 101.717C518.776 101.717 519 101.494 519 101.217H518.5H518ZM519 105.043C519 104.767 518.776 104.543 518.5 104.543C518.224 104.543 518 104.767 518 105.043H518.5H519ZM518.5 62H518V62.9565H518.5H519V62H518.5ZM518.5 66.7826H518V67.7391H518.5H519V66.7826H518.5ZM518.5 71.5652H518V72.5217H518.5H519V71.5652H518.5ZM518.5 76.3478H518V77.3043H518.5H519V76.3478H518.5ZM518.5 81.1304H518V82.087H518.5H519V81.1304H518.5ZM518.5 85.913H518V86.8696H518.5H519V85.913H518.5ZM518.5 90.6957H518V91.6522H518.5H519V90.6957H518.5ZM518.5 95.4783H518V96.4348H518.5H519V95.4783H518.5ZM518.5 100.261H518V101.217H518.5H519V100.261H518.5ZM518.5 105.043H518V106H518.5H519V105.043H518.5Z"
@@ -677,7 +509,7 @@ const Business = (props) => {
   stroke="white"
   strokeWidth="1"
 />
-    <g filter="url(#filter6_dddd_4025_352791)" onMouseEnter={() => showTooltip(6)} onMouseLeave={hideTooltip} style={{ cursor: "pointer" }}>
+    <g className="business-card" onMouseEnter={(event) => showTooltip(6, event)} onMouseLeave={hideTooltip} style={{ cursor: "pointer" }}>
       <rect x={37} y={211} width={135} height={52} rx={12} fill={activeBox === 6 ? "#F97368" : "#FFF2F1"} />
       <rect
         x={37.5}
@@ -753,37 +585,7 @@ const Business = (props) => {
         fill={activeBox === 6 ? "#ffffff" : "#FE9D98"}
       />
     </g>
-      {activeBox === 6 && (
-        <foreignObject
-          x={20}
-          y={190}
-          width={190}
-          height={115}
-          style={{ overflow: "visible", pointerEvents: "none" }}
-        >
-          <div
-            xmlns="http://www.w3.org/1999/xhtml"
-            style={{
-            width: "190px",
-              boxSizing: "border-box",
-              padding: "12px 14px",
-              background: "#ffffff",
-              border: "1px solid #e5e7eb",
-              borderRadius: "8px",
-              boxShadow: "0 8px 24px rgba(0,0,0,0.18)",
-              fontFamily: "inter, sans-serif",
-              zIndex: 999,
-              textAlign: "left",
-            }}
-          >
-             <div style={{ fontSize: "15px", fontWeight: 500, color: "#FE9D98", marginBottom: "6px",letterSpacing: "-0.5%",lineHeight: "100%" }}>
-              {tooltipData[6].heading}
-            </div>
-            <div style={{ fontSize: "13px", color: "#29292B",letterSpacing: "-0.5%", lineHeight: "100%" }}>
-              {tooltipData[6].paragraph}
-            </div></div>
-        </foreignObject>
-      )}
+      
 
 
     <path
@@ -793,7 +595,7 @@ const Business = (props) => {
   stroke="white"
   strokeWidth="1"
 />
-    <g filter="url(#filter7_dddd_4025_352791)" onMouseEnter={() => showTooltip(7)} onMouseLeave={hideTooltip} style={{ cursor: "pointer" }}>
+    <g className="business-card" onMouseEnter={(event) => showTooltip(7, event)} onMouseLeave={hideTooltip} style={{ cursor: "pointer" }}>
       <rect x={632} y={211} width={140} height={52} rx={12} fill={activeBox === 7 ? "#14B8A6" : "#F0FDFA"} />
       <rect
         x={632.5}
@@ -835,39 +637,9 @@ const Business = (props) => {
         fill={activeBox === 7 ? "#ffffff" : "#1DB7A3"}
       />
     </g>
-      {activeBox === 7 && (
-        <foreignObject
-          x={700}
-          y={190}
-          width={190}
-          height={115}
-          style={{ overflow: "visible", pointerEvents: "none" }}
-        >
-          <div
-            xmlns="http://www.w3.org/1999/xhtml"
-            style={{
-             width: "190px",
-              boxSizing: "border-box",
-              padding: "12px 14px",
-              background: "#ffffff",
-              border: "1px solid #e5e7eb",
-              borderRadius: "8px",
-              boxShadow: "0 8px 24px rgba(0,0,0,0.18)",
-              fontFamily: "inter, sans-serif",
-              zIndex: 999,
-              textAlign: "left",
-            }}
-          >
-            <div style={{ fontSize: "15px", fontWeight: 500, color: "#1DB7A3", marginBottom: "6px",letterSpacing: "-0.5%",lineHeight: "100%" }}>
-              {tooltipData[7].heading}
-            </div>
-            <div style={{ fontSize: "13px", color: "#29292B",letterSpacing: "-0.5%", lineHeight: "100%" }}>
-              {tooltipData[7].paragraph}
-            </div></div>
-        </foreignObject>
-      )}
+      
 
-    <g filter="url(#filter8_dddd_4025_352791)" onMouseEnter={() => showTooltip(8)} onMouseLeave={hideTooltip} style={{ cursor: "pointer" }}>
+    <g className="business-card" onMouseEnter={(event) => showTooltip(8, event)} onMouseLeave={hideTooltip} style={{ cursor: "pointer" }}>
       <rect x={350} y={323} width={155} height={52} rx={12} fill={activeBox === 8 ? "#64748B" : "#EAECF5"} />
       <rect
         x={350.5}
@@ -917,39 +689,9 @@ const Business = (props) => {
          fill={activeBox === 8 ? "#ffffff" : "#535C98"}
       />
     </g>
-      {activeBox === 8 && (
-        <foreignObject
-          x={250}
-          y={310}
-          width={190}
-          height={115}
-          style={{ overflow: "visible", pointerEvents: "none" }}
-        >
-          <div
-            xmlns="http://www.w3.org/1999/xhtml"
-            style={{
-              width: "190px",
-              boxSizing: "border-box",
-              padding: "12px 14px",
-              background: "#ffffff",
-              border: "1px solid #e5e7eb",
-              borderRadius: "8px",
-              boxShadow: "0 8px 24px rgba(0,0,0,0.18)",
-              fontFamily: "inter, sans-serif",
-              zIndex: 999,
-              textAlign: "left",
-            }}
-          >
-          <div style={{ fontSize: "15px", fontWeight: 500, color: "#535C98", marginBottom: "6px",letterSpacing: "-0.5%",lineHeight: "100%" }}>
-              {tooltipData[8].heading}
-            </div>
-            <div style={{ fontSize: "13px", color: "#29292B",letterSpacing: "-0.5%", lineHeight: "100%" }}>
-              {tooltipData[8].paragraph}
-            </div></div>
-        </foreignObject>
-      )}
+      
 
-    <g filter="url(#filter9_dddd_4025_352791)" onMouseEnter={() => showTooltip(9)} onMouseLeave={hideTooltip} style={{ cursor: "pointer" }}>
+    <g className="business-card" onMouseEnter={(event) => showTooltip(9, event)} onMouseLeave={hideTooltip} style={{ cursor: "pointer" }}>
       <rect x={525} y={323} width={163} height={52} rx={12} fill={activeBox === 9 ? "#DB5AA7" : "#FCE7F6"} />
       <rect
         x={525.5}
@@ -999,37 +741,7 @@ const Business = (props) => {
        fill={activeBox === 9 ? "#ffffff" : "#D24EA3"} 
       /> 
     </g>
-      {activeBox === 9 && (
-        <foreignObject
-          x={560.5}
-          y={305.5}
-          width={190}
-          height={115}
-          style={{ overflow: "visible", pointerEvents: "none" }}
-        >
-          <div
-            xmlns="http://www.w3.org/1999/xhtml"
-            style={{
-           width: "190px",
-              boxSizing: "border-box",
-              padding: "12px 14px",
-              background: "#ffffff",
-              border: "1px solid #e5e7eb",
-              borderRadius: "8px",
-              boxShadow: "0 8px 24px rgba(0,0,0,0.18)",
-              fontFamily: "inter, sans-serif",
-              zIndex: 999,
-              textAlign: "left",
-            }}
-          >
-            <div style={{ fontSize: "15px", fontWeight: 500, color: "#D24EA3", marginBottom: "6px",letterSpacing: "-0.5%",lineHeight: "100%" }}>
-              {tooltipData[9].heading}
-            </div>
-            <div style={{ fontSize: "13px", color: "#29292B",letterSpacing: "-0.5%", lineHeight: "100%" }}>
-              {tooltipData[9].paragraph}
-            </div></div>
-        </foreignObject>
-      )}
+      
     <path
   className="animated-dash down"
   d="M491.809 266 V319"
@@ -1058,7 +770,7 @@ const Business = (props) => {
   stroke="white"
   strokeWidth="1"
 />
-    <g filter="url(#filter10_dddd_4025_352791)" onMouseEnter={() => showTooltip(10)} onMouseLeave={hideTooltip} style={{ cursor: "pointer" }}>
+    <g className="business-card" onMouseEnter={(event) => showTooltip(10, event)} onMouseLeave={hideTooltip} style={{ cursor: "pointer" }}>
       <rect x={772} y={109} width={143} height={52} rx={12} fill={activeBox === 10 ? "#F59E0B" : "#FEF4E4"} />
       <rect
         x={772.5}
@@ -1144,37 +856,7 @@ const Business = (props) => {
        fill={activeBox === 10 ? "#ffffff" : "#E08D16"}
       />
     </g>
-      {activeBox === 10 && (
-        <foreignObject
-          x={810}
-          y={90}
-          width={190}
-          height={115}
-          style={{ overflow: "visible", pointerEvents: "none" }}
-        >
-          <div
-            xmlns="http://www.w3.org/1999/xhtml"
-            style={{
-             width: "190px",
-              boxSizing: "border-box",
-              padding: "12px 14px",
-              background: "#ffffff",
-              border: "1px solid #e5e7eb",
-              borderRadius: "8px",
-              boxShadow: "0 8px 24px rgba(0,0,0,0.18)",
-              fontFamily: "inter, sans-serif",
-              zIndex: 999,
-              textAlign: "left",
-            }}
-          >
-            <div style={{ fontSize: "15px", fontWeight: 500, color: "#E08D16", marginBottom: "6px",letterSpacing: "-0.5%",lineHeight: "100%" }}>
-              {tooltipData[10].heading}
-            </div>
-            <div style={{ fontSize: "13px", color: "#29292B",letterSpacing: "-0.5%", lineHeight: "100%" }}>
-              {tooltipData[10].paragraph}
-            </div></div>
-        </foreignObject>
-      )}
+      
     <path
     className="animated-dash"
     d="M585 237 H629"
@@ -2206,6 +1888,8 @@ const Business = (props) => {
       </clipPath>
     </defs>
   </svg>
+  <DiagramTooltip tooltip={tooltip} />
+</div>
   );
 };
 

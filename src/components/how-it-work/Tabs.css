@@ -29,7 +29,17 @@
 }
 .workTabsWrapper {
     padding-top: 50px;
+    position: relative;
 }
+
+.business-diagram {
+  position: relative;
+}
+
+.business-card {
+  filter: drop-shadow(0 6px 6px rgba(0, 0, 0, 0.1));
+}
+
 .tab-button:hover {
  color: #29292B;
   border: 1px solid #fff;
@@ -62,4 +72,52 @@
 
 .animated-dash {
   fill: none !important;
+}
+
+.how-it-works-wrapper:not(.is-in-view) .animated-dash {
+  animation-play-state: paused;
+}
+
+.diagram-tooltip {
+  position: absolute;
+  z-index: 2;
+  width: 190px;
+  box-sizing: border-box;
+  padding: 12px 14px;
+  transform: translateY(-100%);
+  pointer-events: none;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
+  font-family: inter, sans-serif;
+  text-align: left;
+}
+
+.diagram-tooltip__title {
+  margin-bottom: 6px;
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: -0.5px;
+  line-height: 1;
+}
+
+.diagram-tooltip__description {
+  color: #29292b;
+  font-size: 13px;
+  letter-spacing: -0.5px;
+  line-height: 1.2;
+}
+
+.diagram-loading {
+  min-height: 500px;
+  display: grid;
+  place-items: center;
+  color: #ffffff;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animated-dash {
+    animation: none;
+  }
 }

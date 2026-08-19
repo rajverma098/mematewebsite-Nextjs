@@ -1,39 +1,64 @@
 "use client";
 
+import { useEffect, useRef, useState } from "react";
+import dynamic from "next/dynamic";
 import Tabs from "./Tabs";
-import Business from "./Business";
-import BusinessMap from "./BusinessMap";
-import WorkMap from "./WorkMap";
-import WorkTabs from "./WorkTabs";
 import "./HowItWorks.css";
 import BackgroundShape from "./BackgroundShape";
 
+const Business = dynamic(() => import("./Business"), {
+  ssr: false,
+  loading: () => <div className="diagram-loading" aria-live="polite">Loading...</div>,
+});
+
+const WorkTabs = dynamic(() => import("./WorkTabs"), {
+  ssr: false,
+  loading: () => <div className="diagram-loading" aria-live="polite">Loading...</div>,
+});
+
 export default function HowItWorks() {
+  const sectionRef = useRef(null);
+  const [isInView, setIsInView] = useState(false);
+
+  useEffect(() => {
+    const section = sectionRef.current;
+    if (!section) return undefined;
+
+    const observer = new IntersectionObserver(
+      ([entry]) => setIsInView(entry.isIntersecting),
+      { rootMargin: "200px 0px" }
+    );
+
+    observer.observe(section);
+    return () => observer.disconnect();
+  }, []);
+
   const tabs = [
     {
       id: "business",
       label: "Business",
-      content: <Business />,
+      Component: Business,
     },
     {
       id: "work",
       label: "Work",
-      content: <WorkTabs />,
+      Component: WorkTabs,
     },
     {
       id: "enquiry",
       label: "Enquiry",
-       content: [],
     },
     {
       id: "assets",
       label: "Assets",
-       content: [],
     },
   ];
 
   return (
-    <section className="how-it-works-wrapper hero-section">
+    <section
+      ref={sectionRef}
+      className={`how-it-works-wrapper hero-section${isInView ? " is-in-view" : ""}`}
+    >
        <BackgroundShape className="hero-bg" />
      <div className="hero-content">
       <div className="how-it-works-header">

@@ -29,7 +29,8 @@ const BussinessManagement = () => {
                     alt="Business Management Software"
                     src={Images.landingHero}                           
                     priority                      
-                    fetchPriority="high"         
+                    // fetchPriority="high"      
+                    priority   
                     placeholder="empty"         
                     width={1200} height={600} sizes="100vw" style={{ width: "100%", height: "auto" }}
                   />

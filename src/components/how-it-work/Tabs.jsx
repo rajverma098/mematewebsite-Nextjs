@@ -18,6 +18,8 @@ export default function Tabs({ tabs, defaultTab }) {
               activeTab === tab.id ? "active" : ""
             }`}
             onClick={() => setActiveTab(tab.id)}
+            onPointerEnter={() => tab.Component?.preload?.()}
+            onFocus={() => tab.Component?.preload?.()}
           >
             {tab.label}
           </button>
@@ -25,7 +27,10 @@ export default function Tabs({ tabs, defaultTab }) {
       </div>
 
       <div className="tabs-content">
-        {tabs.find((tab) => tab.id === activeTab)?.content}
+        {(() => {
+          const ActiveTab = tabs.find((tab) => tab.id === activeTab)?.Component;
+          return ActiveTab ? <ActiveTab /> : null;
+        })()}
       </div>
     </div>
   );

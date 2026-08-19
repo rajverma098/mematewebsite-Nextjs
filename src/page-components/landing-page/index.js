@@ -36,40 +36,19 @@ const LandingPage = ({ postsLatest }) => {
       const salesFeatureWrapper = document.querySelector(".salesFeatureBg");
       if (!salesFeatureWrapper) return;
   
-      wrappers.forEach((wrapper, index) => {
-        const isEven = index % 2 === 0;
-  
-        wrapper.style.backgroundImage = isEven || !isEven
-          ? `${SKYBLUE_GRADIENT}, ${ORANGE_GRADIENT}`
-          : `${SKYBLUE_GRADIENT}, ${ ORANGE_GRADIENT}`;
-  
+      wrappers.forEach((wrapper) => {
+        wrapper.style.backgroundImage = `${SKYBLUE_GRADIENT}, ${ORANGE_GRADIENT}`;
         wrapper.style.backgroundRepeat = "no-repeat, no-repeat";
-        wrapper.style.backgroundPosition = isEven
-          ? "left center, right center"
-          : "left center, right center";
-  
+        wrapper.style.backgroundPosition = "left center, right center";
         wrapper.style.backgroundSize = "auto, auto";
         wrapper.style.zIndex = "999";
-        // wrapper.style.transform = "translateY(200px)";
-        // wrapper.style.animation = "gradientAnimation 10s ease-in-out infinite";
-        const yPositions = ["0%", "25%", "50%", "75%", "100%"]; 
-  
-      const images = [
-        ...yPositions.map(() => SKYBLUE_GRADIENT), 
-        ...yPositions.map(() => ORANGE_GRADIENT), 
-      ].join(", ");
-  
-      const positions = [
-        ...yPositions.map((y) => `left ${y}`),
-        ...yPositions.map((y) => `right ${y}`),
-      ].join(", ");
-  
-     salesFeatureWrapper.style.backgroundImage = images;
-      salesFeatureWrapper.style.backgroundRepeat = "no-repeat";
-      salesFeatureWrapper.style.backgroundPosition = positions;
-      salesFeatureWrapper.style.backgroundSize = "auto";
-      salesFeatureWrapper.style.zIndex = "999";
       });
+
+      salesFeatureWrapper.style.backgroundImage = `${SKYBLUE_GRADIENT}, ${ORANGE_GRADIENT}`;
+      salesFeatureWrapper.style.backgroundRepeat = "no-repeat, no-repeat";
+      salesFeatureWrapper.style.backgroundPosition = "left center, right center";
+      salesFeatureWrapper.style.backgroundSize = "auto, auto";
+      salesFeatureWrapper.style.zIndex = "999";
     }, []);
   return (
     <>

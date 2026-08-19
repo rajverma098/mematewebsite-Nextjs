@@ -2,6 +2,7 @@
 
 import * as React from "react";
 import { useState } from "react";
+import DiagramTooltip from "./DiagramTooltip";
 
 const tooltipData = [
   { title: "Project Description / Location", description: "Full project details including description, address and location pinning.", color: "#825fd8", box: { x: 400, y: 100, width: 297, height: 52 }, tooltip: { x: 500, y: 80 } },
@@ -18,9 +19,24 @@ const tooltipData = [
 
 const WorkTabs = (props) => {
   const [activeBox, setActiveBox] = useState(null);
+  const [tooltip, setTooltip] = useState(null);
 
-  const handleEnter = (index) => setActiveBox(index);
-  const handleLeave = () => setActiveBox(null);
+  const handleEnter = (index, event) => {
+    const bounds = event.currentTarget.ownerSVGElement.getBoundingClientRect();
+    const item = tooltipData[index];
+
+    setActiveBox(index);
+    setTooltip({
+      ...item,
+      x: `${((event.clientX - bounds.left) / bounds.width) * 100}%`,
+      y: `${((event.clientY - bounds.top) / bounds.height) * 100}%`,
+    });
+  };
+
+  const handleLeave = () => {
+    setActiveBox(null);
+    setTooltip(null);
+  };
 
   return (
 <div className="workTabsWrapper">
@@ -247,7 +263,7 @@ const WorkTabs = (props) => {
       return (
         <g
           key={`interaction-${index}`}
-          onMouseEnter={() => handleEnter(index)}
+          onMouseEnter={(event) => handleEnter(index, event)}
           onMouseLeave={handleLeave}
           style={{ cursor: "pointer" }}
         >
@@ -280,53 +296,8 @@ const WorkTabs = (props) => {
       );
     })}
 
-    {/* Tooltip */}
-    {activeBox !== null && (() => {
-      const item = tooltipData[activeBox];
-      const x = item.tooltip.x;
-      const y = item.tooltip.y;
-      return (
-        <g pointerEvents="none">
-          <foreignObject x={x} y={y} width="250" height="112">
-            <div
-              xmlns="http://www.w3.org/1999/xhtml"
-              style={{
-                width: "190px",
-              boxSizing: "border-box",
-              padding: "12px 14px",
-              background: "#ffffff",
-              border: "1px solid #e5e7eb",
-              borderRadius: "8px",
-              boxShadow: "0 8px 24px rgba(0,0,0,0.18)",
-              fontFamily: "inter, sans-serif",
-              zIndex: 999,
-              textAlign: "left",
-              }}
-            >
-              <div
-                style={{
-    fontSize: "15px",
-    fontWeight: 500,
-    color: item.color,
-    marginBottom: "6px",
-    letterSpacing: "-0.5px",
-    lineHeight: "100%",
-  }}
-
-              >
-                {item.title}
-              </div>
-              <div
-                style={{ fontSize: "13px", color: "#29292B",letterSpacing: "-0.5%", lineHeight: "100%" }}
-              >
-                {item.description}
-              </div>
-            </div>
-          </foreignObject>
-        </g>
-      );
-    })()}
 </svg>
+    <DiagramTooltip tooltip={tooltip} />
 
   </div>
   );
