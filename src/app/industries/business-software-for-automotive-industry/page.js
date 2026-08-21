@@ -10,6 +10,9 @@ export const metadata = {
     title: 'Automotive Workshop Software for Aussie Businesses | MeMate',
     description: 'Run your auto repair shop with MeMate — smart Aussie automotive business management software to manage jobs, quotes, schedules & payments. Visit our website!',
   },
+  alternates: {
+    canonical: 'https://memate.com.au/industries/business-software-for-automotive-industry',
+  },
 }
 
 

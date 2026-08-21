@@ -16,7 +16,7 @@ import ComingSoon from '../../layout/coming-soon';
 const TimeTrakerComponent = () => {
   return (
     <>
-      <ComingSoon />
+      <ComingSoon text="Time Tracking Software" />
     </>
   );
 };

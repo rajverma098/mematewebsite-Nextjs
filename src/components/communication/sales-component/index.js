@@ -15,7 +15,7 @@ const SalesComponent = () => {
       <div className="sales-componet-content-wrapperF client-component-para">
         <div className="sales-component-contentF">
         <span>
-        meMate includes multiple communication tools that allow seamless communication both within the company and externally with contractors and customers.</span>
+        meMate provides <b>team communication tools</b> that help businesses keep conversations, project updates, notes, and communication history organised in one central system. Teams can communicate around projects and tasks while staying connected with contractors and customers. By keeping important communication linked to everyday workflows, meMate helps reduce scattered information, improve collaboration and keep everyone up to date throughout a project.</span>
         </div>
         <div className="sales-component-button-wrapper">
         <div  className="request-btn request-btn-center">

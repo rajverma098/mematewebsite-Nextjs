@@ -564,9 +564,9 @@ const MiddleSection = () => {
   return (
     <>
     <Helmet>
-    <title>Terms of Use: Guidelines for Using MeMate</title>
-    <meta property="og:title" content="Terms of Use: Guidelines for Using MeMate" />
-      <meta property="og:description" content="Check the terms of use for MeMate services. Understand your rights and responsibilities when using our platform for a seamless experience." />
+    <title>Terms of Use: Guidelines for Using meMate</title>
+    <meta property="og:title" content="Terms of Use: Guidelines for Using meMate" />
+      <meta property="og:description" content="Check the terms of use for meMate services. Understand your rights and responsibilities when using our platform for a seamless experience." />
   </Helmet>
      <div className="kb-wrapper">
         <div className="kb-left-wrappermm kb-left-wrappermain kb-tos-wrapperF">

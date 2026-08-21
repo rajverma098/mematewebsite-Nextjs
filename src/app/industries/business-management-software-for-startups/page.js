@@ -10,6 +10,9 @@ export const metadata = {
     title: 'All-in-One Startup Management Platform | MeMate',
     description: 'Manage your startup with MeMate — CRM, project management tools for startups, workflow software & invoicing in one all-in-one software solution.',
   },
+  alternates: {
+    canonical: 'https://memate.com.au/industries/business-management-software-for-startups',
+  },
 }
 
 

@@ -208,11 +208,11 @@ const arrowIconBack = "https://memate-website.s3.ap-southeast-2.amazonaws.com/as
 
 const article =  {
   type: "terms",
-  headline: "Terms of Use | MeMate Business Software Australia",
+  headline: "Terms of Use | meMate Business Software Australia",
   author: "admin",
   publisherName: "Terms of use",
   publisherLogo: "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/logo.svg",
-  keywords: "Terms of Use | MeMate Business Software Australia",
+  keywords: "Terms of Use | meMate Business Software Australia",
 
 } 
 

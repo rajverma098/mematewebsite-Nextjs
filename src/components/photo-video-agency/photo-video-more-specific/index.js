@@ -13,7 +13,7 @@ const IndustryMoreSpecific = () => {
     data-aos-anchor-placement="top-bottom">
       <p className="industry-more-specific-heading">More Specific</p>
       <p className="industry-more-specific-description">
-        At MeMate, we are dedicated to enhancing businesses throughout Australia
+        At meMate, we are dedicated to enhancing businesses throughout Australia
         by offering them the power of a simple yet robust business management
         software solution.
       </p>
@@ -24,7 +24,7 @@ const IndustryMoreSpecific = () => {
             card_image={IndustryImages.moreSpeicificOne}
             heading={"Tailored Features"}
             description={
-              "MeMate is specifically designed to meet the unique needs of creative agencies. It combines essential functionalities like project management, accounting, quoting, and invoicing into one comprehensive solution."
+              "meMate is specifically designed to meet the unique needs of creative agencies. It combines essential functionalities like project management, accounting, quoting, and invoicing into one comprehensive solution."
             }
           />
           <MoreSpecificCard
@@ -33,7 +33,7 @@ const IndustryMoreSpecific = () => {
             heading={"Centralised Platform"}
             width={"349px"}
             description={
-              "MeMate provides a centralised platform where creative agencies can manage their entire workflow. From project initiation to invoicing and client communication, everything can be accessed and handled from a single location."
+              "meMate provides a centralised platform where creative agencies can manage their entire workflow. From project initiation to invoicing and client communication, everything can be accessed and handled from a single location."
             }
           />
 
@@ -42,7 +42,7 @@ const IndustryMoreSpecific = () => {
             card_image={IndustryImages.moreSpecificThree}
             heading={"Streamlined Workflow"}
             description={
-              "With MeMate, creative agencies can streamline their workflow and enhance overall efficiency. By integrating various functionalities, tasks such as project tracking, task assignment, team collaboration, and financial management become seamless and interconnected."
+              "With meMate, creative agencies can streamline their workflow and enhance overall efficiency. By integrating various functionalities, tasks such as project tracking, task assignment, team collaboration, and financial management become seamless and interconnected."
             }
           />
         </div>
@@ -52,7 +52,7 @@ const IndustryMoreSpecific = () => {
             card_image={IndustryImages.moreSpecificFour}
             heading={"Financial Management Made Easy"}
             description={
-              "MeMate simplifies financial management for creative agencies. The integrated accounting module enables easy tracking of expenses, generating invoices, and managing payments."
+              "meMate simplifies financial management for creative agencies. The integrated accounting module enables easy tracking of expenses, generating invoices, and managing payments."
             }
           />
           <MoreSpecificCard
@@ -61,7 +61,7 @@ const IndustryMoreSpecific = () => {
             heading={"Client Relationship Management"}
             width={"327px"}
             description={
-              "MeMate offers features that facilitate effective client communication and relationship management. Creative agencies can handle client requests, share updates, and gather feedback all within the platform."
+              "meMate offers features that facilitate effective client communication and relationship management. Creative agencies can handle client requests, share updates, and gather feedback all within the platform."
             }
           />
 
@@ -70,7 +70,7 @@ const IndustryMoreSpecific = () => {
             card_image={IndustryImages.moreSpecificSix}
             heading={"Customisation and Scalability"}
             description={
-              "MeMate understands that every creative agency has unique requirements. The software allows for customisation, enabling agencies to tailor their workflows, templates, and processes according to their specific needs."
+              "meMate understands that every creative agency has unique requirements. The software allows for customisation, enabling agencies to tailor their workflows, templates, and processes according to their specific needs."
             }
           />
         </div>

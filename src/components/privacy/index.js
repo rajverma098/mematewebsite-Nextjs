@@ -33,11 +33,11 @@ const PrivacyComponent = () => {
 
 const article =  {
   type: "privacy",
-  headline: "Privacy Policy | MeMate Business Management Software",
+  headline: "Privacy Policy | meMate Business Management Software",
   author: "admin",
   publisherName: "Terms of use",
   publisherLogo: "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/logo.svg",
-  keywords: "Privacy Policy | MeMate Business Management Software",
+  keywords: "Privacy Policy | meMate Business Management Software",
 
 } 
 

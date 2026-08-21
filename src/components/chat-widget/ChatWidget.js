@@ -64,7 +64,7 @@ const ChatWidget = () => {
 
                   <div className="chat-sub">Hi! How can I assist you?</div>
 
-                  <div className="chat-meta">meMate Team</div>
+                  {/* <div className="chat-meta">meMate Team</div> */}
                 </div>
               </div>
             </div>

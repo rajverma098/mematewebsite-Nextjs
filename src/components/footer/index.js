@@ -95,7 +95,7 @@ const Footer = () => {
               <Link href="/features/team-communication-tools">Communication</Link>
               <Link href="/features/job-management-software">Schedule Jobs</Link>
               <Link href="/features/invoicing-software">Invoicing</Link>
-              <Link href="/features/business-statistics-tools">Statistic</Link>
+              {/* <Link href="/features/business-statistics-tools">Statistic</Link> */}
               <Link href="/features/business-reporting-tools">Reports</Link>
               </div>
             </div>
@@ -129,16 +129,16 @@ const Footer = () => {
               <p className="link-heading">Compare</p>
               <div className="page-links" style={{width: "149px"}}>
               <Link href="/compare/memate-vs-quickbooks">meMate vs QuickBooks</Link>
-              <Link href="/compare/memate-vs-myob">meMate vs Myob</Link>
+              {/* <Link href="/compare/memate-vs-myob">meMate vs Myob</Link> */}
               <Link href="/compare/memate-vs-jira">meMate Vs Jira</Link>
-              <Link href="/compare/memate-vs-monday">meMate vs Monday</Link>
-              <Link href="/compare/memate-vs-trello">meMate vs Trello</Link>
-              <Link href="/compare/memate-vs-salesForce">meMate vs SalesForce</Link>
-              <Link href="/compare/meMate-vs-airtable">meMate vs Airtable</Link>
-              <Link href="/compare/memate-vs-wrike">meMate vs Wrike</Link>
+              {/* <Link href="/compare/memate-vs-monday">meMate vs Monday</Link> */}
+              {/* <Link href="/compare/memate-vs-trello">meMate vs Trello</Link> */}
+              {/* <Link href="/compare/memate-vs-salesForce">meMate vs SalesForce</Link> */}
+              {/* <Link href="/compare/meMate-vs-airtable">meMate vs Airtable</Link> */}
+              {/* <Link href="/compare/memate-vs-wrike">meMate vs Wrike</Link> */}
               <Link href="/compare/memate-vs-servicem8">meMate vs Servicem8</Link>
-              <Link href="/compare/memate-vs-reckon">meMate vs Reckon</Link>
-              <Link href="/compare/memate-vs-xero">meMate vs Xero</Link>
+              {/* <Link href="/compare/memate-vs-reckon">meMate vs Reckon</Link> */}
+              {/* <Link href="/compare/memate-vs-xero">meMate vs Xero</Link> */}
               <Link href="/compare/memate-vs-microsoft-project">meMate vs ms Project</Link>
               <Link href="/compare/memate-vs-sage">meMate vs Sage</Link>
               <Link href="/compare/memate-vs-netsuite">meMate vs NetSuite</Link>

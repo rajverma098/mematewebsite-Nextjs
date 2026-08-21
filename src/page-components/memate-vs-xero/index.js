@@ -7,7 +7,7 @@ const MemateVsXeroPage = () => {
     <>
     <AppWrapper>
     <Layout>
-       <ComingSoon />
+       <ComingSoon text="meMate vs Xero" />
     </Layout>
     </AppWrapper>
     </>

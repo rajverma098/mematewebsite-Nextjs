@@ -15,6 +15,9 @@ export const metadata = {
       'Estimate your business value with our Business Valuation Calculator. Discover how revenue, profitability and systems impact what your business could be worth.',
     url: 'https://memate.com.au/business-valuation-calculator',
   },
+  alternates: {
+    canonical: 'https://memate.com.au/business-valuation-calculator',
+  },
 };
 
 export default function BusinessValuationCalculator() {

@@ -8,7 +8,7 @@
     background-position: center;
 }
 
-.ComingSonnBg h1{
+.ComingSonnBg h2{
     background: linear-gradient(to right, #1ab2ff 33.15%, #ffb258 62%);
     -webkit-background-clip: text;
     background-clip: text;
@@ -48,11 +48,11 @@
         .ComingSonnBg {
             padding: 15px;
         }
-        .ComingSonnBg h1 {
+        .ComingSonnBg h2 {
             font-size: 50px;
             line-height: 56px;
         }
-        .ComingSonnBg h1 br {
+        .ComingSonnBg h2 br {
             display: none;
         }
         .ComingSonnBg img {

@@ -10,6 +10,9 @@ export const metadata = {
     title: 'Business Resources & Guides for Growth | MeMate',
     description: 'Explore MeMate resources to help your business grow. Find guides, tools, and insights designed to streamline work and boost productivity.',
   },
+  alternates: {
+    canonical: 'https://memate.com.au/resources',
+  },
 }
 
 

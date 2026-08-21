@@ -526,18 +526,18 @@ const arrowIconBack = "https://memate-website.s3.ap-southeast-2.amazonaws.com/as
   return (
     <>
       <Helmet>
-        <title>Terms of Use | MeMate Business Software Australia</title>
+        <title>Terms of Use | meMate Business Software Australia</title>
         <meta
           name="description"
-          content="View the terms of use for MeMate — Australia’s business management software platform. Review your rights, responsibilities and platform access terms."
+          content="View the terms of use for meMate — Australia’s business management software platform. Review your rights, responsibilities and platform access terms."
         />
         <meta
           property="og:title"
-          content="Terms of Use | MeMate Business Software Australia"
+          content="Terms of Use | meMate Business Software Australia"
         />
         <meta
           property="og:description"
-          content="View the terms of use for MeMate — Australia’s business management software platform. Review your rights, responsibilities and platform access terms."
+          content="View the terms of use for meMate — Australia’s business management software platform. Review your rights, responsibilities and platform access terms."
         />
       </Helmet>
    <div className="conditionWrrapperF">

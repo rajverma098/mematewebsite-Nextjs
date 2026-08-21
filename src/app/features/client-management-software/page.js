@@ -4,18 +4,21 @@
 import ClientPage from '../../../page-components/client-management';
 
 export const metadata = {
-  title: 'Client Management Software for Aussie Businesses | MeMate',
-  description: 'Client management software by Memate will simplify your business managing clients, contacts, and communications in one place built for Australian businesses',
+  title: 'Client Management Software for Better Workflows | meMate',
+  description: 'Manage client information, jobs and workflows with meMate client management software. Organise client relationships and customer data in one place. Try it now.',
+ alternates: {
+    canonical: 'https://memate.com.au/features/client-management-software',
+  },
   openGraph: {
-    title: 'Client Management Software for Aussie Businesses | MeMate',
-    description: 'Client management software by Memate will simplify your business managing clients, contacts, and communications in one place built for Australian businesses',
+   title: 'Client Management Software for Better Workflows | meMate',
+  description: 'Manage client information, jobs and workflows with meMate client management software. Organise client relationships and customer data in one place. Try it now.',
   },
 }
 
 export default function Client() {
   return (
     // <AppWrapper>
-      <ClientPage />   
+      <ClientPage />     
     // </AppWrapper>
   );
 }

@@ -4,18 +4,28 @@
 import MemateVsXeroPage from '../../../page-components/memate-vs-xero';
 
 export const metadata = {
-  title: 'Compare MeMate vs Xero | Save More, Do Less Accounting',
-  description: 'Compare MeMate vs QuickBooks—discover key differences, pricing & features, and see why MeMate is the smarter choice for businesses. Explore our solution now!',
-  openGraph: {
-    title: 'Compare MeMate vs Xero | Save More, Do Less Accounting',
-    description: 'Compare MeMate vs Xero key differences, pricing & features, and see why MeMate is the smarter choice for businesses. Explore our solution now!',
+  title: 'MeMate vs Xero: Compare Business Software Solutions',
+  description:
+    'Compare MeMate vs Xero for Australian businesses. Explore features, workflows and key differences to find the right software for your needs.',
+
+  robots: {
+    index: false,
+    follow: false,
   },
-}
+alternates: {
+    canonical: 'https://memate.com.au/compare/memate-vs-xero',
+  },
+  openGraph: {
+    title: 'MeMate vs Xero: Compare Business Software Solutions',
+    description:
+      'Compare MeMate vs Xero for Australian businesses. Explore features, workflows and key differences to find the right software for your needs.',
+  },
+};
 
 export default function MemateVsXero() {
   return (
     // <AppWrapper>
-      <MemateVsXeroPage /> 
+      <MemateVsXeroPage />  
     // </AppWrapper>
   );
 }

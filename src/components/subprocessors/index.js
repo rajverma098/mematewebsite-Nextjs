@@ -62,12 +62,12 @@ const SubprocessorsComponent = () => {
   return (
     <div className="SubPageWrap">
       <div className="SubPageHead">
-        <h1>MeMate Subprocessors</h1>
+        <h1>meMate Subprocessors</h1>
         <span>Current as of Aug 25, 2025</span>
         <p>
           Know exactly where your data is and how it is being used.
           <br />
-          MeMate subprocessors.
+          meMate subprocessors.
         </p>
       </div>
 

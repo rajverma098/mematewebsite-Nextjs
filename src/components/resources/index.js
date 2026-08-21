@@ -11,7 +11,7 @@ const ResourcesComponent = () => {
           className={`sales-component-wrapper salesfeaturesWrapper ${style.mainHeadTitle}`}
         >
           <h1 className="h1tagsseo h1tagsseof fontWeight">
-          MeMate Resources: Tools, Insights, and Support
+          meMate Resources: Tools, Insights, and Support
           </h1>
           <h2>resources</h2>
           <span>

@@ -10,63 +10,63 @@ const QuestionAnswer = () => {
 
   const questions = [
     {
-      question: "What is job scheduling software, and how does meMate help?",
+      question: "What is job management software, and how does meMate help?",
       key: 1,
       answer:
-        "Job scheduling software automates the assignment and management of tasks or shifts for employees and contractors. With meMate, you can schedule jobs and shifts effortlessly, monitor progress in real time, and streamline workflows for your team.",
+        "Job management software helps businesses organise jobs, allocate work, coordinate teams and track progress from one central platform. meMate brings key business processes together, helping businesses manage jobs, schedules, tasks, time tracking, clients and day-to-day operations more efficiently.",
     },
     {
-      question: "How does meMate’s shift scheduling benefit businesses?",
+      question: "How can meMate help with job scheduling?",
       key: 2,
       answer:
-        "meMate simplifies the scheduling process by allowing you to plan shifts, allocate tasks, and view everything in one screen. This ensures smooth operations, reduces scheduling conflicts, and improves team productivity.",
+        "meMate helps businesses plan and allocate jobs and shifts based on team availability, responsibilities and workloads. By bringing scheduling and job information together, businesses can improve coordination, reduce scheduling conflicts and keep employees and contractors informed.",
     },
     {
-      question: "Can meMate handle scheduling for both employees and contractors?",
+      question: "Can meMate schedule work for employees and contractors?",
       key: 3,
       answer:
-        "Yes, meMate is designed to manage assignments for both employees and contractors. It allows you to assign shifts or jobs, track progress, and communicate with all team members in one platform.",
+        "Yes. meMate helps businesses organise and allocate work for both employees and contractors. A centralised job management system makes it easier to coordinate responsibilities, manage schedules and maintain visibility across different types of workers.",
     },
     {
-      question: "Can I create reusable shift templates in meMate?",
+      question: "Can I create recurring or reusable jobs and shift schedules?",
       key: 4,
       answer:
-        "Absolutely. meMate lets you create and save shift and job templates for recurring tasks, making weekly scheduling quick and efficient.",
+        "meMate can help simplify recurring scheduling by allowing businesses to organise frequently used job and shift structures. Using job management software for repeatable workflows can reduce manual administration and make regular scheduling more consistent.",
     },
     {
-      question: "How does the meMate mobile app enhance job scheduling?",
+      question: "Does meMate offer a mobile job management app?",
       key: 5,
       answer:
-        "The meMate mobile app allows your team to view, accept, and manage their shifts or tasks on the go. It also includes features like clock-in/clock-out and group communication, ensuring real-time updates and seamless collaboration.",
+        "Yes. The meMate job management app gives teams convenient access to relevant job and scheduling information while working remotely or away from the office. Employees and contractors can stay informed about assigned work, schedules, tasks and updates from their mobile devices.",
     },
     {
-      question: "Can meMate track time and attendance for employees and contractors?",
+      question: "Can meMate track employee and contractor time?",
       key: 6,
       answer:
-        "Yes, meMate includes time-tracking features. Employees and contractors can log their hours using the app, and timesheets are automatically generated for approval and payroll integration.",
+        "Yes. meMate supports time tracking alongside job and scheduling workflows, helping businesses maintain better visibility of working hours and job-related activities. Combining time information with job tracking software can help managers understand how time and resources are being used.",
     },
     {
-      question: "How does meMate handle last-minute changes or shift swaps?",
+      question: "Can meMate help manage changes to jobs and schedules?",
       key: 7,
       answer:
-        "meMate allows employees to request shift swaps or changes through the app, and managers can approve these updates instantly. This keeps the schedule flexible and adaptable to real-time needs.",
+        "Yes. Business requirements can change quickly, so meMate helps teams keep job and scheduling information organised when updates are required. Centralised job management software makes it easier for authorised users to update work details and keep relevant team members informed.",
     },
     {
-      question: "Can meMate help monitor employee and contractor workloads?",
+      question: "Can meMate help businesses manage workloads?",
       key: 8,
       answer:
-        "Yes, meMate provides a clear overview of all assigned tasks and shifts, helping you assess workloads and optimise resource allocation to prevent overburdening your team.",
+        "meMate provides greater visibility into assigned jobs, schedules, tasks and working hours. This can help businesses identify workload imbalances, coordinate resources and distribute work more effectively across employees and contractors.",
     },
     {
-      question: "Does meMate integrate with other business systems?",
+      question: "Can meMate integrate with other business systems?",
       key: 9,
       answer:
-        "Yes, meMate integrates with payroll, project management, and other business tools, ensuring a seamless flow of information across different departments.",
+        "meMate is designed to bring important business processes together and support relevant business and accounting workflows. This can help reduce duplicate data entry while connecting information relating to jobs, clients, time, invoicing and other operational activities.",
     },
     {
-      question: "Why should I choose meMate for job and shift scheduling?",
+      question: "Why choose meMate as a job management solution?",
       answer:
-        "meMate offers an all-in-one solution for job and shift scheduling, combining features like time tracking, real-time monitoring, mobile app access, and detailed reporting. It simplifies workforce management, making it an excellent choice for businesses of any size.",
+        "meMate combines job management, scheduling, time tracking, task coordination, client management and other business processes in one platform. With job tracking software and a mobile job management app, businesses can improve operational visibility, coordinate teams and manage their work more efficiently.",
       key: 10,
     },
   ];

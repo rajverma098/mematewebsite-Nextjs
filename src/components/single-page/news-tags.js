@@ -8,9 +8,6 @@ import { Helmet } from 'react-helmet-async';
 import ShareComponent from './ShareComponent';
 const arrowIconBack = "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/arrowIconBack.svg";
 
-
-
-
 const NewsTagsComponents = () => {
     const { slug } = useParams();
     const [post, setPost] = useState(null);
@@ -18,10 +15,9 @@ const NewsTagsComponents = () => {
     const [isScrolled, setIsScrolled] = useState(false);
     const [isNearBottom, setIsNearBottom] = useState(false);
     const [postTagsslug, setPostTagsslug] = useState(null);
+    console.log('postTagsslug: ', postTagsslug);
     const [error, setError] = useState(null);
     const [loading, setLoading] = useState(true);
-
-
 
     useEffect(() => {
         const handleScroll = () => {
@@ -63,17 +59,49 @@ const NewsTagsComponents = () => {
         fetchTagsPosts();
     }, [slug]);
 
-    if (loading) {
-        return <div></div>;
-    }
+useEffect(() => {
+  if (!slug) return;
 
-    if (error) {
-        return <div>Error: {error}</div>;
-    }
+  const tagTitle = decodeURIComponent(slug)
+    .replace(/-/g, " ")
+    .replace(/\b\w/g, (char) => char.toUpperCase());
 
-    if (!postTagsslug || postTagsslug.length === 0) {
-        return <div>No posts found for this tag.</div>;
-    }
+  document.title = `${tagTitle} | MeMate`;
+
+  // Add noindex, nofollow
+  let robotsMeta = document.querySelector('meta[name="robots"]');
+
+  if (!robotsMeta) {
+    robotsMeta = document.createElement("meta");
+    robotsMeta.setAttribute("name", "robots");
+    document.head.appendChild(robotsMeta);
+  }
+
+  robotsMeta.setAttribute("content", "noindex, nofollow");
+
+  // Google-specific robots
+  let googleRobotsMeta = document.querySelector(
+    'meta[name="googlebot"]'
+  );
+
+  if (!googleRobotsMeta) {
+    googleRobotsMeta = document.createElement("meta");
+    googleRobotsMeta.setAttribute("name", "googlebot");
+    document.head.appendChild(googleRobotsMeta);
+  }
+
+  googleRobotsMeta.setAttribute("content", "noindex, nofollow");
+}, [slug]);
+
+  // ALL RETURNS AFTER ALL HOOKS
+
+  if (loading) {
+    return <div></div>;
+  }
+
+  if (error) {
+    return <div>Error: {error}</div>;
+  }
 
 
     const formatDateWithOrdinal = (dateString) => {

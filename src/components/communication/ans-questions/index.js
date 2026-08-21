@@ -13,60 +13,60 @@ const QuestionAnswer = () => {
       question: "What communication tools are included in a business management system?",
       key: 1,
       answer:
-        "Most business management systems include tools such as email, SMS, in-app messaging, and notifications. These allow seamless communication between team members, contractors, and clients, all within one platform.",
+        "A business management system may include a range of team communication tools designed to keep important conversations and updates connected to daily operations. Depending on the available features, this can include internal communication, client messaging, shared updates, notifications, automated reminders, and communication history. By bringing these activities into a central system, businesses can reduce reliance on scattered emails, separate messaging apps and disconnected communication channels.",
     },
     {
       question: "Can I communicate with clients directly through the software?",
       key: 2,
       answer:
-        "Yes, many business management systems allow you to send updates, quotes, and reminders via email or SMS directly to clients. You can track all communication in one place to maintain transparency and ensure nothing is missed.",
+        "Yes. Centralised business software can help businesses manage client communication alongside other important activities. Depending on the features available, users may be able to send updates, reminders and relevant information while keeping a clearer record of previous client interactions. Having communication connected to client information can also help team members understand the context of previous conversations and provide more consistent service.",
     },
     {
-      question: "How does the system handle internal communication with my team?",
+      question: "How does the system support internal team communication?",
       key: 3,
       answer:
-        "Business management software typically offers in-app messaging, chat functions, and task assignment features to keep your team aligned. You can create and share notes, assign tasks, and provide updates on project progress within the system.",
+        "Team communication software can help employees share updates, coordinate responsibilities, and stay informed about important business activities. Instead of relying entirely on long email chains or multiple communication platforms, teams can keep relevant discussions closer to their projects, tasks, jobs and client requirements. This can improve visibility, reduce misunderstandings and make it easier for team members to follow important updates.",
     },
     {
       question: "Can I send automated reminders to clients?",
       key: 4,
       answer:
-        "Yes, most business management systems include automated reminder features. You can schedule automatic reminders for quotes, payments, or project updates, ensuring timely communication with your clients.",
+        "Depending on the system's available features, businesses may be able to automate reminders and notifications for important actions and events. Automated reminders can be useful for appointments, invoices, approvals, tasks and other follow-ups. This can help businesses maintain more consistent communication, reduce repetitive manual work and minimise the risk of important follow-ups being missed.",
     },
     {
       question: "Does the software store communication history?",
       key: 5,
       answer:
-        "Yes, communication history is stored within the system. This includes all emails, SMS messages, and internal chats, ensuring that you can easily retrieve past conversations and updates at any time.",
+        "A centralised business management system can help maintain a record of relevant communications and interactions. This makes it easier for authorised team members to review previous conversations when responding to enquiries, continuing work or managing client relationships. Access to communication history can also provide useful context when responsibilities are transferred from one team member to another.",
     },
     {
       question: "Can I communicate with contractors and freelancers through the software?",
       key: 6,
       answer:
-        "Absolutely. Business management systems typically include features for communicating with external contractors and freelancers. You can send updates, assign tasks, and share project details, all within the platform.",
+        "Team communication tools can support collaboration with both internal employees and external contributors, depending on the platform's features and access settings. Businesses may be able to keep contractors and freelancers informed about relevant tasks, updates, and project requirements without relying entirely on separate communication channels. Centralising important discussions can help external contributors stay aligned with the work they are involved in.",
     },
     {
-      question: " How does the software support mobile communication?",
+      question: "How does the software support mobile communication?",
       key: 7,
       answer:
-        "Most business management systems offer mobile apps that allow you to communicate on the go. You can send and receive messages, share files, and receive project updates from your phone or tablet.",
+        "Mobile-friendly access can help team members stay connected when they are working away from their desks. Depending on the platform and compatible devices, users may be able to access important updates, tasks, notifications and business information while working remotely or in the field. This can be particularly valuable for mobile teams, field workers, service businesses and organisations with flexible work arrangements.",
     },
     {
-      question: "Can I track who has read or responded to messages in the system?",
+      question: "Can I track who has read or responded to messages?",
       key: 8,
       answer:
-        "Yes, many business management systems offer read receipts and tracking, so you can see who has opened or responded to your messages. This feature ensures accountability and helps follow up when necessary.",
+        "Message tracking capabilities depend on the specific communication features available within the system. Some platforms may provide information about responses, acknowledgements or other message activity, helping teams determine whether important communications require further follow-up. Businesses should review the available communication features to understand how message activity is managed within their chosen system.",
     },
     {
-      question: " Is it possible to send group messages within the system?",
+      question: "Is it possible to send group messages within the system?",
       key: 9,
       answer:
-        "Yes, you can often send group messages to teams, departments, or multiple stakeholders. This makes it easy to keep everyone informed at once, reducing the need for multiple follow-up communications.",
+        "Yes, group communication features can help businesses share relevant information with multiple people at the same time. Depending on the system, this may include communication with teams, departments, project participants, contractors or other authorised users. Group messaging can reduce the need to repeat the same information individually and help everyone involved stay informed about important updates.",
     },
     {
-      question: "How secure is the communication within the system?",
+      question: "How secure is communication within a business management system?",
       answer:
-        "Communication within most business management systems is secure, using encryption and access controls to ensure that only authorized team members or clients can view the messages. This protects your business data and client information.",
+        "Communication security depends on the software provider, system infrastructure and available security settings. Businesses should look for appropriate measures designed to protect business information and ensure that access is managed through authorised user permissions. When choosing a business management platform, it is important to review available security measures, access controls, authentication options and data management practices.",
       key: 10,
     },
   ];

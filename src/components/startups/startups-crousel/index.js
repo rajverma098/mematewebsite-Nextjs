@@ -4,7 +4,7 @@ import IndustryImages from "../../../assests/industry-images";
 
 const carouselData = [
   {
-    heading: "MeMate has been a game-changer for our private membership club.",
+    heading: "meMate has been a game-changer for our private membership club.",
     logoText: "EL",
     title: "Elite Life",
     subtitle: "Head of Design, Layers",

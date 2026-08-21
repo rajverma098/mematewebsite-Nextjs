@@ -23,7 +23,7 @@ const SalesManagement = () => {
         <p className="sales-heading-salesF">Replace Clock-In<br/>Clock-Out </p>
         <p className="sales-typeF">Devices</p>
         <p className="sales-description-salesF">
-        MeMate replaces all your traditional clock-in and<br/> clock-out time-tracking devices. With the MeMate<br/> mobile 
+        meMate replaces all your traditional clock-in and<br/> clock-out time-tracking devices. With the meMate<br/> mobile 
         app, tracking shifts becomes simpler and <br/>more efficient, streamlining workforce time <br/>management in your office.
        </p>
       </div>

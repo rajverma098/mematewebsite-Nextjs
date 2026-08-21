@@ -7,7 +7,7 @@ const MemateVsWrikePage = () => {
     <>
     <AppWrapper>
     <Layout>
-       <ComingSoon />
+       <ComingSoon text="meMate vs Wrike" />
     </Layout>
     </AppWrapper>
     </>

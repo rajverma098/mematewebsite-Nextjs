@@ -10,64 +10,63 @@ const QuestionAnswer = () => {
 
   const questions = [
     {
-      question: " What is customer database management in CRM software?",
+      question: "What is customer database management in CRM software?",
       key: 1,
       answer:
-        "Customer database management in CRM software involves organizing, storing, and managing client information efficiently. It helps businesses keep track of customer interactions, preferences, and history.",
+        "Customer database management involves storing, organising and updating customer information, communication history, sales activity and other relevant records in one central system. Client management software makes it easier for businesses to access accurate customer information, while a client relationship management database provides a structured view of client interactions, requirements and engagement.",
     },
     {
-      question: "How does your software help in managing clients?",
+      question: "How does your software help businesses manage clients?",
       key: 2,
       answer:
-        "Our software offers intuitive tools to manage clients effectively, providing features like contact information storage, interaction tracking, and automated reminders to ensure no client detail is missed.",
+        "Our client management software helps businesses centralise client information, track communications, manage tasks and organise follow-ups from one platform. By supporting effective client relationship management, it gives teams greater visibility of client details, interactions, requirements and ongoing activities, helping them provide more consistent customer service.",
     },
     {
       question: "Can I manage prospective clients with your CRM system?",
       key: 3,
       answer:
-        "Yes, our CRM system includes features specifically designed to manage prospective clients. It helps you track leads, nurture prospects, and convert them into loyal customers.",
+        "Yes. Customer relationship management software can help businesses manage prospective clients throughout the sales process. Teams can organise prospect information, record interactions, schedule follow-ups and track opportunities, making it easier to manage leads and build lasting relationships with potential customers.",
     },
     {
-      question: "What kind of software is best for managing a client database?",
+      question: "What type of software is best for managing a client database?",
       key: 4,
       answer:
-        "A cloud-based CRM software like ours is ideal for managing a client database. It provides easy access, robust security, and scalable features to handle growing client lists.",
+        "The right client management software should make it easy to store, update and access client information while supporting communication tracking, follow-ups, task management and reporting. A centralised client relationship management database can help businesses reduce scattered customer information and maintain a more organised approach to managing client relationships.",
     },
     {
-      question: "What CRM tools for small businesses do you offer?",
+      question: "What CRM features are available for small businesses?",
       key: 5,
       answer:
-        "Our CRM tools for small businesses include contact management, lead tracking, sales forecasting, email marketing integration, and detailed reporting to help you streamline your business operations.",
+        "CRM platforms for small businesses typically include features for managing clients and prospects, storing customer records, tracking communications, scheduling follow-ups, managing tasks and organising workflows. These capabilities within customer relationship management software can help small teams improve visibility, reduce manual administration and manage customer relationships more efficiently.",
     },
     {
       question: "Is your CRM software suitable for small businesses in Australia?",
       key: 6,
       answer:
-        "Yes, our CRM software is specifically designed to meet the needs of small businesses in Australia, with features tailored to local business practices and regulations.",
+        "Yes. Our customer relationship management software is designed to support the needs of small and growing Australian businesses. The client management software helps teams organise customer information, manage prospects, track interactions and maintain consistent client relationships from a centralised platform.",
     },
     {
-      question: "How does your CRM software support small businesses in Australia?",
+      question: "How does CRM software help small businesses manage clients?",
       key: 7,
       answer:
-        "Our CRM software supports small businesses in Australia by offering easy-to-use tools for managing customer relationships, automating routine tasks, and providing insights to improve customer engagement and sales.",
+        "Client management software can bring customer records, communications, tasks and follow-up activities together in one organised system. For small businesses, this can simplify client relationship management, improve visibility across customer interactions and help teams spend less time managing information manually.",
     },
     {
-      question: "What are the benefits of using cloud CRM?",
+      question: "What are the benefits of using cloud-based CRM software?",
       key: 8,
       answer:
-        "Cloud CRM offers several benefits, including remote access to your database, automatic updates, enhanced security, and scalability to grow with your business needs.",
+        "Cloud-based CRM software allows authorised users to access customer and client information from connected devices without relying on a single local system. Using customer relationship management software in the cloud can support team collaboration, centralised data management and more consistent client relationship management as a business grows.",
     },
     {
-      question: "How secure is your client relationship management database?",
+      question: "How can I protect information stored in a client relationship management database?",
       key: 9,
       answer:
-        "Our client relationship management database is highly secure, utilizing advanced encryption methods, regular security updates, and strict access controls to protect your data.",
+        "Protecting information in a client relationship management database requires appropriate security controls, user permissions and responsible data-management practices. Businesses should choose CRM software with suitable security features and use strong passwords, controlled user access and effective data-management processes to help protect customer information.",
     },
     {
-      question: "Can I integrate other marketing software with your CRM system?",
+      question: "Can CRM software integrate with other marketing and business tools?",
       answer:
-        "Yes, our CRM system is compatible with all major marketing software, allowing seamless data integration and streamlined marketing efforts.",
-      key: 10,
+        "Many CRM platforms can integrate with marketing and business applications to connect customer data and reduce repetitive manual tasks. Integrating other tools with customer relationship management software can help businesses coordinate lead generation, customer information, communication and follow-up activities, supporting more efficient client relationship management.",
     },
   ];
 

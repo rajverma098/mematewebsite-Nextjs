@@ -8,7 +8,7 @@ const StatisticComponent = () => {
 
   return (
     <>
-      <ComingSoon />
+      <ComingSoon text="Business Statistics Tools" />
     </>
   );
 };

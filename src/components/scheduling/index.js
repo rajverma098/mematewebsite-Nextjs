@@ -5,12 +5,9 @@ import style from './scheduling.module.scss';
 
 const SchedulingComponent = () => {
 
-
   return (
     <>
-    <ComingSoon />
-    
-    
+    <ComingSoon text="Job Scheduling Software | MeMate" />
     </>
   );
 };

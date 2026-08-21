@@ -218,7 +218,7 @@ const supplier_services_id = data.supplied_services?.value || '';
             data-aos-mirror="true"
             data-aos-once="false"
             data-aos-anchor-placement="top-bottom">
-            <h1>Add Your Company to the MeMate Network — Get Listed on</h1>
+            <h1>Add Your Company to the meMate Network — Get Listed on</h1>
             <div className={style.supplierAddform}>
               <form className={style.requestsendForm} onSubmit={handleSubmit(onSubmit)}>
                 <div className={style.flexWrapGrid}>

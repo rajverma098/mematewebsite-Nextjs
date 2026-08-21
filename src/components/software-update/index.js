@@ -74,12 +74,12 @@ const SoftwareUpdate = () => {
 
   const article = {
     type: "memate-software-updates",
-    headline: "MeMate Software Updates | Latest Features & Improvements",
+    headline: "meMate Software Updates | Latest Features & Improvements",
     author: "admin",
     publisherName: "Latest Updates",
     publisherLogo:
       "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/logo.svg",
-    keywords: "MeMate Software Updates | Latest Features & Improvements",
+    keywords: "meMate Software Updates | Latest Features & Improvements",
   };
 
   return (

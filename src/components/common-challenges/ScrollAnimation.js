@@ -8,7 +8,7 @@ export default function ScrollAnimation() {
       <div className="bg-scroll">
         <div className="scroll-track">
           {[...images, ...images].map((img, index) => (
-            <img key={index} src={img} className="bg-img" alt="" />
+            <img key={index} src={img} className="bg-img" alt="MeMate business management software" />
           ))}
         </div>
       </div>

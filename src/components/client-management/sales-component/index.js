@@ -26,7 +26,7 @@ const SalesComponent = () => {
         viewport={{ once: true, amount: 0.6 }}
         transition={{ type: "spring", stiffness: 180, damping: 18, mass: 0.6, delay: 1  }}
         >
-        meMate - Designed as a simple cloud CRM to manage your client database. It’s easy to use and easy to navigate - a CRM for small businesses in Australia.
+       meMate is simple, cloud-based <b>client management software</b> built for Australian small businesses to organise client information, manage interactions and strengthen <b>client relationship management</b> from one central platform. It keeps contact details, client history and key business information organised, while its <b>client relationship management database</b> connects client records with quoting, projects, communication and invoicing. With integrated CRM functionality, meMate provides a practical <b>customer relationship management software</b> solution that helps businesses manage client information, streamline workflows and build stronger relationships without switching between multiple tools.
           </motion.span>
         </div>
         <div className="sales-component-button-wrapper">

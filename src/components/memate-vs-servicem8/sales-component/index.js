@@ -11,7 +11,7 @@ const SalesComponent = () => {
     data-aos-once="false"
     data-aos-anchor-placement="top-bottom">
         <h2 className="compaireMainH2">Compare the solutions</h2>
-       <h1 className="comapirMainH1">Compare MeMate vs ServiceM8</h1>
+       <h1 className="comapirMainH1">Compare meMate vs ServiceM8</h1>
       <div className="sales-componet-content-wrapper client-component-para">
      
         <div className="compaire-service01">
@@ -26,7 +26,7 @@ const SalesComponent = () => {
 
         <div className="compaireHeadPara">
           <h2>Work smarter with the #1 Service M8 alternative.</h2>
-          <p>Despite the similarities in name and target audience, these two software solutions are quite different. ServiceM8 is focused more on “on-the-go” tradespeople, while MeMate caters to more established businesses with a more robust workflow.</p>
+          <p>Despite the similarities in name and target audience, these two software solutions are quite different. ServiceM8 is focused more on “on-the-go” tradespeople, while meMate caters to more established businesses with a more robust workflow.</p>
         <br></br>
         <div className="request-btn request-btn-center" data-aos="fade-up"
     data-aos-offset="50"

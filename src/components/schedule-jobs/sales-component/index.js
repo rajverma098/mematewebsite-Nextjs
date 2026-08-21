@@ -25,8 +25,8 @@ const SalesComponent = () => {
         viewport={{ once: true, amount: 0.6 }}
         transition={{ type: "spring", stiffness: 180, damping: 18, mass: 0.6, delay: 1  }}
         >
-        With meMate, you can schedule shifts and jobs for your entire team, including employees and contractors. Simplify job/shift assignment 
-        and ensure everyone knows their responsibilities, keeping your operations smooth and organised.
+        With meMate, you can easily schedule shifts, assign jobs and coordinate work across your entire team, including employees and contractors. Our <b>job management software</b> brings job allocation, scheduling and team coordination into one place, so everyone knows what needs to be done and when. Built-in <b>job tracking software</b> helps you monitor job progress, upcoming work and assigned tasks, giving you better visibility over daily operations. With the <b>job management app</b>, your team can access and manage jobs wherever they work, helping keep schedules organised and work moving efficiently. 
+
           </motion.span>
         </div>
         <div className="sales-component-button-wrapper">

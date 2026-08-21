@@ -7,7 +7,7 @@ const MeMateVsAirtablePage = () => {
     <>
     <AppWrapper>
     <Layout>
-       <ComingSoon />
+       <ComingSoon text="meMate vs Airtable" />
     </Layout>
     </AppWrapper>
     </>

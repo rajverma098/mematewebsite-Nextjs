@@ -41,7 +41,11 @@ const RequestToEdit = ({ supplierData }) => {
      const initLogo = async () => {
     if (supplierData?.upload_url && !upload_file) {
       try {
-        const response = await fetch(supplierData.upload_url);
+      const response = await fetch(
+      `/api/fetch-image?url=${encodeURIComponent(
+        supplierData.upload_url
+      )}`
+    );
         const blob = await response.blob();
         const filename = supplierData.upload_url.split("/").pop();
         const file = new File([blob], filename, { type: blob.type });

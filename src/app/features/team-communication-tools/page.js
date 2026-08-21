@@ -4,18 +4,21 @@
 import CommunicationPage from '../../../page-components/communication';
 
 export const metadata = {
-  title: 'Team Communication Software & Tools for Teams | MeMate',
-  description: 'MeMate team communication tools make teamwork simple. Manage chats, tasks, and updates in one place with the best team communication software.',
+  title: 'Team Communication Software & Tools for Business | meMate',
+    description: "Improve team communication with meMate's team communication software. Chat, assign tasks, organise conversations, and keep everyone connected in one place.",
   openGraph: {
-    title: 'Team Communication Software & Tools for Teams | MeMate',
-    description: 'MeMate team communication tools make teamwork simple. Manage chats, tasks, and updates in one place with the best team communication software.',
+    title: 'Team Communication Software & Tools for Business | meMate',
+    description: "Improve team communication with meMate's team communication software. Chat, assign tasks, organise conversations, and keep everyone connected in one place.",
+},
+  alternates: {
+    canonical: 'https://memate.com.au/features/team-communication-tools',
   },
 }
 
 export default function Communication() {
   return (
     // <AppWrapper>
-      <CommunicationPage />        
+      <CommunicationPage />         
     // </AppWrapper>
   );
 }

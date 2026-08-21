@@ -19,7 +19,7 @@ const StartupsBussinessManagement = () => {
       {/* <p className="industry-bussiness-management-heading">Business Management for</p>
       <span className='industry-bussinees-content gradientAnimenate'>  Startups and New Companies</span> */}
       {/* <div className='industry-bussiness-sub-content'>
-        <p className='industry-bussiness-sub-content-heading'>Why MeMate works exceptionally well for creative agencies</p>
+        <p className='industry-bussiness-sub-content-heading'>Why meMate works exceptionally well for creative agencies</p>
         <p className='industry-bussiness-sub-content-description'>Are you looking for the perfect project management <br></br>software for your creative agency?</p>
       
       </div> */}

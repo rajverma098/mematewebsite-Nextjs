@@ -10,6 +10,9 @@ export const metadata = {
     title: 'Subprocessors & Data Partners | Trusted List | MeMate',
     description: 'Discover how MeMate securely manages subprocessors to protect your data & privacy. Learn what we use, why it matters, and take control today! Visit us now.',
   },
+  alternates: {
+    canonical: 'https://memate.com.au/subprocessors',
+  },
 }
 
 

@@ -14,10 +14,10 @@ const ThankYouComponents  = () => {
   return (
    <>
     <Helmet>
-    <title>Thank You for Choosing MeMate | Business Software You Trust</title>
-    <meta name="description" content="Thank you for trusting MeMate. Our tools make it easy to manage tasks, teams, and growth so your business runs smoother every day." />
-    <meta property="og:title" content="Thank You for Choosing MeMate | Business Software You Trust" />
-    <meta property="og:description" content="Thank you for trusting MeMate. Our tools make it easy to manage tasks, teams, and growth so your business runs smoother every day." />
+    <title>Thank You for Choosing meMate | Business Software You Trust</title>
+    <meta name="description" content="Thank you for trusting meMate. Our tools make it easy to manage tasks, teams, and growth so your business runs smoother every day." />
+    <meta property="og:title" content="Thank You for Choosing meMate | Business Software You Trust" />
+    <meta property="og:description" content="Thank you for trusting meMate. Our tools make it easy to manage tasks, teams, and growth so your business runs smoother every day." />
   </Helmet>
     <div className={`${style.Errorpage}`}>
     <div className={`${style.imgText}`}>
@@ -25,7 +25,7 @@ const ThankYouComponents  = () => {
         <img className={style.images} src={Images.koalaTransparent} alt={Images.koalaTransparent} />
       </div>
     <div className={`${style.TextHead}`}>
-        <h1 className='h1tagsseo fontSize42-2'>Thank You from MeMate – We Value Your Business</h1>
+        <h1 className='h1tagsseo fontSize42-2'>Thank You from meMate – We Value Your Business</h1>
         <p className='fontAndText'>Your support means the world to us. We’re excited to continue this journey together!</p>
         <div className={`${style.button}`}>
         <Link href="#" onClick={() => router.back()} ><img src={arrowIconBack} alt="Arrow" /> <span className='ssMDFont'>Back</span></Link>

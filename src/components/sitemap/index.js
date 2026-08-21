@@ -140,24 +140,24 @@ const SitemapComponent = () => {
         <h3>Compare</h3>
         <div className={style.sitemapGrid}>
         <div className={style.sitemapGridItem}>
-            <Link href="/compare/memate-vs-quickbooks">MeMate vs QuickBooks</Link>
+            <Link href="/compare/memate-vs-quickbooks">meMate vs QuickBooks</Link>
             {/* <Link href="/legalvision">Run Your Business</Link> */}
-            <Link href="#">MeMate vs Myob</Link>
-            <Link href="/compare/memate-vs-jira">MeMate Vs Jira</Link>
-            <Link href="#">MeMate vs Monday</Link>
-            <Link href="#">MeMate vs Trello</Link>
-            <Link href="#">MeMate vs SalesForce</Link>
-            <Link href="#">MeMate vs Airtable</Link>
+            <Link href="#">meMate vs Myob</Link>
+            <Link href="/compare/memate-vs-jira">meMate Vs Jira</Link>
+            <Link href="#">meMate vs Monday</Link>
+            <Link href="#">meMate vs Trello</Link>
+            <Link href="#">meMate vs SalesForce</Link>
+            <Link href="#">meMate vs Airtable</Link>
            
         </div>
         <div className={style.sitemapGridItem}>
            <Link href="#">MeMate vs Wrike</Link>
-            <Link href="/compare/memate-vs-servicem8">MeMate vs Servicem8</Link>
-            <Link href="#">MeMate vs Reckon</Link>
-            <Link href="#">MeMate vs Xero</Link>
-            <Link href="/compare/memate-vs-microsoft-project">MeMate vs ms Project</Link>
-            <Link href="/compare/memate-vs-sage">MeMate vs Sage</Link>
-            <Link href="/compare/memate-vs-netsuite">MeMate vs NetSuite</Link>
+            <Link href="/compare/memate-vs-servicem8">meMate vs Servicem8</Link>
+            <Link href="#">meMate vs Reckon</Link>
+            <Link href="#">meMate vs Xero</Link>
+            <Link href="/compare/memate-vs-microsoft-project">meMate vs ms Project</Link>
+            <Link href="/compare/memate-vs-sage">meMate vs Sage</Link>
+            <Link href="/compare/memate-vs-netsuite">meMate vs NetSuite</Link>
         </div>
         </div>
       </li>

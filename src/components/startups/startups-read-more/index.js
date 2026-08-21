@@ -12,7 +12,7 @@ const ReadMoreData = ({postsLatestReadMore}) => {
     data-aos-once="false"
     data-aos-anchor-placement="top-bottom">
       <div className="industry-read-more-content">
-        <p className="read-more-heading">Read More MeMate</p>
+        <p className="read-more-heading">Read More meMate</p>
         <div className="read-more-card-wrapper">
           {postsLatestReadMore?.map((post, index) => (
             <div className="read-more-card" key={index}>

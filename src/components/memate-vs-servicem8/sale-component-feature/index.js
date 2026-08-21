@@ -35,21 +35,21 @@ const SalesComponentFeature = () => {
       <div className={style.sectionService8Gradient}>
       <div className={style.gridService8L}>
         <img src='https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/logo.svg' alt='Services M8' />
-      <h4>What’s MeMate<br/>
+      <h4>What’s meMate<br/>
       Good For?</h4>
-      <p>MeMate, on the other hand, is designed to be run from an office environment. It offers features for quoting, invoicing, and project management, with the ability to assign and track jobs for employees and contractors. </p>
-      <p>Although it is less flexible in terms of on-the-go usage, MeMate provides a more structured and secure system, enabling managers to maintain a strict workflow.</p>
+      <p>meMate, on the other hand, is designed to be run from an office environment. It offers features for quoting, invoicing, and project management, with the ability to assign and track jobs for employees and contractors. </p>
+      <p>Although it is less flexible in terms of on-the-go usage, meMate provides a more structured and secure system, enabling managers to maintain a strict workflow.</p>
         </div>
         <div className={style.gridService8R}>
         <img src='https://memate-website.s3.ap-southeast-2.amazonaws.com/compaire-servicem8-01-min.png' alt='Services M8 Services' />
         </div>
         </div>
         <div className='m8compaireSwitchingSection01'>
-        <h2>More benefits to switching to MeMate</h2>
+        <h2>More benefits to switching to meMate</h2>
           <div className='m8InSection01'>
               <div className='m8InFlexLeft'>
                <h3>Switching <span>is easy</span></h3>
-               <p>Our team is here to help you transition smoothly by migrating your existing data to MeMate. If you’re considering the switch, let us know, and we’ll support you every step of the way.</p>
+               <p>Our team is here to help you transition smoothly by migrating your existing data to meMate. If you’re considering the switch, let us know, and we’ll support you every step of the way.</p>
               </div>
               <div className='m8InFlexRight'>
                 <img src='https://memate-website.s3.ap-southeast-2.amazonaws.com/m8image01-min.jpg' alt='m8image01'/>
@@ -63,14 +63,14 @@ const SalesComponentFeature = () => {
               </div>
               <div className='m8InFlexLeft'>
                <h3>Service M8 <span>Alternative</span></h3>
-               <p>MeMate could be a great alternative to ServiceM8 for your business. Reach out to our onboarding team today for a free demo!</p>
+               <p>meMate could be a great alternative to ServiceM8 for your business. Reach out to our onboarding team today for a free demo!</p>
               </div>
           </div>
         </div>
       <div className={`${style.sectionService8grey} sectionService8greyNew`}>
       <div className={style.gridService8L}>
       <h4>In short</h4>
-      <p>MeMate could be a great alternative to ServiceM8 for your business. Reach out to our onboarding team today for a free demo!</p>
+      <p>meMate could be a great alternative to ServiceM8 for your business. Reach out to our onboarding team today for a free demo!</p>
           <div className='topSpaceGap'>
          <DarkMemateBlackBut
       link1="https://app.memate.com.au/requestdemo"
@@ -98,13 +98,13 @@ const SalesComponentFeature = () => {
         data-aos-once="false"
         data-aos-anchor-placement="top-bottom">
            <h3>Compare</h3>
-        <span className='gradientAnimenate'>MeMate vs ServiceM8</span>
+        <span className='gradientAnimenate'>meMate vs ServiceM8</span>
        <p>Choosing software is about finding the right balance between functionality and a simple, intuitive interface.</p>
       </div>
         <ComparisonTabs />
         </div>
         <div className={style.sectionSwapWrap}>
-        <h2>Swap Multiple Tools for <br></br><span>MeMate</span> and <span>Save Money</span></h2>
+        <h2>Swap Multiple Tools for <br></br><span>meMate</span> and <span>Save Money</span></h2>
         <div className={style.sectionSwapWrapBg}>
         <div className={style.sectionSwapL}>
           <p><img src='https://memate-website.s3.ap-southeast-2.amazonaws.com/media/pricing-cardLT.png' alt='pricingcard' /></p>

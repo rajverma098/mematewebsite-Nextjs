@@ -5,9 +5,9 @@ const IndustryHeader = () => {
   return (
     <>
     <div className='NextHeaderWrap'>
-      <h1>Agency Management Software for Creative Agencies | meMate</h1>
+      <h1>Business Software for Creative Agencies Australia | meMate</h1>
       <h2>software for creatives</h2>
-      <p>Easily create and quote your projects based on hourly rates or cost-of-sale models, <br/>ensuring accurate and efficient pricing for your creative work.</p>
+      <p>Streamline projects, clients, quotes, invoicing and team workflows with business software for creative agencies built for growing Australian businesses.</p>
     </div>
       <div className='NextHeaderWrapper'>
     <div className='industryNewHead'>

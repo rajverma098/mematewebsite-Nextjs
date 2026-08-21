@@ -580,6 +580,9 @@ h1{
         .databasesLogo{
         margin: 60px auto 10px;
         }
+        .databasesLogo img{
+        width: 100%;
+        }
         h2{
             font-size: 30px;
         }
@@ -588,6 +591,7 @@ h1{
             grid-template-columns: 100%;
             width: 100%;
             margin: 37px auto;
+            padding: 0 22px;
             .itemDatalist{
                 padding: 16px 24px;
             }
