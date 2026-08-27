@@ -4,7 +4,6 @@ import "./videostyles.css";
 import "react-responsive-modal/styles.css";
 import { Modal } from "react-responsive-modal";
 import PlayIconVideo from "../../svg/PlayIconVideo";
-import { LazyLoadImage } from "react-lazy-load-image-component";
 import PauseIconVideo from "../../svg/PauseIconVideo";
 
 const LessBusyness = () => {
@@ -12,7 +11,6 @@ const LessBusyness = () => {
   const [fromUrlParam, setFromUrlParam] = useState(false);
   const [isPlaying, setIsPlaying] = useState(false);
   const modalVideoRef = useRef(null);
-
   const onOpenModal = () => {
     setOpen(true);
   };
@@ -34,16 +32,13 @@ const LessBusyness = () => {
     }
   }, []);
 
-  // Handle video playback when modal opens
   useEffect(() => {
     if (open && modalVideoRef.current) {
       if (fromUrlParam) {
-        // Unmute and play when opened from URL param
         modalVideoRef.current.muted = false;
         modalVideoRef.current.play();
         setIsPlaying(true);
       } else {
-        // Muted autoplay when opened from home screen button
         modalVideoRef.current.muted = true;
         modalVideoRef.current.play();
         setIsPlaying(true);

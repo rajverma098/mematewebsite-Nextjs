@@ -56,7 +56,7 @@ const LandingPage = ({ postsLatest }) => {
         <SmoothScroll/> 
         <Layout>
         
-          <BussinessManagement />   
+          <BussinessManagement />     
           <LessBusyness />     
           <FeaturedOn />   
           <FindOneApplication />

@@ -60,7 +60,7 @@ const CalendarComponentFeature = () => {
         </motion.span>
       </div>
       <div className="scroll-stack-wrapper">
-        <ScrollStack CardDataComponent={CalendarManagement} color="white" i={1} />
+        <ScrollStack CardDataComponent={CalendarManagement} color="white" i={1} /> 
         <ScrollStack CardDataComponent={CRMCalendarTools} color="white" i={2} />
         <ScrollStack CardDataComponent={PipeLineTool} color="white" i={3} />
         <ScrollStack CardDataComponent={CalendarProcessOptimiation} color="white" i={4} />
