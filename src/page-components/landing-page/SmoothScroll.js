@@ -1,67 +1,110 @@
-// "use client";
-
-// import { useEffect } from "react";
-// import Lenis from "lenis";
-// import { ScrollTrigger } from "gsap/ScrollTrigger";
-// import "lenis/dist/lenis.css";
-
-// export default function SmoothScroll() {
-//   useEffect(() => {
-//     const lenis = new Lenis({
-//       duration: 1,
-//       smoothWheel: true,
-//       syncTouch: false,
-//       wheelMultiplier: 1,
-//       touchMultiplier: 1,
-//       // autoRaf: true,
-//     });
-
-//     lenis.on("scroll", ScrollTrigger.update);
-
-//     return () => {
-//       lenis.off("scroll", ScrollTrigger.update);
-//       lenis.destroy();
-//     };
-//   }, []);
-
-//   return null;
-// }
-
-
-
-
 "use client";
 
 import { useEffect } from "react";
 import Lenis from "lenis";
-import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
 import "lenis/dist/lenis.css";
 
-gsap.registerPlugin(ScrollTrigger);
+function isSafari() {
+  const ua = navigator.userAgent;
+  return (
+    /safari/i.test(ua) &&
+    !/chrome|chromium|crios|fxios|edg|edgios|android/i.test(ua)
+  );
+}
+
+function wheelDeltaPx(event) {
+  if (event.deltaMode === WheelEvent.DOM_DELTA_LINE) return event.deltaY * 16;
+  if (event.deltaMode === WheelEvent.DOM_DELTA_PAGE) {
+    return event.deltaY * window.innerHeight;
+  }
+  return event.deltaY;
+}
+
+function isSafariTrackpad(event) {
+  if (event.ctrlKey) return true;
+  if (Math.abs(event.deltaX) > 0.25) return true;
+  if (event.deltaMode !== WheelEvent.DOM_DELTA_PIXEL) return false;
+
+  const dy = Math.abs(event.deltaY);
+  if (dy > 0 && dy < 40) return true;
+  if (Math.abs(event.deltaY - Math.round(event.deltaY)) > 0.001) return true;
+
+  const wheelDelta = event.wheelDelta;
+  if (
+    typeof wheelDelta === "number" &&
+    wheelDelta !== 0 &&
+    wheelDelta % 120 !== 0
+  ) {
+    return true;
+  }
+
+  return false;
+}
 
 export default function SmoothScroll() {
   useEffect(() => {
+    const safari = isSafari();
+    if (safari) {
+      document.documentElement.classList.add("is-safari");
+    }
+
     const lenis = new Lenis({
       duration: 1.2,
-      smoothWheel: true,
+      smooth: true,
+      smoothWheel: !safari,
+      smoothTouch: !safari,
       syncTouch: false,
-      wheelMultiplier: 1,
-      touchMultiplier: 1,
     });
 
-    lenis.on("scroll", ScrollTrigger.update);
+    let animationFrame;
+    const raf = (time) => {
+      lenis.raf(time);
+      animationFrame = requestAnimationFrame(raf);
+    };
+    animationFrame = requestAnimationFrame(raf);
 
-    const update = (time) => {
-      lenis.raf(time * 1000);
+    let inputLock = null;
+    let lockTimer = null;
+
+    const onSafariWheel = (event) => {
+      if (event.ctrlKey) return;
+      if (Math.abs(event.deltaX) > Math.abs(event.deltaY)) return;
+
+      const trackpad = isSafariTrackpad(event);
+
+      if (inputLock === null) {
+        inputLock = trackpad ? "trackpad" : "mouse";
+      }
+
+      if (lockTimer) window.clearTimeout(lockTimer);
+      lockTimer = window.setTimeout(() => {
+        inputLock = null;
+        lockTimer = null;
+      }, 180);
+
+      if (inputLock === "trackpad") return;
+
+      event.preventDefault();
+      event.stopPropagation();
+      lenis.scrollTo(lenis.targetScroll + wheelDeltaPx(event) * 1.2, {
+        duration: 1.2,
+      });
     };
 
-    gsap.ticker.add(update);
-    gsap.ticker.lagSmoothing(0);
+    if (safari) {
+      window.addEventListener("wheel", onSafariWheel, {
+        passive: false,
+        capture: true,
+      });
+    }
 
     return () => {
-      lenis.off("scroll", ScrollTrigger.update);
-      gsap.ticker.remove(update);
+      if (lockTimer) window.clearTimeout(lockTimer);
+      if (safari) {
+        window.removeEventListener("wheel", onSafariWheel, { capture: true });
+      }
+      cancelAnimationFrame(animationFrame);
+      document.documentElement.classList.remove("is-safari");
       lenis.destroy();
     };
   }, []);

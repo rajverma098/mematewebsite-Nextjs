@@ -11,6 +11,7 @@ const LessBusyness = () => {
   const [fromUrlParam, setFromUrlParam] = useState(false);
   const [isPlaying, setIsPlaying] = useState(false);
   const modalVideoRef = useRef(null);
+  const previewVideoRef = useRef(null);
   const onOpenModal = () => {
     setOpen(true);
   };
@@ -30,6 +31,31 @@ const LessBusyness = () => {
       setFromUrlParam(true);
       setOpen(true);
     }
+  }, []);
+
+  useEffect(() => {
+    const video = previewVideoRef.current;
+    if (!video) return undefined;
+
+    video.pause();
+    video.muted = true;
+    video.playsInline = true;
+    video.setAttribute("playsinline", "");
+    video.setAttribute("webkit-playsinline", "");
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          video.play().catch(() => {});
+        } else {
+          video.pause();
+        }
+      },
+      { threshold: 0.35, rootMargin: "0px" }
+    );
+
+    observer.observe(video);
+    return () => observer.disconnect();
   }, []);
 
   useEffect(() => {
@@ -64,7 +90,6 @@ const LessBusyness = () => {
                    <video
                   width="100%"
                   height="100%"
-                  // poster="https://memate-website.s3.ap-southeast-2.amazonaws.com/videoposter-memate-bg.jpg"
                   autoPlay
                   muted
                   loop
@@ -94,13 +119,14 @@ const LessBusyness = () => {
               <div className={style.videoWrapper1}></div>
               <div className={style.videoWrapperv}>
                 <video
+                  ref={previewVideoRef}
                   width="100%"
                   height="100%"
                   poster="https://memate-website.s3.ap-southeast-2.amazonaws.com/videoposter-memate-bg.jpg"
-                  autoPlay
                   muted
                   loop
                   playsInline
+                  preload="none"
                   className={style.reactPlayer}
                 >
                   <source

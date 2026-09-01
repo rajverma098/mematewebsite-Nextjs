@@ -78,6 +78,14 @@
   animation-play-state: paused;
 } */
 
+html.is-safari .business-card {
+  filter: none;
+}
+
+html.is-safari .animated-dash {
+  animation: none;
+}
+
 .diagram-tooltip {
   position: absolute;
   z-index: 2;

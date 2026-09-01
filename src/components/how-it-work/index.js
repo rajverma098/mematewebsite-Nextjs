@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useLayoutEffect, useRef, useState } from "react";
 import dynamic from "next/dynamic";
 import Tabs from "./Tabs";
 import "./HowItWorks.css";
@@ -16,9 +16,27 @@ const WorkTabs = dynamic(() => import("./WorkTabs"), {
   loading: () => <div className="diagram-loading" aria-live="polite">Loading...</div>,
 });
 
+function isSafariBrowser() {
+  if (typeof navigator === "undefined") return false;
+  const ua = navigator.userAgent;
+  return (
+    /safari/i.test(ua) &&
+    !/chrome|chromium|crios|fxios|edg|edgios|android/i.test(ua)
+  );
+}
+
 export default function HowItWorks() {
   const sectionRef = useRef(null);
   const [isInView, setIsInView] = useState(false);
+  const [safariLite, setSafariLite] = useState(false);
+
+  useLayoutEffect(() => {
+    const safari = isSafariBrowser();
+    setSafariLite(safari);
+    if (safari) {
+      document.documentElement.classList.add("is-safari");
+    }
+  }, []);
 
   useEffect(() => {
     const section = sectionRef.current;
@@ -59,7 +77,11 @@ export default function HowItWorks() {
       ref={sectionRef}
       className={`how-it-works-wrapper hero-section${isInView ? " is-in-view" : ""}`}
     >
-       <BackgroundShape className="hero-bg" />
+       {safariLite ? (
+         <div className="hero-bg hero-bg-lite" aria-hidden="true" />
+       ) : (
+         <BackgroundShape className="hero-bg" />
+       )}
      <div className="hero-content">
       <div className="how-it-works-header">
               <h2>meMate</h2>
