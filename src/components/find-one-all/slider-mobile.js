@@ -23,7 +23,6 @@ import EmployeesActive from "../../svg/EmployeesActive";
 import WhiteButtonBammer from '../../layout/hover-button/WhiteButtonBammer';
 import Link from 'next/link';
 const SalesImage = "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/slider/img-sales-banner-min.png";
-// const SalesImage = "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/Sales-image-banner.svg";
 const CalculationImage = "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/slider/img-calculation-min.png";
 const EmployeesImage = "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/slider/img-employees-min.png";
 const SchedulingImage = "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/slider/img-scheduling-min.png";
@@ -227,16 +226,7 @@ function SliderTabMobile() {
         className="large-image-container "
          role="group"
         aria-roledescription="slide"
-        aria-label={`Slide ${index + 1} of ${tabs.length}`} 
-        data-aos="fade-up"
-        data-aos-offset="50"
-        data-aos-delay="50"
-        data-aos-duration="1400"
-        data-aos-mirror="true"
-        data-aos-once="false"
-        data-aos-anchor-placement="top-bottom"
-        key={index}
-      >
+        aria-label={`Slide ${index + 1} of ${tabs.length}`}  key={index}>
           <div key={index}>
             <img
               src={tab.image}
@@ -263,9 +253,5 @@ function SliderTabMobile() {
     </div>
   );
 }
-
-
-
-
 
 export default SliderTabMobile;

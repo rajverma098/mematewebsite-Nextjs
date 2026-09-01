@@ -37,6 +37,24 @@
     letter-spacing: 0px;
 
 }
+.CaseStudiesSection h5 {
+    color: #101828;
+    letter-spacing: -1.3px;
+    margin: 0;
+    font-size: 64px;
+    font-weight: 100;
+    line-height: 120%;
+    font-family: 'sequel_sans' !important;
+}
+.CaseStudiesSection h5 span {
+   color: #101828;
+    letter-spacing: -1.3px;
+    margin: 0;
+    font-size: 64px;
+     font-family: 'sequel_sans_bold_disp' !important;
+    font-weight: 100;
+    line-height: 120%;
+}
  .CaseStudiesItem .imageBox .overlyBox span {
     color: #fff;
     text-align: left;

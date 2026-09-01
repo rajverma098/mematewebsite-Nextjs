@@ -60,7 +60,7 @@ const LessBusyness = () => {
   return (
     <>
       <div className={style.shelfgradientwrap}>
-        <div className={style.videobackground}>
+        {/* <div className={style.videobackground}>
                    <video
                   width="100%"
                   height="100%"
@@ -72,12 +72,12 @@ const LessBusyness = () => {
                   className={style.reactPlayer}
                 >
                   <source
-                    src="https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/video/video-bg.mp4"
+                    src="https://memate-website.s3.ap-southeast-2.amazonaws.com/video-bg-compressed-main1.mp4"
                     type="video/mp4"
                   />
                   Your browser does not support the video tag.
                 </video>
-          </div>
+          </div> */}
 
         <div className={`${style.shelfgradient} ${style.videoOverlyWrap} `}>
           <div className={style.lessContainers}>

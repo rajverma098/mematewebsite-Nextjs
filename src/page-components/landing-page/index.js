@@ -56,21 +56,21 @@ const LandingPage = ({ postsLatest }) => {
         <SmoothScroll/> 
         <Layout>
         
-          <BussinessManagement />     
+          <BussinessManagement />      
           <LessBusyness />     
-          <FeaturedOn />   
-          <FindOneApplication />
+          <FeaturedOn />     
+          <FindOneApplication /> 
           <CommonChallenges /> 
           <HowItWork />
           <div className="bgshadowwrapper salesFeatureBg">
            <HomePageFeatuchers /> 
          </div>
-           <ZeroOfferOnboarding /> 
+           <ZeroOfferOnboarding />  
           <SeamlessInegration />
           <BrandLogoSlide />    
-          <CaseStudiesHome />          
+          <CaseStudiesHome />           
           {/* <SimpleVersatilePowerful /> */}
-          <SuccessStories />  
+          <SuccessStories />   
           <NewsAndUpdate postsLatest={postsLatest} />
            <AutomotiveQuesitonAndAns />  
         </Layout>

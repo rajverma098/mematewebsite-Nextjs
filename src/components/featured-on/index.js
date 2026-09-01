@@ -6,13 +6,7 @@ import AbcDotCom from "../../svg/AbcDotCom";
 import TheGardian from "../../svg/TheGardian";
 const FeaturedOn = () => {
   return (
-    <div className="featured-section" data-aos="fade-up"
-    data-aos-offset="50"
-    data-aos-delay="50"
-    data-aos-duration="1000"
-    data-aos-mirror="true"
-    data-aos-once="false"
-    data-aos-anchor-placement="top-bottom">
+    <div className="featured-section">
       <div className="featured-text">
         <p>Featured on:</p>
         <div className="brand-names">

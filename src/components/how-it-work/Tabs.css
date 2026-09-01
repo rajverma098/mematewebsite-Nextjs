@@ -62,21 +62,21 @@
   stroke-dashoffset: 0;
   animation: dashMove 1.5s linear infinite;
 }
-
+/* 
 @keyframes dashMove {
   to {
     stroke-dashoffset: -8;
   }
-}
+} */
 
 
 .animated-dash {
   fill: none !important;
 }
 
-.how-it-works-wrapper:not(.is-in-view) .animated-dash {
+/* .how-it-works-wrapper:not(.is-in-view) .animated-dash {
   animation-play-state: paused;
-}
+} */
 
 .diagram-tooltip {
   position: absolute;

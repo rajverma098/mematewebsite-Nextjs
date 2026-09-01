@@ -20,12 +20,9 @@ import Scheduling from "../../svg/Scheduling";
 import SchedulingActive from "../../svg/SchedulingActive";
 import Employees from "../../svg/Employees";
 import EmployeesActive from "../../svg/EmployeesActive";
-import WhiteButtonBammer from '../../layout/hover-button/WhiteButtonBammer';
-import Link from "next/link";
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import DarkMemateBlackBut from "@/layout/hover-button/DarkMemateBlackBut";
 const SalesImage = "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/slider/img-sales-banner-min.png";
-// const SalesImage = "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/Sales-image-banner.svg";
 const CalculationImage = "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/slider/img-calculation-min.png";
 const EmployeesImage = "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/slider/img-employees-min.png";
 const SchedulingImage = "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/slider/img-scheduling-min.png";
@@ -38,9 +35,6 @@ const ManagementImage = "https://memate-website.s3.ap-southeast-2.amazonaws.com/
 const tabs = [
     { 
        label: "Sales",
-      // image1x: SalesImage,
-      // image2x: SalesImage,
-      // image3x: SalesImage,
        image: SalesImage, 
       iconIamgeActive: <SalesActive alt="Sales active icon" />, 
       iconIamge: <Sales alt="Sales icon" />, 
@@ -114,9 +108,6 @@ const tabs = [
     { 
       label: "Employees", 
       image: EmployeesImage,
-      // image1x: EmployeesImage,
-      // image2x: EmployeesImage,
-      // image3x: EmployeesImage, 
       iconIamgeActive: <EmployeesActive alt="Employees active icon" />, 
       iconIamge: <Employees alt="Employees icon" />, 
       head: 'Employees and Contractors', 
@@ -138,10 +129,6 @@ function  CenterMode() {
     setNav2(slider2.current);
   }, []);
 
-
-
-
-
  const updateSlideFocus = () => {
     const slides = document.querySelectorAll(".slick-slide");
     slides.forEach((slide) => {
@@ -158,11 +145,6 @@ function  CenterMode() {
     const timer = setTimeout(updateSlideFocus, 200); // small delay to wait for DOM update
     return () => clearTimeout(timer);
   }, [currentIndex]);
-
-
-
-
-
 
   const mainSettings = {
     slidesToShow: 1,
@@ -221,12 +203,6 @@ function  CenterMode() {
     ]
   };
 
-
-
-
-
-
-  
   return (
     <div className="oneappwrap large-image-container-wrap" style={{ padding: "40px" }}>
       <Slider {...navSettings} ref={slider2} className="sliderTabWrapper" style={{ marginTop: "20px" }}>
@@ -241,48 +217,20 @@ function  CenterMode() {
           </div>
         ))}
       </Slider>
-
       <Slider {...mainSettings} ref={slider1}>
         {tabs.map((tab, index) => (
              <div 
         className="large-image-container"
             role="group"
             aria-roledescription="slide"
-            aria-label={`Slide ${index + 1} of ${tabs.length}`}
-        data-aos="fade-up"
-        data-aos-offset="50"
-        data-aos-delay="50"
-        data-aos-duration="1400"
-        data-aos-mirror="true"
-        data-aos-once="false"
-        data-aos-anchor-placement="top-bottom"
-        key={index}>
+            aria-label={`Slide ${index + 1} of ${tabs.length}`} key={index}>
           <div key={index}>
              <LazyLoadImage
               alt={tab.label}
               src={tab.image}
-              // width={800}
-              // height={600}
               effect="blur" 
               style={{ width: "100%", height: "auto" }}
             />
-            {/* <img
-              src={tab.image}
-              alt={tab.label}
-              className="large-image"
-              width="800"
-              height="600"
-              type="image/svg+xml" loading="lazy"
-              style={{ width: "100%", height: "auto" }}
-            /> */}
-            {/* <img
-            srcSet={`${tab.image3x} 600w, ${tab.image2x} 1200w, ${tab.image1x} 1800w`}
-            sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 25vw"
-            src={tab.image1x}
-            alt={tab.label}
-            className="large-image"
-            style={{ width: "100%", maxHeight: "500px", objectFit: "contain" }}
-          /> */}
             <div style={{ padding: "20px", textAlign: "center" }}>
                 <div className="how-to-use">
               <p>{tab.head}</p>
@@ -290,16 +238,11 @@ function  CenterMode() {
                <div className="businesses-mode">
               <span>{tab.para}</span>
               </div>
-            
-        {/* <Link href={tab.link} className="nav-btn--get-started get-started-border-box navbar-link">
-        <WhiteButtonBammer text="Find more" />
-        </Link> */}
-         <DarkMemateBlackBut
-      link2={tab.link}
-      buttonTextlight="Find more"
-      showButton2={true}
-    />
-   
+            <DarkMemateBlackBut
+              link2={tab.link}
+              buttonTextlight="Find more"
+              showButton2={true}
+            />
             </div>
           </div>
           </div>
@@ -308,9 +251,4 @@ function  CenterMode() {
     </div>
   );
 }
-
-
-
-
-
 export default CenterMode;
