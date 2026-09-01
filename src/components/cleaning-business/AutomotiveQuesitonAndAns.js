@@ -7,43 +7,44 @@ import { Helmet } from "react-helmet-async";
 const AutomotiveQuesitonAndAns = () => {
   const [selectedQuestion, setSelectedQuestion] = useState();
 
-  const questions = [
-    {
-      question: "What is meMate?",
-      key: 0,
-      answer:
-        "meMate is an all-in-one business management software that helps companies manage projects, teams, clients, finances, and workflows from one platform.",
-    },
-    {
-      question: "Is meMate suitable for small businesses?",
-      key: 1,
-      answer:
-        "Yes. meMate is designed as a powerful small business management software, offering simple setup, intuitive workflows, and the ability to scale as your business grows.",
-    },
-    {
-      question:
-        "What type of businesses uses meMate?",
-      key: 2,
-      answer:
-        "meMate is ideal for service-based businesses, agencies, trades, consultants, and growing SMEs that need better control over operations and reporting.",
-    },
-    {
-      question:
-        "Can meMate replace multiple tools?",
-      key: 3,
-      answer:
-        "Absolutely. meMate is built to replace spreadsheets, CRMs, project tools, invoicing software, and scheduling apps with one integrated solution.",
-    },
-    {
-      question:
-        "Is meMate cloud-based?",
-      key: 4,
-      answer:
-        "Yes. meMate is a secure, cloud-based company management software accessible from anywhere.",
-    },
-  
-  ];
-
+ const questions = [
+  {
+    question: "Do I need to be tech savvy to use it?",
+    key: 0,
+    answer:
+      "Not at all. meMate is built for people who run businesses, not people who sit in front of a screen all day. It is simple, clean, and focused on giving you everything you actually need — without unnecessary complexity.",
+  },
+  {
+    question: "How long does setup take?",
+    key: 1,
+    answer:
+      "Most businesses are fully up and running within a few days to a week. New businesses can start instantly, and our team is with you every step of the way in real time, so you are never left figuring things out alone.",
+  },
+  {
+    question: "Does it work on mobile?",
+    key: 2,
+    answer:
+      "Yes. meMate is designed to work across desktop, tablet, and mobile. Management teams can run the business from desktop and tablet, while contractors and employees can use the mobile version to communicate, manage jobs, and track shifts.",
+  },
+  {
+    question: "Does it integrate with Xero or MYOB?",
+    key: 3,
+    answer:
+      "Absolutely. meMate lets you send invoices and bills directly to Xero or MYOB with one click, helping your bookkeeper and accountant get the information they need without unnecessary double handling.",
+  },
+  {
+    question: "What happens after my 14 day trial?",
+    key: 4,
+    answer:
+      "After your 14-day trial, meMate is just $98 a month with no lock-in contract. You can cancel anytime. Most customers see the value within the first few days, but if you need more time, simply let us know.",
+  },
+  {
+    question: "Is there a real person I can call for support?",
+    key: 5,
+    answer:
+      "Yes. You can speak with a real person based right here in Sydney, with dedicated support for your account from day one.",
+  },
+];
 
   const toggleQuestion = (key) => {
     setSelectedQuestion(selectedQuestion === key ? null : key); 
@@ -67,13 +68,12 @@ const generateFAQSchema = () => {
 };
 
   return (
-    <div className="question-answer-wrapper questionAnswerMain">
+    <div className="question-answer-wrappercl cleaningFaqs">
        <Helmet>
                     <script type="application/ld+json">{generateFAQSchema()}</script>
                   </Helmet>
-    <div className="question-answer-content">
-      <div className="question-answer-heading-wrapperF">
-        <p className="question-answer-heading">We answer your questions</p>
+      <div className="question-answer-headingcl">
+        <p className="question-answer-heading">Questions You're Probably <span>Asking Right Now</span></p>
       </div>
       <div className="questions-wrapper">
         {questions.map((ques) => (
@@ -119,7 +119,7 @@ const generateFAQSchema = () => {
           </div>
         ))}
       </div>
-    </div>
+ 
   </div>
   );
 };

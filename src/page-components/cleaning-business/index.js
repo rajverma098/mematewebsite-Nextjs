@@ -6,12 +6,13 @@ import AppWrapper from '../../components/AppWrapper';
 import SmoothScroll from "./SmoothScroll";
 
 const CleaningBusinessPage = () => {
+
   return (
     <AppWrapper>
     <Layout>
-      <div className="bgshadowwrapper">
-           <SmoothScroll/> 
-        <CleaningBusinessComponent/>
+      <div className="bgshadowwrapper salesFeatureBg">
+           <SmoothScroll/>  
+        <CleaningBusinessComponent/> 
         </div>
     </Layout>
     </AppWrapper>

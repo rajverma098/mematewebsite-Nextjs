@@ -117,6 +117,7 @@ const Footer = () => {
             <div className="links">
               <p className="link-heading">Industries</p>
               <div className="page-links" style={{width: "181px"}}>
+              <Link href="/cleaning-business">Cleaning Business</Link>
               <Link href="/industries/business-software-for-creative-agencies">Creative Agencies</Link>
               <Link href="/industries/software-for-electronic-repair-businesses">Electronic Repair Specialists</Link>
               <Link href="/industries/software-for-photo-video-agencies">Photo & Video Agency</Link>
