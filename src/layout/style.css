@@ -8,15 +8,6 @@
     margin-bottom: -130px !important;
 }
 .sticky-section-switch {
-    transform: translate3d(0,0,0);
-  }
-
-  .children-wrapper {
-    backface-visibility: hidden;
-    perspective: 1000;
-  }
-
-  .sticky-section-switch {
     position: -webkit-relative; /* Safari fallback */
     position: relative;
     top: 0;

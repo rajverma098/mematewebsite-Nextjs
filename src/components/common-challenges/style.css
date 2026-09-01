@@ -27,6 +27,12 @@
     left: 0;
 }
 
+html.is-safari .phone-frame:before {
+  filter: none;
+  background: radial-gradient(#000000 0%, #000000 35%, transparent 80%);
+  opacity: 0.35;
+}
+
 .frame-image {
   width: 100%;
   height: auto;
@@ -46,9 +52,6 @@
 .scroll-content {
   display: flex;
   flex-direction: column;
-  transform: translateY(0px);
-  will-change: transform;
-  transition: transform 0.80s ease-out;
 }
 .screen-image {
   width: 100%;
@@ -98,6 +101,9 @@
   height: 413px;
   border-radius: 30px;
   background: #f7f8fa;
+  contain: layout paint;
+  content-visibility: auto;
+  contain-intrinsic-size: auto 413px;
 }
 .bg-scroll {
   position: absolute;
@@ -110,6 +116,12 @@
   display: flex;
   width: max-content;
   animation: infiniteScroll 90s linear infinite;
+  animation-play-state: paused;
+}
+
+.common-challenges-section.is-in-view .scroll-track {
+  animation-play-state: running;
+  will-change: transform;
 }
 .bg-img {
   width: 180px;
@@ -121,10 +133,10 @@
 }
 @keyframes infiniteScroll {
   from {
-    transform: translateX(0);
+    transform: translate3d(0, 0, 0);
   }
   to {
-    transform: translateX(-50%);
+    transform: translate3d(-50%, 0, 0);
   }
 }
 .streamlineimggrid.streamlineimggrid12 img {
@@ -139,18 +151,17 @@
   margin: 0;
 }
 
-@keyframes infiniteScroll {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-50%);
-  }
+.challenges-text {
+  opacity: 0;
+  transform: translate3d(0, 24px, 0);
+  transition: opacity 0.9s ease, transform 0.9s ease;
 }
 
-.overcome-pro-content {
-  width: 80%;
+.common-challenges-section.is-in-view .challenges-text {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
 }
+
 .challenges-text h3 {
     color: #29292B;
     text-align: center;

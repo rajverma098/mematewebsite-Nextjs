@@ -95,6 +95,14 @@
   z-index: 0;
 }
 
+.hero-bg-lite {
+  pointer-events: none;
+  background:
+    radial-gradient(ellipse 46% 52% at 50% 52%, rgba(255, 255, 255, 0.18), transparent 70%),
+    radial-gradient(ellipse 34% 42% at 72% 58%, rgba(30, 178, 220, 0.28), transparent 68%),
+    radial-gradient(ellipse 34% 42% at 24% 48%, rgba(255, 178, 89, 0.28), transparent 68%);
+}
+
 .hero-content {
     z-index: 1;
     position: relative;

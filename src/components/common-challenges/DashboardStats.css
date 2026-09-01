@@ -7,6 +7,10 @@
 .dashboard-wrapper .dashboard-card {
   max-width: 960px;
 }
+
+.dashboard-wrapper .dashboard-card-placeholder {
+  min-height: 280px;
+}
 .dashboard-wrapper .fade-in {
   opacity: 1;
   transform: translateY(0);
@@ -158,10 +162,18 @@
     cursor: pointer;
     background: #bae8ff;
     border-radius: 100%;
-    transition: all .2s;
+    transition: transform .2s;
     position: absolute;
     top: 20px;
     right: 16px;
+    width: 18px;
+    height: 18px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    line-height: 1;
+    font-weight: 600;
 }
 .dashboard-wrapper .icon-btn:hover {
   transform: scale(1.15);
@@ -189,6 +201,7 @@
     transition: all .25s;
     position: relative;
 }
+
 .dashboard-wrapper .skeleton-number {
   width: 50px;
   height: 30px;

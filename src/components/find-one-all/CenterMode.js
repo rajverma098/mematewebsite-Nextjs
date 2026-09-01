@@ -132,10 +132,68 @@ function  CenterMode() {
 
   const slider1 = useRef(null);
   const slider2 = useRef(null);
+  const wrapRef = useRef(null);
+  const isVisibleRef = useRef(false);
+  const isScrollingRef = useRef(false);
+  const resumeTimerRef = useRef(null);
 
   useEffect(() => {
     setNav1(slider1.current);
     setNav2(slider2.current);
+  }, []);
+
+  useEffect(() => {
+    const el = wrapRef.current;
+    if (!el) return undefined;
+
+    const pause = () => {
+      slider1.current?.slickPause?.();
+      slider2.current?.slickPause?.();
+    };
+    const play = () => {
+      slider1.current?.slickPlay?.();
+      slider2.current?.slickPlay?.();
+    };
+
+    const stopScrollTimer = () => {
+      if (resumeTimerRef.current) {
+        window.clearTimeout(resumeTimerRef.current);
+        resumeTimerRef.current = null;
+      }
+    };
+
+    const onScroll = () => {
+      isScrollingRef.current = true;
+      pause();
+      stopScrollTimer();
+      resumeTimerRef.current = window.setTimeout(() => {
+        isScrollingRef.current = false;
+        if (isVisibleRef.current) play();
+      }, 180);
+    };
+
+    pause();
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        isVisibleRef.current = entry.isIntersecting;
+        if (!entry.isIntersecting) {
+          pause();
+          return;
+        }
+        if (!isScrollingRef.current) play();
+      },
+      { threshold: 0.15 }
+    );
+
+    observer.observe(el);
+    window.addEventListener("scroll", onScroll, { passive: true });
+
+    return () => {
+      stopScrollTimer();
+      window.removeEventListener("scroll", onScroll);
+      observer.disconnect();
+    };
   }, []);
 
 
@@ -228,7 +286,17 @@ function  CenterMode() {
 
   
   return (
-    <div className="oneappwrap large-image-container-wrap" style={{ padding: "40px" }}>
+    <div
+      ref={wrapRef}
+      className="oneappwrap large-image-container-wrap"
+      style={{ padding: "40px" }}
+      data-aos="fade-up"
+      data-aos-offset="50"
+      data-aos-delay="50"
+      data-aos-duration="1400"
+      data-aos-once="true"
+      data-aos-anchor-placement="top-bottom"
+    >
       <Slider {...navSettings} ref={slider2} className="sliderTabWrapper" style={{ marginTop: "20px" }}>
         {tabs.map((tab, index) => (
           <div key={index} role="tabpanel" className="boxCenterModew">
@@ -249,20 +317,11 @@ function  CenterMode() {
             role="group"
             aria-roledescription="slide"
             aria-label={`Slide ${index + 1} of ${tabs.length}`}
-        data-aos="fade-up"
-        data-aos-offset="50"
-        data-aos-delay="50"
-        data-aos-duration="1400"
-        data-aos-mirror="true"
-        data-aos-once="false"
-        data-aos-anchor-placement="top-bottom"
         key={index}>
           <div key={index}>
              <LazyLoadImage
               alt={tab.label}
               src={tab.image}
-              // width={800}
-              // height={600}
               effect="blur" 
               style={{ width: "100%", height: "auto" }}
             />
