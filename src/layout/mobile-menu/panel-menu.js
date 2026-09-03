@@ -178,6 +178,11 @@ const items = [
     contents: {
       Industries: [
         {
+          content: "Cleaning Companies",
+          link: "/cleaning-companies",
+          img: `${menuImages.creativeAgency}`,
+        },
+        {
           content: "Creative Agencies",
           link: "/industries/business-software-for-creative-agencies",
           img: `${menuImages.creativeAgency}`,

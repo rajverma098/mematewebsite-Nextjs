@@ -68,7 +68,7 @@ const generateFAQSchema = () => {
 };
 
   return (
-    <div className="question-answer-wrappercl cleaningFaqs">
+    <div className="question-answer-wrappercl questionAnswerMain cleaningFaqs">
        <Helmet>
                     <script type="application/ld+json">{generateFAQSchema()}</script>
                   </Helmet>

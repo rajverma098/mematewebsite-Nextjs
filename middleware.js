@@ -180,6 +180,7 @@ export function middleware(request) {
     '/news/business-operations-software': '/news/what-australian-business-owners-can-learn-from-japanese-business-culture',   
     '/news/cash-flow-forecasting-australia': '/news/women-business-backbone-australia',   
     '/customer-stories/pro-vinyl': '/customer-stories/case-study-provinyl-car-wrapping-business-software',   
+    '/cleaning-business': '/cleaning-companies',   
  
   };
 

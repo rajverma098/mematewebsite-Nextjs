@@ -6,9 +6,30 @@
   
 }
 .enquiry-profit__container {
-  width: 1200px;
+  max-width: 1200px;
   margin: 0 auto;
-  
+  padding: 0 30px;
+}
+.enquiry-profit {
+  overflow: hidden;
+}
+
+.enquiry-profit__slider-wrapper {
+  width: calc(100% + ((100vw - 1200px) / 2));
+  margin-left: max(30px, calc((100vw - 1200px) / 2 + 0px));
+  overflow: hidden;
+}
+
+.enquiry-profit__slider {
+  width: 100%;
+}
+
+.enquiry-profit__slide {
+  padding-right: 20px;
+}
+
+.profit-card {
+  width: 320px;
 }
 .enquiry-profit__header {
   display: flex;
@@ -71,8 +92,8 @@
   border-color: #657180;
 }
 .enquiry-profit__slider-wrapper {
-  width: calc(100% + 350px);
-  margin-left: 350px;
+  /* width: calc(100% + 350px);
+  margin-left: 350px; */
   overflow: hidden;
 }
 .enquiry-profit__slider {
@@ -206,12 +227,16 @@
   }
 }
 @media (max-width: 600px) {
+  .profit-card {
+    width: 89%;
+    margin: 0 auto;
+}
 .enquiry-profit {
     padding: 18px 0 8px;
 }
-  .enquiry-profit__container {
-    width: calc(100% - 32px);
-  }
+ .enquiry-profit__container {
+    width: 100%;
+}
   .enquiry-profit__heading {
     font-size: 27px;
     letter-spacing: -1px;

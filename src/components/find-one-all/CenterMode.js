@@ -228,7 +228,7 @@ function  CenterMode() {
   };
 
   const navSettings = {
-    slidesToShow: 9,
+    slidesToShow: 5,
     slidesToScroll: 1,
     asNavFor: nav1,
     dots: false,
@@ -269,13 +269,8 @@ function  CenterMode() {
     <div
       ref={wrapRef}
       className="oneappwrap large-image-container-wrap"
-      style={{ padding: "40px" }}
-      data-aos="fade-up"
-      data-aos-offset="50"
-      data-aos-delay="50"
-      data-aos-duration="1400"
-      data-aos-once="true"
-      data-aos-anchor-placement="top-bottom"
+      style={{ padding: "0 0px 0 0" }}
+      
     >
       <Slider {...navSettings} ref={slider2} className="sliderTabWrapper" style={{ marginTop: "20px" }}>
         {tabs.map((tab, index) => (

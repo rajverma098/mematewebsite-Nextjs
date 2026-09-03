@@ -8,6 +8,7 @@ import PhotoAndVideoAgencySVG from "../../../../svg/PhotoAndVideoAgencySVG";
 import AutomotiveSVG from "../../../../svg/AutomotiveSVG";
 import StartupsSVG from "../../../../svg/StartupsSVG";
 import ConstructionSVG from "../../../../svg/ConstructionSVG";
+import CleaningCompaniesIcon from "../../../../svg/CleaningCompaniesIcon";
 
 
 const MenuIndustry = () => {
@@ -18,6 +19,13 @@ const MenuIndustry = () => {
         <div className="menu-feature-management">
           <p className="menu-feature-text">INDUSTRIES</p>
 
+          <div
+            className="menu-management-features">
+            <div className="menu-client-management">
+              <CleaningCompaniesIcon/>
+              <Link href="/cleaning-companies" className={` ${pathname === "/cleaning-companies" ? "navbar-item-active" : ""}`}><p className="clinet-management-text bgicons icon021">Cleaning Companies</p></Link>
+            </div>
+          </div>
           <div
             className="menu-management-features"
             

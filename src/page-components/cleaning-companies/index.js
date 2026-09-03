@@ -1,7 +1,7 @@
 'use client'
 import React from 'react'
 import Layout from '../../layout';
-import CleaningBusinessComponent from '../../components/cleaning-business';
+import CleaningBusinessComponent from '../../components/cleaning-companies';
 import AppWrapper from '../../components/AppWrapper';
 import SmoothScroll from "./SmoothScroll";
 

@@ -56,9 +56,9 @@
   }
 }
 
-.cleaning-infinite-images:hover .cleaning-infinite-track {
+/* .cleaning-infinite-images:hover .cleaning-infinite-track {
   animation-play-state: paused;
-}
+} */
 @media (max-width: 768px) {
   .cleaning-infinite-track {
     animation-duration: 20s;

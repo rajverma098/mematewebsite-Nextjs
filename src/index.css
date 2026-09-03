@@ -23,6 +23,22 @@ body {
     position: sticky;
     top: 0;
 }
+.question-answer-ans-infoF {
+  overflow: hidden;
+  opacity: 0;
+  transform: translateY(-10px);
+
+  transition:
+    max-height 0.5s cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 0.35s ease,
+    transform 0.35s ease,
+    padding 0.5s ease;
+}
+
+.question-answer-ans-infoF.expanded {
+  opacity: 1;
+  transform: translateY(0);
+}
 .big-img-macMain img {
     width: 100%;
 }
@@ -365,6 +381,18 @@ span.ssMDFont {
     display: flex;
   }
 
+
+@media screen and (max-width: 3000px) {
+
+.get-started-wrapper {
+    height: 700px;
+}
+.apply-content {
+    margin-top: -100px;
+}
+
+
+}
 
 @media screen and (max-width: 767px) {
     .get-started-wrapper {

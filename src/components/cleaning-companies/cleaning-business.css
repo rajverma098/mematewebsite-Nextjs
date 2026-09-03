@@ -359,11 +359,172 @@
 
 
 
+.business-features {
+  --container-width: 1200px;
+  --container-padding: 0px;
 
+  width: 100%;
+  overflow: hidden;
+  background: #fff;
+  padding: 0px 0;
+}
+
+/* Header container */
+.business-features__container {
+  width: min(
+    calc(100% - (var(--container-padding) * 2)),
+    var(--container-width)
+  );
+
+  margin: 0 auto;
+}
+
+/* Header */
+.business-features__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 55px;
+}
+
+.business-features__header h2 {
+  margin: 0;
+  color: #101828;
+  font-size: 46px;
+  line-height: 1.2;
+  letter-spacing: -1.3px;
+  font-family: "sequel_sans" !important;
+  font-weight: 100;
+}
+
+.business-features__header h2 span {
+  font-family: "sequel_sans_bold_disp" !important;
+  font-weight: 100;
+}
+
+/* =========================
+   SLIDER
+========================= */
+
+.business-features__slider-wrapper {
+  width: calc(
+    100% - max(
+      var(--container-padding),
+      calc((100vw - var(--container-width)) / 2 + var(--container-padding))
+    )
+  );
+
+  margin-left: max(
+    var(--container-padding),
+    calc(
+      (100vw - var(--container-width)) / 2 + var(--container-padding)
+    )
+  );
+
+  overflow: hidden;
+}
 
 .business-features__slider {
-   width: calc(100% + 350px);
-  margin-left: 350px;
+  width: 100%;
+}
+
+.business-features__slider .slick-list {
+  overflow: visible;
+}
+
+.business-features__slider .slick-track {
+  display: flex;
+}
+
+/* Individual slide */
+.business-features__slide {
+  width: 330px;
+  padding-right: 20px;
+  box-sizing: border-box;
+}
+
+/* =========================
+   CARD
+========================= */
+
+.business-card {
+  width: 100%;
+}
+
+.business-card__image {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+}
+
+.business-card__image img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.business-card h3 {
+  margin: 22px 0 10px;
+  color: #101828;
+  font-family: "sequel_sans_bold_disp" !important;
+  font-size: 24px;
+  line-height: 1.15;
+  letter-spacing: -0.4px;
+}
+
+.business-card p {
+  margin: 0;
+  color: #757b8a;
+  font-family: Inter, sans-serif !important;
+  font-size: 16px;
+  line-height: 1.4;
+  max-width: 310px;
+}
+
+/* =========================
+   ARROWS
+========================= */
+
+.business-features__arrows {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.slider-arrow {
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  border: 1px solid #9ca7b5;
+  border-radius: 50%;
+  background: #fff;
+  color: #718096;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+  transition:
+    background 0.25s ease,
+    color 0.25s ease,
+    border-color 0.25s ease,
+    transform 0.25s ease;
+}
+
+.slider-arrow:hover {
+  background: #f4f7f9;
+  color: #101827;
+  border-color: #101827;
+}
+
+.slider-arrow:active {
+  transform: scale(0.92);
+}
+
+.business-features__slider {
+  
   overflow: hidden;
 }
 .business-features__slide {
@@ -452,7 +613,7 @@
     text-align: center;
     width: 1200px;
     margin: 0 auto;
-    padding: 200px 0;
+    padding: 100px 0;
     background: url(https://memate-website.s3.ap-southeast-2.amazonaws.com/gradient02.png);
     background-position: center;
     background-repeat: no-repeat;
@@ -482,6 +643,39 @@
 }
 .cleaningBusinessListWrap .ListWrap:nth-child(2) {
     margin: 100px 0;
+}
+.cleaningBusinessListWrap {
+  position: relative;
+  min-height: 55px;
+  overflow: hidden;
+}
+
+.ListWrap {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.listIcon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wordRotate {
+  animation: wordRotate 0.6s ease-in-out;
+}
+
+@keyframes wordRotate {
+  0% {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 .AustralianBusinessesWrap .CaseStudiesSection {
     margin: 0 auto;
@@ -536,7 +730,7 @@
     flex-direction: column;
     width: 1440px;
     max-width: 1440px;
-    padding: 64px 120px 56px;
+    padding: 64px 0px 56px;
     display: flex;
     margin: 0 auto;
 }
@@ -552,6 +746,7 @@
     display: flex;
     position: relative;
     padding-bottom: 76px;
+    background-attachment: fixed;
 }
 .business-hero__title {
    color: #fff;
@@ -564,21 +759,22 @@
 }
 .smokeyGradient1 {
     -webkit-text-fill-color: transparent;
-    background: linear-gradient(90deg, #1ab2ff, #ffb258, #1ab2ff) 0 0 / 300%;
     letter-spacing: 0;
+    background: linear-gradient(90deg, #1ab2ff, #ffb258, #1ab2ff) 0 0 / 300%;
     -webkit-background-clip: text;
-    justify-content: center;
-    align-items: center;
-    gap: 8px;
-    margin: 0;
+    gap: 44px;
     font-size: 32px;
     font-weight: 100;
     line-height: 120%;
     animation: 6s ease-in-out infinite smokeMove;
-    display: flex;
     font-family: sequel_sans !important;
-    width: 211px;
-    margin: 0 auto;
+}
+.business-hero__subtitle {
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    display: flex;
+    margin: 25px 0 0;
 }
 .business-hero .topSpaceGap {
     margin-top: 152px;
@@ -624,11 +820,15 @@
     line-height: 32px;
     font-family: sequel_sans_roman_head !important;
 }
-
+.questionAnswerMain .question-answer-ques.selected .question-answer-ques-infoF {
+    -webkit-text-fill-color: transparent;
+    background: linear-gradient(90deg,#1ab2ff,#ffb258,#1ab2ff) 0 0/100%;
+    -webkit-background-clip: text;
+}
 
 .question-answer-wrappercl{
   width: 900px;
-  margin: 160px auto 40px;
+  margin: 70px auto 40px;
 }
 .cleaningFaqs .question-answer-headingcl {
     color: #101828;

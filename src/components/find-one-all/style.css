@@ -262,7 +262,7 @@ ul.tab-list li p {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-left: 60px;
+  margin-left: 0px;
 }
 
 .boxCenterMode span {
@@ -336,9 +336,9 @@ ul.tab-list li p {
 }
 
 
-.oneappwrap{
-  width: 1200px;
-  margin: 0 auto;
+.oneappwrap {
+    width: 802px;
+    margin: 0 auto;
 }
 .oneappwrap .boxCenterMode {
     text-align: center;
@@ -362,7 +362,7 @@ ul.tab-list li p {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    padding-bottom: 93px;
+    padding-bottom: 0px;
     width: 1200px;
     margin: 0 auto;
 }

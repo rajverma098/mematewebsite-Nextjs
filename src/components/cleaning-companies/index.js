@@ -1,20 +1,15 @@
 import CancelWheneverIcon from "../../svg/CancelWheneverIcon";
 import FreeSetupIcon from "../../svg/FreeSetupIcon";
 import MoveDataIcon from "../../svg/MoveDataIcon";
-import EnquiryFunnerlIcon from "../../svg/EnquiryFunnerlIcon";
-import PaymentReceivedIcon from "../../svg/PaymentReceivedIcon";
-import CleaningTechIcon from "../../svg/CleaningTechIcon";
-import SinpleToUseIcon from "../../svg/SinpleToUseIcon";
-import SimplicityAtWorkIcon from "../../svg/SimplicityAtWorkIcon";
-import SimpleToSetUpIcon from "../../svg/SimpleToSetUpIcon";
 import DarkMemateBlackBut from "@/layout/hover-button/DarkMemateBlackBut";
 import InfiniteImageScroll from "./InfiniteImageScroll";
+import CleaningBusinessList from "./CleaningBusinessList";
 import AutomotiveQuesitonAndAns from "./AutomotiveQuesitonAndAns";
 import CaseStudiesHome from "../../components/casestudies-home";
 import EnquiryProfit from "./EnquiryProfit";
 import BusinessFeatures from "./BusinessFeatures";
+import LayerAnimation from "./LayerAnimation";
 import "./cleaning-business.css";
-import Image from "next/image";
 import LessBusyness from "@/page-components/landing-page/less-busyness";
 import FindOneApplication from "../find-one-all";
 import { useEffect } from "react";
@@ -129,8 +124,8 @@ const CleaningBusinessComponent = () => {
           </div>
   <div className='topSpaceGap'>
          <DarkMemateBlackBut
-      link1="https://app.memate.com.au/requestdemo"
-      link2="https://app.memate.com.au/onboarding"
+      link1="https://app.memate.com.au/onboarding"
+      link2="https://app.memate.com.au/requestdemo"
       className="alignLeft"
       target="_blank"
       buttonTextdark="Start Free Trial"
@@ -140,18 +135,17 @@ const CleaningBusinessComponent = () => {
     />
        </div>
        </div>
-       <div className="rightLayoutLayers ">
-       <div className="topLeftLayers">
+      <div className="rightLayoutLayers ">
+       <LayerAnimation />
+        {/* <div className="topLeftLayers">
          <div className="demo-bubble positionValue">
             <strong>Let us show you</strong>
             <span><em>▶</em> 10 Min Demo →</span>
           </div>
               <div className="enquiries-card positionValue">
             <div className="card-small-icon"><EnquiryFunnerlIcon /></div>
-
             <div>
               <span className="card-label">Enquiries</span>
-
               <div className="enquiry-value">
                 <strong>15</strong>
                 <small>↗ 10%</small>
@@ -160,7 +154,6 @@ const CleaningBusinessComponent = () => {
           </div>
         </div>
         <div className="middleLayoutLayers">
-          
                    <Image
                     alt="Your competitors are still texting. That's your advantage."
                     src="https://memate-website.s3.ap-southeast-2.amazonaws.com/cleaningBusinessGirl-img1.png"                          
@@ -170,7 +163,6 @@ const CleaningBusinessComponent = () => {
                   />
                   </div>
                    <div className="bottomRightLayers">
-                  
         <div className="positionValue paymentCardWrap">
              <Image
                     alt="Your competitors are still texting. That's your advantage."
@@ -179,15 +171,12 @@ const CleaningBusinessComponent = () => {
                     placeholder="empty"         
                     width={65} height={46}
                   />
-        <div className="payment-card">
-         
+             <div className="payment-card">
             <div className="payment-icon"><PaymentReceivedIcon /></div>
-
             <div>
               <span className="payment-label">
                 Payment Received
               </span>
-
               <strong>$1,385</strong>
             </div>
           </div>
@@ -196,11 +185,12 @@ const CleaningBusinessComponent = () => {
             <span className="check-icon"><CleaningTechIcon /></span>
             Job Complete
           </div>
-                  </div>
-       </div>
-       </div>
+         </div>*/}
+       </div> 
 
+       </div>
   </div>
+
      <div className="trustedByCleningWrapper">
      <div className="trustedByCleningWrap">
         <div className="trustedByHead">
@@ -221,11 +211,7 @@ const CleaningBusinessComponent = () => {
       <div className="BusinessFeaturesWrap">
           <BusinessFeatures /> 
         </div>
-      <div className="cleaningBusinessListWrap">
-          <div className="ListWrap">Simple to <SinpleToUseIcon /> <span>use</span></div>
-          <div className="ListWrap">Simplicity at <SimplicityAtWorkIcon /> <span>work</span></div>
-          <div className="ListWrap">Simple to <SimpleToSetUpIcon /> <span>set up</span></div>
-        </div>
+        <CleaningBusinessList />
       <div className="AustralianBusinessesWrap">
          <CaseStudiesHome />   
            <div className='topSpaceGap'>
@@ -249,12 +235,12 @@ const CleaningBusinessComponent = () => {
             <h1 className="business-hero__title">
               More Business - Less Busyness
             </h1>
-            <p className="business-hero__subtitle smokeyGradient1">
-              <span>Smarter</span>
-              <b> · </b>
-              <span>Faster</span>
-              <b> · </b>
-              <span>Digital</span>
+            <p className="business-hero__subtitle ">
+              <span className="smokeyGradient1">Smarter</span>
+              <b className="smokeyGradient1"> · </b>
+              <span className="smokeyGradient1">Faster</span>
+              <b className="smokeyGradient1"> · </b>
+              <span className="smokeyGradient1">Digital</span>
             </p>
              <div className='topSpaceGap'>
          <DarkMemateBlackBut
